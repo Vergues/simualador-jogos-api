@@ -1,0 +1,283 @@
+{
+  "nome": "Grêmio",
+  "sigla": "GRE",
+  "forca": 76,
+  "regraEspecial": "normal",
+  "jogadores": [
+    {
+      "nome": "Tiago Volpi",
+      "posicao": "GOL",
+      "overall": 78,
+      "ataque": 36,
+      "defesa": 86,
+      "finalizacao": 28,
+      "passe": 60,
+      "velocidade": 56,
+      "fisico": 81
+    },
+    {
+      "nome": "Weverton",
+      "posicao": "GOL",
+      "overall": 79,
+      "ataque": 37,
+      "defesa": 87,
+      "finalizacao": 29,
+      "passe": 61,
+      "velocidade": 57,
+      "fisico": 82
+    },
+    {
+      "nome": "Thiago Beltrame",
+      "posicao": "GOL",
+      "overall": 77,
+      "ataque": 35,
+      "defesa": 85,
+      "finalizacao": 27,
+      "passe": 59,
+      "velocidade": 55,
+      "fisico": 80
+    },
+    {
+      "nome": "Walter Kannemann",
+      "posicao": "ZAG",
+      "overall": 78,
+      "ataque": 52,
+      "defesa": 86,
+      "finalizacao": 44,
+      "passe": 68,
+      "velocidade": 70,
+      "fisico": 84
+    },
+    {
+      "nome": "Jemerson",
+      "posicao": "ZAG",
+      "overall": 74,
+      "ataque": 48,
+      "defesa": 82,
+      "finalizacao": 40,
+      "passe": 64,
+      "velocidade": 66,
+      "fisico": 80
+    },
+    {
+      "nome": "Rodrigo Ely",
+      "posicao": "ZAG",
+      "overall": 75,
+      "ataque": 49,
+      "defesa": 83,
+      "finalizacao": 41,
+      "passe": 65,
+      "velocidade": 67,
+      "fisico": 81
+    },
+    {
+      "nome": "Gustavo Martins",
+      "posicao": "ZAG",
+      "overall": 75,
+      "ataque": 49,
+      "defesa": 83,
+      "finalizacao": 41,
+      "passe": 65,
+      "velocidade": 67,
+      "fisico": 81
+    },
+    {
+      "nome": "Marlon",
+      "posicao": "LE",
+      "overall": 76,
+      "ataque": 72,
+      "defesa": 78,
+      "finalizacao": 58,
+      "passe": 77,
+      "velocidade": 83,
+      "fisico": 76
+    },
+    {
+      "nome": "Lucas Esteves",
+      "posicao": "LE",
+      "overall": 75,
+      "ataque": 71,
+      "defesa": 77,
+      "finalizacao": 57,
+      "passe": 76,
+      "velocidade": 82,
+      "fisico": 75
+    },
+    {
+      "nome": "João Pedro",
+      "posicao": "LD",
+      "overall": 75,
+      "ataque": 71,
+      "defesa": 77,
+      "finalizacao": 57,
+      "passe": 76,
+      "velocidade": 82,
+      "fisico": 75
+    },
+    {
+      "nome": "Marcos Rocha",
+      "posicao": "LD",
+      "overall": 77,
+      "ataque": 73,
+      "defesa": 79,
+      "finalizacao": 59,
+      "passe": 78,
+      "velocidade": 84,
+      "fisico": 77
+    },
+    {
+      "nome": "Erick Noriega",
+      "posicao": "VOL",
+      "overall": 73,
+      "ataque": 63,
+      "defesa": 78,
+      "finalizacao": 55,
+      "passe": 76,
+      "velocidade": 71,
+      "fisico": 77
+    },
+    {
+      "nome": "Villasanti",
+      "posicao": "VOL",
+      "overall": 78,
+      "ataque": 68,
+      "defesa": 83,
+      "finalizacao": 60,
+      "passe": 81,
+      "velocidade": 76,
+      "fisico": 82
+    },
+    {
+      "nome": "Dodi",
+      "posicao": "MC",
+      "overall": 77,
+      "ataque": 77,
+      "defesa": 75,
+      "finalizacao": 69,
+      "passe": 83,
+      "velocidade": 77,
+      "fisico": 77
+    },
+    {
+      "nome": "Edenilson",
+      "posicao": "MC",
+      "overall": 77,
+      "ataque": 77,
+      "defesa": 75,
+      "finalizacao": 69,
+      "passe": 83,
+      "velocidade": 77,
+      "fisico": 77
+    },
+    {
+      "nome": "Cristaldo",
+      "posicao": "MEI",
+      "overall": 78,
+      "ataque": 85,
+      "defesa": 60,
+      "finalizacao": 81,
+      "passe": 86,
+      "velocidade": 81,
+      "fisico": 73
+    },
+    {
+      "nome": "Riquelme",
+      "posicao": "MEI",
+      "overall": 74,
+      "ataque": 81,
+      "defesa": 56,
+      "finalizacao": 77,
+      "passe": 82,
+      "velocidade": 77,
+      "fisico": 69
+    },
+    {
+      "nome": "Francis Amuzu",
+      "posicao": "PE",
+      "overall": 74,
+      "ataque": 82,
+      "defesa": 52,
+      "finalizacao": 78,
+      "passe": 78,
+      "velocidade": 83,
+      "fisico": 68
+    },
+    {
+      "nome": "Jovane Cabral",
+      "posicao": "PE",
+      "overall": 76,
+      "ataque": 84,
+      "defesa": 54,
+      "finalizacao": 80,
+      "passe": 80,
+      "velocidade": 85,
+      "fisico": 70
+    },
+    {
+      "nome": "Pavón",
+      "posicao": "PD",
+      "overall": 75,
+      "ataque": 83,
+      "defesa": 53,
+      "finalizacao": 79,
+      "passe": 79,
+      "velocidade": 84,
+      "fisico": 69
+    },
+    {
+      "nome": "Alysson",
+      "posicao": "PD",
+      "overall": 72,
+      "ataque": 80,
+      "defesa": 50,
+      "finalizacao": 76,
+      "passe": 76,
+      "velocidade": 81,
+      "fisico": 66
+    },
+    {
+      "nome": "Braithwaite",
+      "posicao": "ATA",
+      "overall": 75,
+      "ataque": 85,
+      "defesa": 45,
+      "finalizacao": 85,
+      "passe": 71,
+      "velocidade": 78,
+      "fisico": 79
+    },
+    {
+      "nome": "Carlos Vinícius",
+      "posicao": "ATA",
+      "overall": 73,
+      "ataque": 83,
+      "defesa": 43,
+      "finalizacao": 83,
+      "passe": 69,
+      "velocidade": 76,
+      "fisico": 77
+    },
+    {
+      "nome": "André Henrique",
+      "posicao": "ATA",
+      "overall": 72,
+      "ataque": 82,
+      "defesa": 42,
+      "finalizacao": 82,
+      "passe": 68,
+      "velocidade": 75,
+      "fisico": 76
+    },
+    {
+      "nome": "Arezo",
+      "posicao": "ATA",
+      "overall": 73,
+      "ataque": 83,
+      "defesa": 43,
+      "finalizacao": 83,
+      "passe": 69,
+      "velocidade": 76,
+      "fisico": 77
+    }
+  ]
+}

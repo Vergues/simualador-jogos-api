@@ -1,0 +1,283 @@
+{
+  "nome": "Fluminense",
+  "sigla": "FLU",
+  "forca": 84,
+  "regraEspecial": "normal",
+  "jogadores": [
+    {
+      "nome": "Fábio",
+      "posicao": "GOL",
+      "overall": 86,
+      "ataque": 44,
+      "defesa": 94,
+      "finalizacao": 36,
+      "passe": 68,
+      "velocidade": 64,
+      "fisico": 89
+    },
+    {
+      "nome": "Marcelo Pitaluga",
+      "posicao": "GOL",
+      "overall": 84,
+      "ataque": 42,
+      "defesa": 92,
+      "finalizacao": 34,
+      "passe": 66,
+      "velocidade": 62,
+      "fisico": 87
+    },
+    {
+      "nome": "Vitor Eudes",
+      "posicao": "GOL",
+      "overall": 83,
+      "ataque": 41,
+      "defesa": 91,
+      "finalizacao": 33,
+      "passe": 65,
+      "velocidade": 61,
+      "fisico": 86
+    },
+    {
+      "nome": "Thiago Silva",
+      "posicao": "ZAG",
+      "overall": 88,
+      "ataque": 62,
+      "defesa": 96,
+      "finalizacao": 54,
+      "passe": 78,
+      "velocidade": 80,
+      "fisico": 94
+    },
+    {
+      "nome": "Ignácio",
+      "posicao": "ZAG",
+      "overall": 83,
+      "ataque": 57,
+      "defesa": 91,
+      "finalizacao": 49,
+      "passe": 73,
+      "velocidade": 75,
+      "fisico": 89
+    },
+    {
+      "nome": "Freytes",
+      "posicao": "ZAG",
+      "overall": 85,
+      "ataque": 59,
+      "defesa": 93,
+      "finalizacao": 51,
+      "passe": 75,
+      "velocidade": 77,
+      "fisico": 91
+    },
+    {
+      "nome": "João Loiola",
+      "posicao": "ZAG",
+      "overall": 85,
+      "ataque": 59,
+      "defesa": 93,
+      "finalizacao": 51,
+      "passe": 75,
+      "velocidade": 77,
+      "fisico": 91
+    },
+    {
+      "nome": "Guilherme Arana",
+      "posicao": "LE",
+      "overall": 85,
+      "ataque": 81,
+      "defesa": 87,
+      "finalizacao": 67,
+      "passe": 86,
+      "velocidade": 92,
+      "fisico": 85
+    },
+    {
+      "nome": "Renê",
+      "posicao": "LE",
+      "overall": 84,
+      "ataque": 80,
+      "defesa": 86,
+      "finalizacao": 66,
+      "passe": 85,
+      "velocidade": 91,
+      "fisico": 84
+    },
+    {
+      "nome": "Samuel Xavier",
+      "posicao": "LD",
+      "overall": 82,
+      "ataque": 78,
+      "defesa": 84,
+      "finalizacao": 64,
+      "passe": 83,
+      "velocidade": 89,
+      "fisico": 82
+    },
+    {
+      "nome": "Guga",
+      "posicao": "LD",
+      "overall": 85,
+      "ataque": 81,
+      "defesa": 87,
+      "finalizacao": 67,
+      "passe": 86,
+      "velocidade": 92,
+      "fisico": 85
+    },
+    {
+      "nome": "Hércules",
+      "posicao": "VOL",
+      "overall": 85,
+      "ataque": 75,
+      "defesa": 90,
+      "finalizacao": 67,
+      "passe": 88,
+      "velocidade": 83,
+      "fisico": 89
+    },
+    {
+      "nome": "Martinelli",
+      "posicao": "VOL",
+      "overall": 82,
+      "ataque": 72,
+      "defesa": 87,
+      "finalizacao": 64,
+      "passe": 85,
+      "velocidade": 80,
+      "fisico": 86
+    },
+    {
+      "nome": "Bernal",
+      "posicao": "VOL",
+      "overall": 82,
+      "ataque": 72,
+      "defesa": 87,
+      "finalizacao": 64,
+      "passe": 85,
+      "velocidade": 80,
+      "fisico": 86
+    },
+    {
+      "nome": "Nonato",
+      "posicao": "MC",
+      "overall": 84,
+      "ataque": 84,
+      "defesa": 82,
+      "finalizacao": 76,
+      "passe": 90,
+      "velocidade": 84,
+      "fisico": 84
+    },
+    {
+      "nome": "Ganso",
+      "posicao": "MEI",
+      "overall": 88,
+      "ataque": 95,
+      "defesa": 70,
+      "finalizacao": 91,
+      "passe": 96,
+      "velocidade": 91,
+      "fisico": 83
+    },
+    {
+      "nome": "Lima",
+      "posicao": "MEI",
+      "overall": 83,
+      "ataque": 90,
+      "defesa": 65,
+      "finalizacao": 86,
+      "passe": 91,
+      "velocidade": 86,
+      "fisico": 78
+    },
+    {
+      "nome": "Canobbio",
+      "posicao": "PE",
+      "overall": 84,
+      "ataque": 92,
+      "defesa": 62,
+      "finalizacao": 88,
+      "passe": 88,
+      "velocidade": 93,
+      "fisico": 78
+    },
+    {
+      "nome": "Kevin Serna",
+      "posicao": "PD",
+      "overall": 81,
+      "ataque": 89,
+      "defesa": 59,
+      "finalizacao": 85,
+      "passe": 85,
+      "velocidade": 90,
+      "fisico": 75
+    },
+    {
+      "nome": "Riquelme",
+      "posicao": "PD",
+      "overall": 81,
+      "ataque": 89,
+      "defesa": 59,
+      "finalizacao": 85,
+      "passe": 85,
+      "velocidade": 90,
+      "fisico": 75
+    },
+    {
+      "nome": "John Kennedy",
+      "posicao": "ATA",
+      "overall": 87,
+      "ataque": 97,
+      "defesa": 57,
+      "finalizacao": 97,
+      "passe": 83,
+      "velocidade": 90,
+      "fisico": 91
+    },
+    {
+      "nome": "Rodrigo Castillo",
+      "posicao": "ATA",
+      "overall": 80,
+      "ataque": 90,
+      "defesa": 50,
+      "finalizacao": 90,
+      "passe": 76,
+      "velocidade": 83,
+      "fisico": 84
+    },
+    {
+      "nome": "Everaldo",
+      "posicao": "ATA",
+      "overall": 81,
+      "ataque": 91,
+      "defesa": 51,
+      "finalizacao": 91,
+      "passe": 77,
+      "velocidade": 84,
+      "fisico": 85
+    },
+    {
+      "nome": "Keno",
+      "posicao": "PE",
+      "overall": 80,
+      "ataque": 88,
+      "defesa": 58,
+      "finalizacao": 84,
+      "passe": 84,
+      "velocidade": 89,
+      "fisico": 74
+    },
+    {
+      "nome": "Soteldo",
+      "posicao": "PE",
+      "overall": 78,
+      "ataque": 86,
+      "defesa": 56,
+      "finalizacao": 82,
+      "passe": 82,
+      "velocidade": 87,
+      "fisico": 72
+    }
+  ]
+}

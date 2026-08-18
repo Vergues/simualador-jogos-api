@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Simulador de Futebol</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Simulador de Futebol</h1>
+
+        <!-- SELEÇÃO DOS TIMES -->
+        <div class="selecao-times">
+
+            <!-- TIME DA CASA -->
+            <div class="time-box">
+
+                <label for="timeCasa">
+                    Time da casa
+                </label>
+
+                <select id="timeCasa">
+                </select>
+
+            </div>
+
+
+            <div class="versus">
+                X
+            </div>
+
+
+            <!-- TIME VISITANTE -->
+            <div class="time-box">
+
+                <label for="timeFora">
+                    Time visitante
+                </label>
+
+                <select id="timeFora">
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTÃO SIMULAR -->
+        <button id="botaoSimular">
+            Simular Partida
+        </button>
+
+
+        <!-- RESULTADO -->
+        <div
+            id="resultado"
+            class="resultado escondido"
+        >
+
+            <!-- PLACAR -->
+            <div class="placar">
+
+                <!-- CASA -->
+                <div class="time-placar">
+
+                    <h2 id="nomeCasa">
+                    </h2>
+
+                    <span id="siglaCasa">
+                    </span>
+
+                </div>
+
+
+                <!-- PLACAR -->
+                <div class="placar-numeros">
+
+                    <span id="golsCasa">
+                        0
+                    </span>
+
+                    <span class="x">
+                        x
+                    </span>
+
+                    <span id="golsFora">
+                        0
+                    </span>
+
+                </div>
+
+
+                <!-- FORA -->
+                <div class="time-placar">
+
+                    <h2 id="nomeFora">
+                    </h2>
+
+                    <span id="siglaFora">
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- EVENTOS -->
+            <div class="eventos-container">
+
+                <h2>
+                    Eventos da partida
+                </h2>
+
+                <div id="eventos">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+{
+  "nome": "Red Bull Bragantino",
+  "sigla": "RBB",
+  "forca": 74,
+  "regraEspecial": "normal",
+  "jogadores": [
+    {
+      "nome": "Cleiton",
+      "posicao": "GOL",
+      "overall": 78,
+      "ataque": 36,
+      "defesa": 86,
+      "finalizacao": 28,
+      "passe": 60,
+      "velocidade": 56,
+      "fisico": 81
+    },
+    {
+      "nome": "Lucão",
+      "posicao": "GOL",
+      "overall": 72,
+      "ataque": 30,
+      "defesa": 80,
+      "finalizacao": 22,
+      "passe": 54,
+      "velocidade": 50,
+      "fisico": 75
+    },
+    {
+      "nome": "Fabrício",
+      "posicao": "GOL",
+      "overall": 73,
+      "ataque": 31,
+      "defesa": 81,
+      "finalizacao": 23,
+      "passe": 55,
+      "velocidade": 51,
+      "fisico": 76
+    },
+    {
+      "nome": "Pedro Henrique",
+      "posicao": "ZAG",
+      "overall": 73,
+      "ataque": 47,
+      "defesa": 81,
+      "finalizacao": 39,
+      "passe": 63,
+      "velocidade": 65,
+      "fisico": 79
+    },
+    {
+      "nome": "Eduardo Santos",
+      "posicao": "ZAG",
+      "overall": 74,
+      "ataque": 48,
+      "defesa": 82,
+      "finalizacao": 40,
+      "passe": 64,
+      "velocidade": 66,
+      "fisico": 80
+    },
+    {
+      "nome": "Guzmán Rodríguez",
+      "posicao": "ZAG",
+      "overall": 75,
+      "ataque": 49,
+      "defesa": 83,
+      "finalizacao": 41,
+      "passe": 65,
+      "velocidade": 67,
+      "fisico": 81
+    },
+    {
+      "nome": "Pedro Caixinha",
+      "posicao": "ZAG",
+      "overall": 75,
+      "ataque": 49,
+      "defesa": 83,
+      "finalizacao": 41,
+      "passe": 65,
+      "velocidade": 67,
+      "fisico": 81
+    },
+    {
+      "nome": "Juninho Capixaba",
+      "posicao": "LE",
+      "overall": 75,
+      "ataque": 71,
+      "defesa": 77,
+      "finalizacao": 57,
+      "passe": 76,
+      "velocidade": 82,
+      "fisico": 75
+    },
+    {
+      "nome": "Guilherme Lopes",
+      "posicao": "LE",
+      "overall": 74,
+      "ataque": 70,
+      "defesa": 76,
+      "finalizacao": 56,
+      "passe": 75,
+      "velocidade": 81,
+      "fisico": 74
+    },
+    {
+      "nome": "Nathan Mendes",
+      "posicao": "LD",
+      "overall": 75,
+      "ataque": 71,
+      "defesa": 77,
+      "finalizacao": 57,
+      "passe": 76,
+      "velocidade": 82,
+      "fisico": 75
+    },
+    {
+      "nome": "Andrés Hurtado",
+      "posicao": "LD",
+      "overall": 73,
+      "ataque": 69,
+      "defesa": 75,
+      "finalizacao": 55,
+      "passe": 74,
+      "velocidade": 80,
+      "fisico": 73
+    },
+    {
+      "nome": "Jadsom",
+      "posicao": "VOL",
+      "overall": 74,
+      "ataque": 64,
+      "defesa": 79,
+      "finalizacao": 56,
+      "passe": 77,
+      "velocidade": 72,
+      "fisico": 78
+    },
+    {
+      "nome": "Matheus Fernandes",
+      "posicao": "MC",
+      "overall": 73,
+      "ataque": 73,
+      "defesa": 71,
+      "finalizacao": 65,
+      "passe": 79,
+      "velocidade": 73,
+      "fisico": 73
+    },
+    {
+      "nome": "Eric Ramires",
+      "posicao": "MC",
+      "overall": 73,
+      "ataque": 73,
+      "defesa": 71,
+      "finalizacao": 65,
+      "passe": 79,
+      "velocidade": 73,
+      "fisico": 73
+    },
+    {
+      "nome": "Lucas Evangelista",
+      "posicao": "MC",
+      "overall": 71,
+      "ataque": 71,
+      "defesa": 69,
+      "finalizacao": 63,
+      "passe": 77,
+      "velocidade": 71,
+      "fisico": 71
+    },
+    {
+      "nome": "João Neto",
+      "posicao": "MC",
+      "overall": 72,
+      "ataque": 72,
+      "defesa": 70,
+      "finalizacao": 64,
+      "passe": 78,
+      "velocidade": 72,
+      "fisico": 72
+    },
+    {
+      "nome": "Gabriel Lopes",
+      "posicao": "MEI",
+      "overall": 72,
+      "ataque": 79,
+      "defesa": 54,
+      "finalizacao": 75,
+      "passe": 80,
+      "velocidade": 75,
+      "fisico": 67
+    },
+    {
+      "nome": "Helinho",
+      "posicao": "PD",
+      "overall": 71,
+      "ataque": 79,
+      "defesa": 49,
+      "finalizacao": 75,
+      "passe": 75,
+      "velocidade": 80,
+      "fisico": 65
+    },
+    {
+      "nome": "Mosquera",
+      "posicao": "PE",
+      "overall": 70,
+      "ataque": 78,
+      "defesa": 48,
+      "finalizacao": 74,
+      "passe": 74,
+      "velocidade": 79,
+      "fisico": 64
+    },
+    {
+      "nome": "Vinicinho",
+      "posicao": "PE",
+      "overall": 70,
+      "ataque": 78,
+      "defesa": 48,
+      "finalizacao": 74,
+      "passe": 74,
+      "velocidade": 79,
+      "fisico": 64
+    },
+    {
+      "nome": "Laquintana",
+      "posicao": "PD",
+      "overall": 73,
+      "ataque": 81,
+      "defesa": 51,
+      "finalizacao": 77,
+      "passe": 77,
+      "velocidade": 82,
+      "fisico": 67
+    },
+    {
+      "nome": "Isidro Pitta",
+      "posicao": "ATA",
+      "overall": 77,
+      "ataque": 87,
+      "defesa": 47,
+      "finalizacao": 87,
+      "passe": 73,
+      "velocidade": 80,
+      "fisico": 81
+    },
+    {
+      "nome": "Fernando",
+      "posicao": "ATA",
+      "overall": 71,
+      "ataque": 81,
+      "defesa": 41,
+      "finalizacao": 81,
+      "passe": 67,
+      "velocidade": 74,
+      "fisico": 75
+    },
+    {
+      "nome": "Eduardo Sasha",
+      "posicao": "ATA",
+      "overall": 69,
+      "ataque": 79,
+      "defesa": 39,
+      "finalizacao": 79,
+      "passe": 65,
+      "velocidade": 72,
+      "fisico": 73
+    },
+    {
+      "nome": "Gabriel Novaes",
+      "posicao": "ATA",
+      "overall": 69,
+      "ataque": 79,
+      "defesa": 39,
+      "finalizacao": 79,
+      "passe": 65,
+      "velocidade": 72,
+      "fisico": 73
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "nome": "Goiás",
+  "sigla": "GOI",
+  "forca": 62,
+  "regraEspecial": "normal",
+  "jogadores": [
+    {
+      "nome": "Ezequiel Oliveira",
+      "posicao": "GOL",
+      "overall": 60,
+      "ataque": 18,
+      "defesa": 68,
+      "finalizacao": 10,
+      "passe": 42,
+      "velocidade": 38,
+      "fisico": 63
+    },
+    {
+      "nome": "Thiago Rodrigues",
+      "posicao": "GOL",
+      "overall": 64,
+      "ataque": 22,
+      "defesa": 72,
+      "finalizacao": 14,
+      "passe": 46,
+      "velocidade": 42,
+      "fisico": 67
+    },
+    {
+      "nome": "Tadeu",
+      "posicao": "GOL",
+      "overall": 67,
+      "ataque": 25,
+      "defesa": 75,
+      "finalizacao": 17,
+      "passe": 49,
+      "velocidade": 45,
+      "fisico": 70
+    },
+    {
+      "nome": "Messias",
+      "posicao": "ZAG",
+      "overall": 60,
+      "ataque": 34,
+      "defesa": 68,
+      "finalizacao": 26,
+      "passe": 50,
+      "velocidade": 52,
+      "fisico": 66
+    },
+    {
+      "nome": "Lucas Ribeiro",
+      "posicao": "ZAG",
+      "overall": 62,
+      "ataque": 36,
+      "defesa": 70,
+      "finalizacao": 28,
+      "passe": 52,
+      "velocidade": 54,
+      "fisico": 68
+    },
+    {
+      "nome": "Anthony",
+      "posicao": "ZAG",
+      "overall": 62,
+      "ataque": 36,
+      "defesa": 70,
+      "finalizacao": 28,
+      "passe": 52,
+      "velocidade": 54,
+      "fisico": 68
+    },
+    {
+      "nome": "Edu",
+      "posicao": "ZAG",
+      "overall": 61,
+      "ataque": 35,
+      "defesa": 69,
+      "finalizacao": 27,
+      "passe": 51,
+      "velocidade": 53,
+      "fisico": 67
+    },
+    {
+      "nome": "Sander",
+      "posicao": "LE",
+      "overall": 60,
+      "ataque": 56,
+      "defesa": 62,
+      "finalizacao": 42,
+      "passe": 61,
+      "velocidade": 67,
+      "fisico": 60
+    },
+    {
+      "nome": "Moraes",
+      "posicao": "LE",
+      "overall": 60,
+      "ataque": 56,
+      "defesa": 62,
+      "finalizacao": 42,
+      "passe": 61,
+      "velocidade": 67,
+      "fisico": 60
+    },
+    {
+      "nome": "Dieguinho",
+      "posicao": "LD",
+      "overall": 64,
+      "ataque": 60,
+      "defesa": 66,
+      "finalizacao": 46,
+      "passe": 65,
+      "velocidade": 71,
+      "fisico": 64
+    },
+    {
+      "nome": "Willean Lepo",
+      "posicao": "LD",
+      "overall": 63,
+      "ataque": 59,
+      "defesa": 65,
+      "finalizacao": 45,
+      "passe": 64,
+      "velocidade": 70,
+      "fisico": 63
+    },
+    {
+      "nome": "Juninho",
+      "posicao": "VOL",
+      "overall": 60,
+      "ataque": 50,
+      "defesa": 65,
+      "finalizacao": 42,
+      "passe": 63,
+      "velocidade": 58,
+      "fisico": 64
+    },
+    {
+      "nome": "Marcão Silva",
+      "posicao": "VOL",
+      "overall": 62,
+      "ataque": 52,
+      "defesa": 67,
+      "finalizacao": 44,
+      "passe": 65,
+      "velocidade": 60,
+      "fisico": 66
+    },
+    {
+      "nome": "Rafael Gava",
+      "posicao": "MC",
+      "overall": 61,
+      "ataque": 61,
+      "defesa": 59,
+      "finalizacao": 53,
+      "passe": 67,
+      "velocidade": 61,
+      "fisico": 61
+    },
+    {
+      "nome": "Welliton Matheus",
+      "posicao": "MC",
+      "overall": 59,
+      "ataque": 59,
+      "defesa": 57,
+      "finalizacao": 51,
+      "passe": 65,
+      "velocidade": 59,
+      "fisico": 59
+    },
+    {
+      "nome": "Bruno Sávio",
+      "posicao": "MEI",
+      "overall": 61,
+      "ataque": 68,
+      "defesa": 43,
+      "finalizacao": 64,
+      "passe": 69,
+      "velocidade": 64,
+      "fisico": 56
+    },
+    {
+      "nome": "Jean Carlos",
+      "posicao": "MEI",
+      "overall": 62,
+      "ataque": 69,
+      "defesa": 44,
+      "finalizacao": 65,
+      "passe": 70,
+      "velocidade": 65,
+      "fisico": 57
+    },
+    {
+      "nome": "Esli García",
+      "posicao": "PE",
+      "overall": 62,
+      "ataque": 70,
+      "defesa": 40,
+      "finalizacao": 66,
+      "passe": 66,
+      "velocidade": 71,
+      "fisico": 56
+    },
+    {
+      "nome": "Kadu",
+      "posicao": "PE",
+      "overall": 62,
+      "ataque": 70,
+      "defesa": 40,
+      "finalizacao": 66,
+      "passe": 66,
+      "velocidade": 71,
+      "fisico": 56
+    },
+    {
+      "nome": "Pedrinho",
+      "posicao": "PD",
+      "overall": 58,
+      "ataque": 66,
+      "defesa": 36,
+      "finalizacao": 62,
+      "passe": 62,
+      "velocidade": 67,
+      "fisico": 52
+    },
+    {
+      "nome": "Jajá",
+      "posicao": "PD",
+      "overall": 60,
+      "ataque": 68,
+      "defesa": 38,
+      "finalizacao": 64,
+      "passe": 64,
+      "velocidade": 69,
+      "fisico": 54
+    },
+    {
+      "nome": "Anselmo Ramon",
+      "posicao": "ATA",
+      "overall": 60,
+      "ataque": 70,
+      "defesa": 30,
+      "finalizacao": 70,
+      "passe": 56,
+      "velocidade": 63,
+      "fisico": 64
+    },
+    {
+      "nome": "Breno Herculano",
+      "posicao": "ATA",
+      "overall": 59,
+      "ataque": 69,
+      "defesa": 29,
+      "finalizacao": 69,
+      "passe": 55,
+      "velocidade": 62,
+      "fisico": 63
+    },
+    {
+      "nome": "Nicolas",
+      "posicao": "ATA",
+      "overall": 59,
+      "ataque": 69,
+      "defesa": 29,
+      "finalizacao": 69,
+      "passe": 55,
+      "velocidade": 62,
+      "fisico": 63
+    },
+    {
+      "nome": "Régis",
+      "posicao": "ATA",
+      "overall": 59,
+      "ataque": 69,
+      "defesa": 29,
+      "finalizacao": 69,
+      "passe": 55,
+      "velocidade": 62,
+      "fisico": 63
+    }
+  ]
+}

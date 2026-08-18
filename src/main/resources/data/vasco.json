@@ -1,0 +1,283 @@
+{
+  "nome": "Vasco",
+  "sigla": "VAS",
+  "forca": 77,
+  "regraEspecial": "normal",
+  "jogadores": [
+    {
+      "nome": "Léo Jardim",
+      "posicao": "GOL",
+      "overall": 79,
+      "ataque": 37,
+      "defesa": 87,
+      "finalizacao": 29,
+      "passe": 61,
+      "velocidade": 57,
+      "fisico": 82
+    },
+    {
+      "nome": "Daniel Fuzato",
+      "posicao": "GOL",
+      "overall": 79,
+      "ataque": 37,
+      "defesa": 87,
+      "finalizacao": 29,
+      "passe": 61,
+      "velocidade": 57,
+      "fisico": 82
+    },
+    {
+      "nome": "Pablo",
+      "posicao": "GOL",
+      "overall": 79,
+      "ataque": 37,
+      "defesa": 87,
+      "finalizacao": 29,
+      "passe": 61,
+      "velocidade": 57,
+      "fisico": 82
+    },
+    {
+      "nome": "João Victor",
+      "posicao": "ZAG",
+      "overall": 76,
+      "ataque": 50,
+      "defesa": 84,
+      "finalizacao": 42,
+      "passe": 66,
+      "velocidade": 68,
+      "fisico": 82
+    },
+    {
+      "nome": "Lucas Freitas",
+      "posicao": "ZAG",
+      "overall": 79,
+      "ataque": 53,
+      "defesa": 87,
+      "finalizacao": 45,
+      "passe": 69,
+      "velocidade": 71,
+      "fisico": 85
+    },
+    {
+      "nome": "Maurício Lemos",
+      "posicao": "ZAG",
+      "overall": 76,
+      "ataque": 50,
+      "defesa": 84,
+      "finalizacao": 42,
+      "passe": 66,
+      "velocidade": 68,
+      "fisico": 82
+    },
+    {
+      "nome": "Lucas Oliveira",
+      "posicao": "ZAG",
+      "overall": 78,
+      "ataque": 52,
+      "defesa": 86,
+      "finalizacao": 44,
+      "passe": 68,
+      "velocidade": 70,
+      "fisico": 84
+    },
+    {
+      "nome": "Lucas Piton",
+      "posicao": "LE",
+      "overall": 78,
+      "ataque": 74,
+      "defesa": 80,
+      "finalizacao": 60,
+      "passe": 79,
+      "velocidade": 85,
+      "fisico": 78
+    },
+    {
+      "nome": "Victor Luís",
+      "posicao": "LE",
+      "overall": 78,
+      "ataque": 74,
+      "defesa": 80,
+      "finalizacao": 60,
+      "passe": 79,
+      "velocidade": 85,
+      "fisico": 78
+    },
+    {
+      "nome": "Paulo Henrique",
+      "posicao": "LD",
+      "overall": 78,
+      "ataque": 74,
+      "defesa": 80,
+      "finalizacao": 60,
+      "passe": 79,
+      "velocidade": 85,
+      "fisico": 78
+    },
+    {
+      "nome": "Puma Rodríguez",
+      "posicao": "LD",
+      "overall": 77,
+      "ataque": 73,
+      "defesa": 79,
+      "finalizacao": 59,
+      "passe": 78,
+      "velocidade": 84,
+      "fisico": 77
+    },
+    {
+      "nome": "Hugo Moura",
+      "posicao": "VOL",
+      "overall": 75,
+      "ataque": 65,
+      "defesa": 80,
+      "finalizacao": 57,
+      "passe": 78,
+      "velocidade": 73,
+      "fisico": 79
+    },
+    {
+      "nome": "Jair",
+      "posicao": "VOL",
+      "overall": 74,
+      "ataque": 64,
+      "defesa": 79,
+      "finalizacao": 56,
+      "passe": 77,
+      "velocidade": 72,
+      "fisico": 78
+    },
+    {
+      "nome": "Tchê Tchê",
+      "posicao": "MC",
+      "overall": 78,
+      "ataque": 78,
+      "defesa": 76,
+      "finalizacao": 70,
+      "passe": 84,
+      "velocidade": 78,
+      "fisico": 78
+    },
+    {
+      "nome": "Paulinho Paula",
+      "posicao": "MC",
+      "overall": 77,
+      "ataque": 77,
+      "defesa": 75,
+      "finalizacao": 69,
+      "passe": 83,
+      "velocidade": 77,
+      "fisico": 77
+    },
+    {
+      "nome": "Philippe Coutinho",
+      "posicao": "MEI",
+      "overall": 78,
+      "ataque": 85,
+      "defesa": 60,
+      "finalizacao": 81,
+      "passe": 86,
+      "velocidade": 81,
+      "fisico": 73
+    },
+    {
+      "nome": "Payet",
+      "posicao": "MEI",
+      "overall": 74,
+      "ataque": 81,
+      "defesa": 56,
+      "finalizacao": 77,
+      "passe": 82,
+      "velocidade": 77,
+      "fisico": 69
+    },
+    {
+      "nome": "Nuno Moreira",
+      "posicao": "PE",
+      "overall": 75,
+      "ataque": 83,
+      "defesa": 53,
+      "finalizacao": 79,
+      "passe": 79,
+      "velocidade": 84,
+      "fisico": 69
+    },
+    {
+      "nome": "Andrés Gómez",
+      "posicao": "PE",
+      "overall": 75,
+      "ataque": 83,
+      "defesa": 53,
+      "finalizacao": 79,
+      "passe": 79,
+      "velocidade": 84,
+      "fisico": 69
+    },
+    {
+      "nome": "Adson",
+      "posicao": "PD",
+      "overall": 74,
+      "ataque": 82,
+      "defesa": 52,
+      "finalizacao": 78,
+      "passe": 78,
+      "velocidade": 83,
+      "fisico": 68
+    },
+    {
+      "nome": "Rayan",
+      "posicao": "ATA",
+      "overall": 79,
+      "ataque": 89,
+      "defesa": 49,
+      "finalizacao": 89,
+      "passe": 75,
+      "velocidade": 82,
+      "fisico": 83
+    },
+    {
+      "nome": "Vegetti",
+      "posicao": "ATA",
+      "overall": 78,
+      "ataque": 88,
+      "defesa": 48,
+      "finalizacao": 88,
+      "passe": 74,
+      "velocidade": 81,
+      "fisico": 82
+    },
+    {
+      "nome": "David",
+      "posicao": "ATA",
+      "overall": 74,
+      "ataque": 84,
+      "defesa": 44,
+      "finalizacao": 84,
+      "passe": 70,
+      "velocidade": 77,
+      "fisico": 78
+    },
+    {
+      "nome": "GB",
+      "posicao": "ATA",
+      "overall": 73,
+      "ataque": 83,
+      "defesa": 43,
+      "finalizacao": 83,
+      "passe": 69,
+      "velocidade": 76,
+      "fisico": 77
+    },
+    {
+      "nome": "Maxime Dominguez",
+      "posicao": "MEI",
+      "overall": 73,
+      "ataque": 80,
+      "defesa": 55,
+      "finalizacao": 76,
+      "passe": 81,
+      "velocidade": 76,
+      "fisico": 68
+    }
+  ]
+}

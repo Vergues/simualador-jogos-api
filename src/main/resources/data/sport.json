@@ -1,0 +1,283 @@
+{
+  "nome": "Sport",
+  "sigla": "SPT",
+  "forca": 64,
+  "regraEspecial": "normal",
+  "jogadores": [
+    {
+      "nome": "Caíque França",
+      "posicao": "GOL",
+      "overall": 67,
+      "ataque": 25,
+      "defesa": 75,
+      "finalizacao": 17,
+      "passe": 49,
+      "velocidade": 45,
+      "fisico": 70
+    },
+    {
+      "nome": "Thiago Couto",
+      "posicao": "GOL",
+      "overall": 65,
+      "ataque": 23,
+      "defesa": 73,
+      "finalizacao": 15,
+      "passe": 47,
+      "velocidade": 43,
+      "fisico": 68
+    },
+    {
+      "nome": "Hélio Miguel",
+      "posicao": "GOL",
+      "overall": 64,
+      "ataque": 22,
+      "defesa": 72,
+      "finalizacao": 14,
+      "passe": 46,
+      "velocidade": 42,
+      "fisico": 67
+    },
+    {
+      "nome": "Rafael Thyere",
+      "posicao": "ZAG",
+      "overall": 66,
+      "ataque": 40,
+      "defesa": 74,
+      "finalizacao": 32,
+      "passe": 56,
+      "velocidade": 58,
+      "fisico": 72
+    },
+    {
+      "nome": "Chico",
+      "posicao": "ZAG",
+      "overall": 63,
+      "ataque": 37,
+      "defesa": 71,
+      "finalizacao": 29,
+      "passe": 53,
+      "velocidade": 55,
+      "fisico": 69
+    },
+    {
+      "nome": "João Silva",
+      "posicao": "ZAG",
+      "overall": 63,
+      "ataque": 37,
+      "defesa": 71,
+      "finalizacao": 29,
+      "passe": 53,
+      "velocidade": 55,
+      "fisico": 69
+    },
+    {
+      "nome": "Allyson",
+      "posicao": "ZAG",
+      "overall": 65,
+      "ataque": 39,
+      "defesa": 73,
+      "finalizacao": 31,
+      "passe": 55,
+      "velocidade": 57,
+      "fisico": 71
+    },
+    {
+      "nome": "Igor Cariús",
+      "posicao": "LE",
+      "overall": 63,
+      "ataque": 59,
+      "defesa": 65,
+      "finalizacao": 45,
+      "passe": 64,
+      "velocidade": 70,
+      "fisico": 63
+    },
+    {
+      "nome": "Felipinho",
+      "posicao": "LE",
+      "overall": 63,
+      "ataque": 59,
+      "defesa": 65,
+      "finalizacao": 45,
+      "passe": 64,
+      "velocidade": 70,
+      "fisico": 63
+    },
+    {
+      "nome": "Aderlan",
+      "posicao": "LD",
+      "overall": 62,
+      "ataque": 58,
+      "defesa": 64,
+      "finalizacao": 44,
+      "passe": 63,
+      "velocidade": 69,
+      "fisico": 62
+    },
+    {
+      "nome": "Augusto",
+      "posicao": "LD",
+      "overall": 66,
+      "ataque": 62,
+      "defesa": 68,
+      "finalizacao": 48,
+      "passe": 67,
+      "velocidade": 73,
+      "fisico": 66
+    },
+    {
+      "nome": "Zé Gabriel",
+      "posicao": "VOL",
+      "overall": 65,
+      "ataque": 55,
+      "defesa": 70,
+      "finalizacao": 47,
+      "passe": 68,
+      "velocidade": 63,
+      "fisico": 69
+    },
+    {
+      "nome": "Fabinho",
+      "posicao": "VOL",
+      "overall": 61,
+      "ataque": 51,
+      "defesa": 66,
+      "finalizacao": 43,
+      "passe": 64,
+      "velocidade": 59,
+      "fisico": 65
+    },
+    {
+      "nome": "Lucas Lima",
+      "posicao": "MEI",
+      "overall": 67,
+      "ataque": 74,
+      "defesa": 49,
+      "finalizacao": 70,
+      "passe": 75,
+      "velocidade": 70,
+      "fisico": 62
+    },
+    {
+      "nome": "Sérgio Oliveira",
+      "posicao": "MC",
+      "overall": 66,
+      "ataque": 66,
+      "defesa": 64,
+      "finalizacao": 58,
+      "passe": 72,
+      "velocidade": 66,
+      "fisico": 66
+    },
+    {
+      "nome": "Murilo Rhikman",
+      "posicao": "VOL",
+      "overall": 64,
+      "ataque": 54,
+      "defesa": 69,
+      "finalizacao": 46,
+      "passe": 67,
+      "velocidade": 62,
+      "fisico": 68
+    },
+    {
+      "nome": "Matheusinho",
+      "posicao": "MEI",
+      "overall": 63,
+      "ataque": 70,
+      "defesa": 45,
+      "finalizacao": 66,
+      "passe": 71,
+      "velocidade": 66,
+      "fisico": 58
+    },
+    {
+      "nome": "Chrystian Barletta",
+      "posicao": "PD",
+      "overall": 61,
+      "ataque": 69,
+      "defesa": 39,
+      "finalizacao": 65,
+      "passe": 65,
+      "velocidade": 70,
+      "fisico": 55
+    },
+    {
+      "nome": "Romarinho",
+      "posicao": "PE",
+      "overall": 63,
+      "ataque": 71,
+      "defesa": 41,
+      "finalizacao": 67,
+      "passe": 67,
+      "velocidade": 72,
+      "fisico": 57
+    },
+    {
+      "nome": "Pablo",
+      "posicao": "PE",
+      "overall": 64,
+      "ataque": 72,
+      "defesa": 42,
+      "finalizacao": 68,
+      "passe": 68,
+      "velocidade": 73,
+      "fisico": 58
+    },
+    {
+      "nome": "Lenny Lobato",
+      "posicao": "PD",
+      "overall": 64,
+      "ataque": 72,
+      "defesa": 42,
+      "finalizacao": 68,
+      "passe": 68,
+      "velocidade": 73,
+      "fisico": 58
+    },
+    {
+      "nome": "Pablo",
+      "posicao": "ATA",
+      "overall": 64,
+      "ataque": 74,
+      "defesa": 34,
+      "finalizacao": 74,
+      "passe": 60,
+      "velocidade": 67,
+      "fisico": 68
+    },
+    {
+      "nome": "Gustavo Coutinho",
+      "posicao": "ATA",
+      "overall": 61,
+      "ataque": 71,
+      "defesa": 31,
+      "finalizacao": 71,
+      "passe": 57,
+      "velocidade": 64,
+      "fisico": 65
+    },
+    {
+      "nome": "Carlos Alberto",
+      "posicao": "ATA",
+      "overall": 60,
+      "ataque": 70,
+      "defesa": 30,
+      "finalizacao": 70,
+      "passe": 56,
+      "velocidade": 63,
+      "fisico": 64
+    },
+    {
+      "nome": "Pedro Vilhena",
+      "posicao": "ATA",
+      "overall": 62,
+      "ataque": 72,
+      "defesa": 32,
+      "finalizacao": 72,
+      "passe": 58,
+      "velocidade": 65,
+      "fisico": 66
+    }
+  ]
+}

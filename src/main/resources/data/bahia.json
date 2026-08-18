@@ -1,0 +1,283 @@
+{
+  "nome": "Bahia",
+  "sigla": "BAH",
+  "forca": 83,
+  "regraEspecial": "normal",
+  "jogadores": [
+    {
+      "nome": "Marcos Felipe",
+      "posicao": "GOL",
+      "overall": 83,
+      "ataque": 41,
+      "defesa": 91,
+      "finalizacao": 33,
+      "passe": 65,
+      "velocidade": 61,
+      "fisico": 86
+    },
+    {
+      "nome": "Danilo Fernandes",
+      "posicao": "GOL",
+      "overall": 85,
+      "ataque": 43,
+      "defesa": 93,
+      "finalizacao": 35,
+      "passe": 67,
+      "velocidade": 63,
+      "fisico": 88
+    },
+    {
+      "nome": "Victor",
+      "posicao": "GOL",
+      "overall": 82,
+      "ataque": 40,
+      "defesa": 90,
+      "finalizacao": 32,
+      "passe": 64,
+      "velocidade": 60,
+      "fisico": 85
+    },
+    {
+      "nome": "Santiago Ramos Mingo",
+      "posicao": "ZAG",
+      "overall": 82,
+      "ataque": 56,
+      "defesa": 90,
+      "finalizacao": 48,
+      "passe": 72,
+      "velocidade": 74,
+      "fisico": 88
+    },
+    {
+      "nome": "Gabriel Xavier",
+      "posicao": "ZAG",
+      "overall": 85,
+      "ataque": 59,
+      "defesa": 93,
+      "finalizacao": 51,
+      "passe": 75,
+      "velocidade": 77,
+      "fisico": 91
+    },
+    {
+      "nome": "Kanu",
+      "posicao": "ZAG",
+      "overall": 85,
+      "ataque": 59,
+      "defesa": 93,
+      "finalizacao": 51,
+      "passe": 75,
+      "velocidade": 77,
+      "fisico": 91
+    },
+    {
+      "nome": "David Duarte",
+      "posicao": "ZAG",
+      "overall": 84,
+      "ataque": 58,
+      "defesa": 92,
+      "finalizacao": 50,
+      "passe": 74,
+      "velocidade": 76,
+      "fisico": 90
+    },
+    {
+      "nome": "Luciano Juba",
+      "posicao": "LE",
+      "overall": 86,
+      "ataque": 82,
+      "defesa": 88,
+      "finalizacao": 68,
+      "passe": 87,
+      "velocidade": 93,
+      "fisico": 86
+    },
+    {
+      "nome": "Iago",
+      "posicao": "LE",
+      "overall": 85,
+      "ataque": 81,
+      "defesa": 87,
+      "finalizacao": 67,
+      "passe": 86,
+      "velocidade": 92,
+      "fisico": 85
+    },
+    {
+      "nome": "Gilberto",
+      "posicao": "LD",
+      "overall": 85,
+      "ataque": 81,
+      "defesa": 87,
+      "finalizacao": 67,
+      "passe": 86,
+      "velocidade": 92,
+      "fisico": 85
+    },
+    {
+      "nome": "Arias",
+      "posicao": "LD",
+      "overall": 82,
+      "ataque": 78,
+      "defesa": 84,
+      "finalizacao": 64,
+      "passe": 83,
+      "velocidade": 89,
+      "fisico": 82
+    },
+    {
+      "nome": "Nicolás Acevedo",
+      "posicao": "VOL",
+      "overall": 83,
+      "ataque": 73,
+      "defesa": 88,
+      "finalizacao": 65,
+      "passe": 86,
+      "velocidade": 81,
+      "fisico": 87
+    },
+    {
+      "nome": "Erick",
+      "posicao": "VOL",
+      "overall": 84,
+      "ataque": 74,
+      "defesa": 89,
+      "finalizacao": 66,
+      "passe": 87,
+      "velocidade": 82,
+      "fisico": 88
+    },
+    {
+      "nome": "Jean Lucas",
+      "posicao": "MC",
+      "overall": 86,
+      "ataque": 86,
+      "defesa": 84,
+      "finalizacao": 78,
+      "passe": 92,
+      "velocidade": 86,
+      "fisico": 86
+    },
+    {
+      "nome": "Cauly",
+      "posicao": "MEI",
+      "overall": 83,
+      "ataque": 90,
+      "defesa": 65,
+      "finalizacao": 86,
+      "passe": 91,
+      "velocidade": 86,
+      "fisico": 78
+    },
+    {
+      "nome": "Éverton Ribeiro",
+      "posicao": "MEI",
+      "overall": 87,
+      "ataque": 94,
+      "defesa": 69,
+      "finalizacao": 90,
+      "passe": 95,
+      "velocidade": 90,
+      "fisico": 82
+    },
+    {
+      "nome": "Michel Araújo",
+      "posicao": "PD",
+      "overall": 84,
+      "ataque": 92,
+      "defesa": 62,
+      "finalizacao": 88,
+      "passe": 88,
+      "velocidade": 93,
+      "fisico": 78
+    },
+    {
+      "nome": "Ademir",
+      "posicao": "PD",
+      "overall": 83,
+      "ataque": 91,
+      "defesa": 61,
+      "finalizacao": 87,
+      "passe": 87,
+      "velocidade": 92,
+      "fisico": 77
+    },
+    {
+      "nome": "Cristian Olivera",
+      "posicao": "PD",
+      "overall": 82,
+      "ataque": 90,
+      "defesa": 60,
+      "finalizacao": 86,
+      "passe": 86,
+      "velocidade": 91,
+      "fisico": 76
+    },
+    {
+      "nome": "Erick Pulga",
+      "posicao": "PE",
+      "overall": 80,
+      "ataque": 88,
+      "defesa": 58,
+      "finalizacao": 84,
+      "passe": 84,
+      "velocidade": 89,
+      "fisico": 74
+    },
+    {
+      "nome": "Willian José",
+      "posicao": "ATA",
+      "overall": 81,
+      "ataque": 91,
+      "defesa": 51,
+      "finalizacao": 91,
+      "passe": 77,
+      "velocidade": 84,
+      "fisico": 85
+    },
+    {
+      "nome": "Lucho Rodríguez",
+      "posicao": "ATA",
+      "overall": 80,
+      "ataque": 90,
+      "defesa": 50,
+      "finalizacao": 90,
+      "passe": 76,
+      "velocidade": 83,
+      "fisico": 84
+    },
+    {
+      "nome": "Tiago",
+      "posicao": "ATA",
+      "overall": 77,
+      "ataque": 87,
+      "defesa": 47,
+      "finalizacao": 87,
+      "passe": 73,
+      "velocidade": 80,
+      "fisico": 81
+    },
+    {
+      "nome": "Kayky",
+      "posicao": "PE",
+      "overall": 78,
+      "ataque": 86,
+      "defesa": 56,
+      "finalizacao": 82,
+      "passe": 82,
+      "velocidade": 87,
+      "fisico": 72
+    },
+    {
+      "nome": "Ruan Pablo",
+      "posicao": "ATA",
+      "overall": 79,
+      "ataque": 89,
+      "defesa": 49,
+      "finalizacao": 89,
+      "passe": 75,
+      "velocidade": 82,
+      "fisico": 83
+    }
+  ]
+}

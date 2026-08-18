@@ -1,0 +1,283 @@
+{
+  "nome": "Vitória",
+  "sigla": "VIT",
+  "forca": 67,
+  "regraEspecial": "normal",
+  "jogadores": [
+    {
+      "nome": "Lucas Arcanjo",
+      "posicao": "GOL",
+      "overall": 70,
+      "ataque": 28,
+      "defesa": 78,
+      "finalizacao": 20,
+      "passe": 52,
+      "velocidade": 48,
+      "fisico": 73
+    },
+    {
+      "nome": "Fintelman",
+      "posicao": "GOL",
+      "overall": 66,
+      "ataque": 24,
+      "defesa": 74,
+      "finalizacao": 16,
+      "passe": 48,
+      "velocidade": 44,
+      "fisico": 69
+    },
+    {
+      "nome": "Gabriel",
+      "posicao": "GOL",
+      "overall": 69,
+      "ataque": 27,
+      "defesa": 77,
+      "finalizacao": 19,
+      "passe": 51,
+      "velocidade": 47,
+      "fisico": 72
+    },
+    {
+      "nome": "Riccieli",
+      "posicao": "ZAG",
+      "overall": 69,
+      "ataque": 43,
+      "defesa": 77,
+      "finalizacao": 35,
+      "passe": 59,
+      "velocidade": 61,
+      "fisico": 75
+    },
+    {
+      "nome": "Camutanga",
+      "posicao": "ZAG",
+      "overall": 68,
+      "ataque": 42,
+      "defesa": 76,
+      "finalizacao": 34,
+      "passe": 58,
+      "velocidade": 60,
+      "fisico": 74
+    },
+    {
+      "nome": "Edu",
+      "posicao": "ZAG",
+      "overall": 66,
+      "ataque": 40,
+      "defesa": 74,
+      "finalizacao": 32,
+      "passe": 56,
+      "velocidade": 58,
+      "fisico": 72
+    },
+    {
+      "nome": "Wagner Leonardo",
+      "posicao": "ZAG",
+      "overall": 69,
+      "ataque": 43,
+      "defesa": 77,
+      "finalizacao": 35,
+      "passe": 59,
+      "velocidade": 61,
+      "fisico": 75
+    },
+    {
+      "nome": "Jamerson",
+      "posicao": "LE",
+      "overall": 66,
+      "ataque": 62,
+      "defesa": 68,
+      "finalizacao": 48,
+      "passe": 67,
+      "velocidade": 73,
+      "fisico": 66
+    },
+    {
+      "nome": "Hugo",
+      "posicao": "LE",
+      "overall": 68,
+      "ataque": 64,
+      "defesa": 70,
+      "finalizacao": 50,
+      "passe": 69,
+      "velocidade": 75,
+      "fisico": 68
+    },
+    {
+      "nome": "Raúl Cáceres",
+      "posicao": "LD",
+      "overall": 66,
+      "ataque": 62,
+      "defesa": 68,
+      "finalizacao": 48,
+      "passe": 67,
+      "velocidade": 73,
+      "fisico": 66
+    },
+    {
+      "nome": "Claudinho",
+      "posicao": "LD",
+      "overall": 69,
+      "ataque": 65,
+      "defesa": 71,
+      "finalizacao": 51,
+      "passe": 70,
+      "velocidade": 76,
+      "fisico": 69
+    },
+    {
+      "nome": "Willian Oliveira",
+      "posicao": "VOL",
+      "overall": 68,
+      "ataque": 58,
+      "defesa": 73,
+      "finalizacao": 50,
+      "passe": 71,
+      "velocidade": 66,
+      "fisico": 72
+    },
+    {
+      "nome": "Baralhas",
+      "posicao": "VOL",
+      "overall": 67,
+      "ataque": 57,
+      "defesa": 72,
+      "finalizacao": 49,
+      "passe": 70,
+      "velocidade": 65,
+      "fisico": 71
+    },
+    {
+      "nome": "Pepê",
+      "posicao": "MC",
+      "overall": 66,
+      "ataque": 66,
+      "defesa": 64,
+      "finalizacao": 58,
+      "passe": 72,
+      "velocidade": 66,
+      "fisico": 66
+    },
+    {
+      "nome": "Matheuzinho",
+      "posicao": "MEI",
+      "overall": 70,
+      "ataque": 77,
+      "defesa": 52,
+      "finalizacao": 73,
+      "passe": 78,
+      "velocidade": 73,
+      "fisico": 65
+    },
+    {
+      "nome": "Ronald",
+      "posicao": "MC",
+      "overall": 67,
+      "ataque": 67,
+      "defesa": 65,
+      "finalizacao": 59,
+      "passe": 73,
+      "velocidade": 67,
+      "fisico": 67
+    },
+    {
+      "nome": "Gabriel Baralhas",
+      "posicao": "MC",
+      "overall": 68,
+      "ataque": 68,
+      "defesa": 66,
+      "finalizacao": 60,
+      "passe": 74,
+      "velocidade": 68,
+      "fisico": 68
+    },
+    {
+      "nome": "Lucas Silva",
+      "posicao": "PD",
+      "overall": 65,
+      "ataque": 73,
+      "defesa": 43,
+      "finalizacao": 69,
+      "passe": 69,
+      "velocidade": 74,
+      "fisico": 59
+    },
+    {
+      "nome": "Kike Saverio",
+      "posicao": "PE",
+      "overall": 67,
+      "ataque": 75,
+      "defesa": 45,
+      "finalizacao": 71,
+      "passe": 71,
+      "velocidade": 76,
+      "fisico": 61
+    },
+    {
+      "nome": "Osvaldo",
+      "posicao": "PE",
+      "overall": 66,
+      "ataque": 74,
+      "defesa": 44,
+      "finalizacao": 70,
+      "passe": 70,
+      "velocidade": 75,
+      "fisico": 60
+    },
+    {
+      "nome": "Erick",
+      "posicao": "PD",
+      "overall": 67,
+      "ataque": 75,
+      "defesa": 45,
+      "finalizacao": 71,
+      "passe": 71,
+      "velocidade": 76,
+      "fisico": 61
+    },
+    {
+      "nome": "Renato Kayzer",
+      "posicao": "ATA",
+      "overall": 69,
+      "ataque": 79,
+      "defesa": 39,
+      "finalizacao": 79,
+      "passe": 65,
+      "velocidade": 72,
+      "fisico": 73
+    },
+    {
+      "nome": "Carlinhos",
+      "posicao": "ATA",
+      "overall": 62,
+      "ataque": 72,
+      "defesa": 32,
+      "finalizacao": 72,
+      "passe": 58,
+      "velocidade": 65,
+      "fisico": 66
+    },
+    {
+      "nome": "Janderson",
+      "posicao": "ATA",
+      "overall": 63,
+      "ataque": 73,
+      "defesa": 33,
+      "finalizacao": 73,
+      "passe": 59,
+      "velocidade": 66,
+      "fisico": 67
+    },
+    {
+      "nome": "Fabri",
+      "posicao": "ATA",
+      "overall": 65,
+      "ataque": 75,
+      "defesa": 35,
+      "finalizacao": 75,
+      "passe": 61,
+      "velocidade": 68,
+      "fisico": 69
+    }
+  ]
+}

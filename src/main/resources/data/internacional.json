@@ -1,0 +1,283 @@
+{
+  "nome": "Internacional",
+  "sigla": "INT",
+  "forca": 79,
+  "regraEspecial": "normal",
+  "jogadores": [
+    {
+      "nome": "Anthoni",
+      "posicao": "GOL",
+      "overall": 78,
+      "ataque": 36,
+      "defesa": 86,
+      "finalizacao": 28,
+      "passe": 60,
+      "velocidade": 56,
+      "fisico": 81
+    },
+    {
+      "nome": "Matheus Cunha",
+      "posicao": "GOL",
+      "overall": 81,
+      "ataque": 39,
+      "defesa": 89,
+      "finalizacao": 31,
+      "passe": 63,
+      "velocidade": 59,
+      "fisico": 84
+    },
+    {
+      "nome": "Sergio Rochet",
+      "posicao": "GOL",
+      "overall": 81,
+      "ataque": 39,
+      "defesa": 89,
+      "finalizacao": 31,
+      "passe": 63,
+      "velocidade": 59,
+      "fisico": 84
+    },
+    {
+      "nome": "Vitão",
+      "posicao": "ZAG",
+      "overall": 77,
+      "ataque": 51,
+      "defesa": 85,
+      "finalizacao": 43,
+      "passe": 67,
+      "velocidade": 69,
+      "fisico": 83
+    },
+    {
+      "nome": "Gabriel Mercado",
+      "posicao": "ZAG",
+      "overall": 77,
+      "ataque": 51,
+      "defesa": 85,
+      "finalizacao": 43,
+      "passe": 67,
+      "velocidade": 69,
+      "fisico": 83
+    },
+    {
+      "nome": "Juninho",
+      "posicao": "ZAG",
+      "overall": 78,
+      "ataque": 52,
+      "defesa": 86,
+      "finalizacao": 44,
+      "passe": 68,
+      "velocidade": 70,
+      "fisico": 84
+    },
+    {
+      "nome": "Clayton Sampaio",
+      "posicao": "ZAG",
+      "overall": 78,
+      "ataque": 52,
+      "defesa": 86,
+      "finalizacao": 44,
+      "passe": 68,
+      "velocidade": 70,
+      "fisico": 84
+    },
+    {
+      "nome": "Alexandro Bernabei",
+      "posicao": "LE",
+      "overall": 77,
+      "ataque": 73,
+      "defesa": 79,
+      "finalizacao": 59,
+      "passe": 78,
+      "velocidade": 84,
+      "fisico": 77
+    },
+    {
+      "nome": "Ramon",
+      "posicao": "LE",
+      "overall": 81,
+      "ataque": 77,
+      "defesa": 83,
+      "finalizacao": 63,
+      "passe": 82,
+      "velocidade": 88,
+      "fisico": 81
+    },
+    {
+      "nome": "Braian Aguirre",
+      "posicao": "LD",
+      "overall": 77,
+      "ataque": 73,
+      "defesa": 79,
+      "finalizacao": 59,
+      "passe": 78,
+      "velocidade": 84,
+      "fisico": 77
+    },
+    {
+      "nome": "Bruno Gomes",
+      "posicao": "LD",
+      "overall": 79,
+      "ataque": 75,
+      "defesa": 81,
+      "finalizacao": 61,
+      "passe": 80,
+      "velocidade": 86,
+      "fisico": 79
+    },
+    {
+      "nome": "Thiago Maia",
+      "posicao": "VOL",
+      "overall": 78,
+      "ataque": 68,
+      "defesa": 83,
+      "finalizacao": 60,
+      "passe": 81,
+      "velocidade": 76,
+      "fisico": 82
+    },
+    {
+      "nome": "Fernando",
+      "posicao": "VOL",
+      "overall": 79,
+      "ataque": 69,
+      "defesa": 84,
+      "finalizacao": 61,
+      "passe": 82,
+      "velocidade": 77,
+      "fisico": 83
+    },
+    {
+      "nome": "Rômulo",
+      "posicao": "VOL",
+      "overall": 77,
+      "ataque": 67,
+      "defesa": 82,
+      "finalizacao": 59,
+      "passe": 80,
+      "velocidade": 75,
+      "fisico": 81
+    },
+    {
+      "nome": "Bruno Henrique",
+      "posicao": "MC",
+      "overall": 79,
+      "ataque": 79,
+      "defesa": 77,
+      "finalizacao": 71,
+      "passe": 85,
+      "velocidade": 79,
+      "fisico": 79
+    },
+    {
+      "nome": "Paulinho Paula",
+      "posicao": "MC",
+      "overall": 79,
+      "ataque": 79,
+      "defesa": 77,
+      "finalizacao": 71,
+      "passe": 85,
+      "velocidade": 79,
+      "fisico": 79
+    },
+    {
+      "nome": "Alan Patrick",
+      "posicao": "MEI",
+      "overall": 80,
+      "ataque": 87,
+      "defesa": 62,
+      "finalizacao": 83,
+      "passe": 88,
+      "velocidade": 83,
+      "fisico": 75
+    },
+    {
+      "nome": "Yago Noal",
+      "posicao": "MEI",
+      "overall": 76,
+      "ataque": 83,
+      "defesa": 58,
+      "finalizacao": 79,
+      "passe": 84,
+      "velocidade": 79,
+      "fisico": 71
+    },
+    {
+      "nome": "Johan Carbonero",
+      "posicao": "PE",
+      "overall": 76,
+      "ataque": 84,
+      "defesa": 54,
+      "finalizacao": 80,
+      "passe": 80,
+      "velocidade": 85,
+      "fisico": 70
+    },
+    {
+      "nome": "Vitinho",
+      "posicao": "PE",
+      "overall": 77,
+      "ataque": 85,
+      "defesa": 55,
+      "finalizacao": 81,
+      "passe": 81,
+      "velocidade": 86,
+      "fisico": 71
+    },
+    {
+      "nome": "Wesley",
+      "posicao": "PD",
+      "overall": 78,
+      "ataque": 86,
+      "defesa": 56,
+      "finalizacao": 82,
+      "passe": 82,
+      "velocidade": 87,
+      "fisico": 72
+    },
+    {
+      "nome": "Rafael Borré",
+      "posicao": "ATA",
+      "overall": 80,
+      "ataque": 90,
+      "defesa": 50,
+      "finalizacao": 90,
+      "passe": 76,
+      "velocidade": 83,
+      "fisico": 84
+    },
+    {
+      "nome": "Alerrandro",
+      "posicao": "ATA",
+      "overall": 77,
+      "ataque": 87,
+      "defesa": 47,
+      "finalizacao": 87,
+      "passe": 73,
+      "velocidade": 80,
+      "fisico": 81
+    },
+    {
+      "nome": "Ricardo Mathias",
+      "posicao": "ATA",
+      "overall": 74,
+      "ataque": 84,
+      "defesa": 44,
+      "finalizacao": 84,
+      "passe": 70,
+      "velocidade": 77,
+      "fisico": 78
+    },
+    {
+      "nome": "Enner Valencia",
+      "posicao": "ATA",
+      "overall": 77,
+      "ataque": 87,
+      "defesa": 47,
+      "finalizacao": 87,
+      "passe": 73,
+      "velocidade": 80,
+      "fisico": 81
+    }
+  ]
+}
