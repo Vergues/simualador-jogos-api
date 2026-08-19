@@ -1,219 +1,348 @@
-const selectCasa = document.getElementById("timeCasa");
-const selectFora = document.getElementById("timeFora");
+const listaHoje =
+    document.getElementById(
+        "listaHoje"
+    );
 
-const botaoSimular = document.getElementById("botaoSimular");
-
-const resultado = document.getElementById("resultado");
-
-const nomeCasa = document.getElementById("nomeCasa");
-const nomeFora = document.getElementById("nomeFora");
-
-const siglaCasa = document.getElementById("siglaCasa");
-const siglaFora = document.getElementById("siglaFora");
-
-const golsCasa = document.getElementById("golsCasa");
-const golsFora = document.getElementById("golsFora");
-
-const eventosContainer = document.getElementById("eventos");
+const listaProximos =
+    document.getElementById(
+        "listaProximos"
+    );
 
 
-async function carregarTimes() {
+async function carregarHome() {
+
+    await carregarJogosHoje();
+
+    await carregarProximosJogos();
+}
+
+
+async function carregarJogosHoje() {
 
     try {
 
-        const resposta = await fetch("/api/times");
+        const resposta =
+            await fetch(
+                "/api/brasileirao/hoje"
+            );
 
-        const times = await resposta.json();
+        const jogos =
+            await resposta.json();
 
-        selectCasa.innerHTML = "";
-        selectFora.innerHTML = "";
-
-        times.forEach(time => {
-
-            const optionCasa = document.createElement("option");
-
-            optionCasa.value = time.sigla;
-            optionCasa.textContent = time.nome;
-
-            selectCasa.appendChild(optionCasa);
-
-
-            const optionFora = document.createElement("option");
-
-            optionFora.value = time.sigla;
-            optionFora.textContent = time.nome;
-
-            selectFora.appendChild(optionFora);
-
-        });
-
-        if (times.length > 1) {
-            selectFora.selectedIndex = 1;
-        }
+        renderizarJogos(
+            listaHoje,
+            jogos,
+            "Nenhum jogo marcado para hoje."
+        );
 
     } catch (erro) {
 
         console.error(
-            "Erro ao carregar times:",
+            "Erro ao carregar jogos de hoje:",
             erro
         );
+
+        listaHoje.innerHTML =
+            `
+            <div class="vazio">
+                Erro ao carregar os jogos de hoje.
+            </div>
+            `;
     }
 }
 
 
-async function simularPartida() {
+async function carregarProximosJogos() {
 
-    const casa = selectCasa.value;
-    const fora = selectFora.value;
+    try {
 
-    if (casa === fora) {
+        const resposta =
+            await fetch(
+                "/api/brasileirao/proximos?limite=10"
+            );
 
-        alert(
-            "Escolha dois times diferentes."
+        const jogos =
+            await resposta.json();
+
+        renderizarJogos(
+            listaProximos,
+            jogos,
+            "Nenhum próximo jogo encontrado."
         );
+
+    } catch (erro) {
+
+        console.error(
+            "Erro ao carregar próximos jogos:",
+            erro
+        );
+
+        listaProximos.innerHTML =
+            `
+            <div class="vazio">
+                Erro ao carregar os próximos jogos.
+            </div>
+            `;
+    }
+}
+
+
+function renderizarJogos(
+    container,
+    jogos,
+    mensagemVazio
+) {
+
+    container.innerHTML = "";
+
+    container.classList.add(
+        "lista-jogos"
+    );
+
+    if (
+        !jogos ||
+        jogos.length === 0
+    ) {
+
+        container.innerHTML =
+            `
+            <div class="vazio">
+                ${mensagemVazio}
+            </div>
+            `;
 
         return;
     }
 
-    botaoSimular.disabled = true;
+    jogos.forEach(jogo => {
 
-    botaoSimular.textContent =
-        "Simulando...";
+        const card =
+            criarCardJogo(jogo);
 
-    try {
-
-        const resposta = await fetch(
-            `/api/jogos/simular?casa=${casa}&fora=${fora}`
+        container.appendChild(
+            card
         );
-
-        if (!resposta.ok) {
-
-            throw new Error(
-                "Erro ao simular partida."
-            );
-        }
-
-        const jogo = await resposta.json();
-
-        mostrarResultado(jogo);
-
-    } catch (erro) {
-
-        console.error(erro);
-
-        alert(
-            "Não foi possível simular a partida."
-        );
-
-    } finally {
-
-        botaoSimular.disabled = false;
-
-        botaoSimular.textContent =
-            "Simular Partida";
-    }
+    });
 }
 
 
-function mostrarResultado(jogo) {
+function criarCardJogo(jogo) {
 
-    nomeCasa.textContent =
-        jogo.timeCasa;
+    const card =
+        document.createElement(
+            "div"
+        );
 
-    nomeFora.textContent =
-        jogo.timeFora;
-
-    siglaCasa.textContent =
-        jogo.siglaCasa;
-
-    siglaFora.textContent =
-        jogo.siglaFora;
-
-    golsCasa.textContent =
-        jogo.golsCasa;
-
-    golsFora.textContent =
-        jogo.golsFora;
-
-    eventosContainer.innerHTML = "";
+    card.classList.add(
+        "jogo-card"
+    );
 
     if (
-        !jogo.eventos ||
-        jogo.eventos.length === 0
+        jogo.status === "AO_VIVO"
     ) {
 
-        eventosContainer.innerHTML =
-            "<p>Nenhum evento registrado.</p>";
-
-    } else {
-
-        jogo.eventos.forEach(evento => {
-
-            const div =
-                document.createElement("div");
-
-            div.classList.add("evento");
-
-            let icone = "⚽";
-
-            if (
-                evento.tipo ===
-                "CARTAO_AMARELO"
-            ) {
-
-                icone = "🟨";
-
-                div.classList.add(
-                    "evento-cartao"
-                );
-
-            } else if (
-                evento.tipo === "FALTA"
-            ) {
-
-                icone = "❌";
-
-                div.classList.add(
-                    "evento-falta"
-                );
-
-            } else if (
-                evento.tipo === "GOL"
-            ) {
-
-                div.classList.add(
-                    "evento-gol"
-                );
-            }
-
-            div.innerHTML = `
-                <span class="minuto">
-                    ${evento.minuto}'
-                </span>
-
-                <span class="tipo-evento">
-                    ${icone}
-                </span>
-
-                <span class="descricao">
-                    ${evento.descricao}
-                </span>
-            `;
-
-            eventosContainer.appendChild(div);
-        });
+        card.classList.add(
+            "ao-vivo"
+        );
     }
 
-    resultado.classList.remove(
-        "escondido"
+    card.style.cursor =
+        "pointer";
+
+    card.addEventListener(
+        "click",
+        () => {
+
+            window.location.href =
+                `/partida.html?id=${jogo.id}`;
+        }
     );
+
+
+    const data =
+        new Date(
+            jogo.dataHora
+        );
+
+
+    const dataFormatada =
+        data.toLocaleDateString(
+            "pt-BR"
+        );
+
+
+    const horario =
+        data.toLocaleTimeString(
+            "pt-BR",
+            {
+                hour: "2-digit",
+                minute: "2-digit"
+            }
+        );
+
+
+    const statusTexto =
+        formatarStatus(jogo);
+
+
+    const classeStatus =
+        obterClasseStatus(
+            jogo.status
+        );
+
+
+    const placar =
+        montarPlacar(jogo);
+
+
+    card.innerHTML =
+        `
+        <div class="jogo-topo">
+
+            <span class="jogo-campeonato">
+                ${jogo.campeonato}
+                • Rodada ${jogo.rodada}
+            </span>
+
+            <span class="status ${classeStatus}">
+                ${statusTexto}
+            </span>
+
+        </div>
+
+
+        <div class="jogo-confronto">
+
+            <div class="time-casa">
+
+                <span class="nome-time">
+                    ${jogo.timeCasa}
+                </span>
+
+            </div>
+
+
+            <div class="placar">
+                ${placar}
+            </div>
+
+
+            <div class="time-fora">
+
+                <span class="nome-time">
+                    ${jogo.timeFora}
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="jogo-rodape">
+
+            <span>
+                ${dataFormatada}
+            </span>
+
+            <span>
+                ${horario}
+            </span>
+
+        </div>
+        `;
+
+
+    return card;
 }
 
 
-botaoSimular.addEventListener(
-    "click",
-    simularPartida
+function montarPlacar(jogo) {
+
+    if (
+        jogo.status === "AGENDADO"
+    ) {
+
+        return `
+            <span class="x">
+                x
+            </span>
+        `;
+    }
+
+    return `
+        <span class="numero">
+            ${jogo.golsCasa}
+        </span>
+
+        <span class="x">
+            x
+        </span>
+
+        <span class="numero">
+            ${jogo.golsFora}
+        </span>
+    `;
+}
+
+
+function formatarStatus(jogo) {
+
+    if (
+        jogo.status === "AO_VIVO"
+    ) {
+
+        return `AO VIVO • ${jogo.minutoAtual}'`;
+    }
+
+    if (
+        jogo.status === "INTERVALO"
+    ) {
+
+        return "INTERVALO";
+    }
+
+    if (
+        jogo.status === "ENCERRADO"
+    ) {
+
+        return "ENCERRADO";
+    }
+
+    return "AGENDADO";
+}
+
+
+function obterClasseStatus(status) {
+
+    if (
+        status === "AO_VIVO"
+    ) {
+
+        return "status-ao-vivo";
+    }
+
+    if (
+        status === "ENCERRADO"
+    ) {
+
+        return "status-encerrado";
+    }
+
+    if (
+        status === "INTERVALO"
+    ) {
+
+        return "status-intervalo";
+    }
+
+    return "status-agendado";
+}
+
+
+carregarHome();
+
+
+setInterval(
+    carregarHome,
+    5000
 );
-
-
-carregarTimes();

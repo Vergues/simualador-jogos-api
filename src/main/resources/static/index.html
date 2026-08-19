@@ -9,134 +9,78 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>Simulador de Futebol</title>
+    <title>Futebol ao Vivo</title>
 
     <link
         rel="stylesheet"
-        href="style.css"
+        href="style.css?v=3"
     >
 </head>
 
 <body>
 
-    <div class="container">
+    <header class="topo">
 
-        <h1>Simulador de Futebol</h1>
-
-        <!-- SELEÇÃO DOS TIMES -->
-        <div class="selecao-times">
-
-            <!-- TIME DA CASA -->
-            <div class="time-box">
-
-                <label for="timeCasa">
-                    Time da casa
-                </label>
-
-                <select id="timeCasa">
-                </select>
-
-            </div>
-
-
-            <div class="versus">
-                X
-            </div>
-
-
-            <!-- TIME VISITANTE -->
-            <div class="time-box">
-
-                <label for="timeFora">
-                    Time visitante
-                </label>
-
-                <select id="timeFora">
-                </select>
-
-            </div>
-
+        <div class="logo">
+            Futebol ao Vivo
         </div>
 
+        <nav class="menu">
+            <a href="#hoje">Hoje</a>
+            <a href="#proximos">Próximos</a>
+        </nav>
 
-        <!-- BOTÃO SIMULAR -->
-        <button id="botaoSimular">
-            Simular Partida
-        </button>
+    </header>
 
 
-        <!-- RESULTADO -->
-        <div
-            id="resultado"
-            class="resultado escondido"
+    <main class="container">
+
+        <section id="hoje">
+
+            <div class="titulo-secao">
+
+                <div>
+                    <h1>Jogos de hoje</h1>
+
+                    <p>
+                        Partidas agendadas para hoje
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="listaHoje">
+            </div>
+
+        </section>
+
+
+        <section
+            id="proximos"
+            class="secao"
         >
 
-            <!-- PLACAR -->
-            <div class="placar">
+            <div class="titulo-secao">
 
-                <!-- CASA -->
-                <div class="time-placar">
+                <div>
+                    <h2>Próximos jogos</h2>
 
-                    <h2 id="nomeCasa">
-                    </h2>
-
-                    <span id="siglaCasa">
-                    </span>
-
-                </div>
-
-
-                <!-- PLACAR -->
-                <div class="placar-numeros">
-
-                    <span id="golsCasa">
-                        0
-                    </span>
-
-                    <span class="x">
-                        x
-                    </span>
-
-                    <span id="golsFora">
-                        0
-                    </span>
-
-                </div>
-
-
-                <!-- FORA -->
-                <div class="time-placar">
-
-                    <h2 id="nomeFora">
-                    </h2>
-
-                    <span id="siglaFora">
-                    </span>
-
+                    <p>
+                        Próximas partidas do Brasileirão
+                    </p>
                 </div>
 
             </div>
 
-
-            <!-- EVENTOS -->
-            <div class="eventos-container">
-
-                <h2>
-                    Eventos da partida
-                </h2>
-
-                <div id="eventos">
-                </div>
-
+            <div id="listaProximos">
             </div>
 
-        </div>
+        </section>
 
-    </div>
+    </main>
 
 
-    <!-- JAVASCRIPT -->
-    <script src="app.js"></script>
+    <script src="app.js?v=3"></script>
 
 </body>
 
