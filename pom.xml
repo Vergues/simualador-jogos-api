@@ -4,102 +4,193 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+
     <!-- =====================================================
          SPRING BOOT
          ===================================================== -->
+
     <parent>
+
         <groupId>org.springframework.boot</groupId>
+
         <artifactId>spring-boot-starter-parent</artifactId>
+
         <version>4.1.0</version>
+
         <relativePath/>
+
     </parent>
 
+
     <!-- =====================================================
-         INFORMAÇÕES DO PROJETO
+         INFORMACOES DO PROJETO
          ===================================================== -->
+
     <groupId>com.vergues</groupId>
+
     <artifactId>simulador-jogos-api</artifactId>
+
     <version>0.0.1-SNAPSHOT</version>
 
     <name>simulador-jogos-api</name>
 
     <description>
-        API para simulação de partidas de futebol
+        API para simulacao de partidas de futebol
     </description>
 
+
     <!-- =====================================================
-         CONFIGURAÇÕES
+         CONFIGURACOES
          ===================================================== -->
+
     <properties>
 
-        <!-- Versão do Java -->
+        <!-- Versao do Java usada pelo projeto -->
         <java.version>21</java.version>
+
+        <!-- Codificacao dos arquivos -->
+        <project.build.sourceEncoding>
+            UTF-8
+        </project.build.sourceEncoding>
+
+        <project.reporting.outputEncoding>
+            UTF-8
+        </project.reporting.outputEncoding>
 
     </properties>
 
+
     <!-- =====================================================
-         DEPENDÊNCIAS
+         DEPENDENCIAS
          ===================================================== -->
+
     <dependencies>
 
-        <!--
-            Spring MVC.
-            Responsável pelos Controllers, endpoints REST,
-            JSON, servidor web etc.
-        -->
+
+        <!-- =================================================
+             SPRING MVC
+
+             Responsavel pela API REST, Controllers,
+             endpoints HTTP, JSON e servidor web.
+             ================================================= -->
+
         <dependency>
+
             <groupId>org.springframework.boot</groupId>
+
             <artifactId>spring-boot-starter-webmvc</artifactId>
+
         </dependency>
 
-        <!--
-            Spring Data JPA.
 
-            Vamos usar para salvar jogos, eventos,
-            estatísticas e outros dados no banco.
-        -->
+        <!-- =================================================
+             SPRING DATA JPA
+
+             Faz a integracao entre nossas classes Java
+             e o banco de dados.
+
+             O Hibernate trabalha por baixo do JPA.
+             ================================================= -->
+
         <dependency>
+
             <groupId>org.springframework.boot</groupId>
+
             <artifactId>spring-boot-starter-data-jpa</artifactId>
+
         </dependency>
 
-        <!--
-            Banco H2.
 
-            Não precisa instalar nada no computador.
-            Vamos configurar o banco para salvar em arquivo,
-            portanto os dados não somem quando o Spring fecha.
-        -->
+        <!-- =================================================
+             BANCO H2
+
+             Banco de dados leve que nao precisa ser
+             instalado no computador.
+
+             Estamos usando ele em modo FILE, portanto
+             os dados permanecem salvos mesmo depois
+             que a aplicacao for fechada.
+             ================================================= -->
+
         <dependency>
+
             <groupId>com.h2database</groupId>
+
             <artifactId>h2</artifactId>
+
             <scope>runtime</scope>
+
         </dependency>
 
-        <!-- Testes -->
+
+        <!-- =================================================
+             CONSOLE WEB DO H2
+
+             No Spring Boot 4 o console do H2 fica em
+             um modulo separado.
+
+             Essa dependencia permite acessar:
+
+             http://localhost:8080/h2-console
+             ================================================= -->
+
         <dependency>
+
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-webmvc-test</artifactId>
-            <scope>test</scope>
+
+            <artifactId>spring-boot-h2console</artifactId>
+
         </dependency>
+
+
+        <!-- =================================================
+             TESTES
+
+             Dependencias usadas pelos testes da aplicacao.
+             ================================================= -->
+
+        <dependency>
+
+            <groupId>org.springframework.boot</groupId>
+
+            <artifactId>spring-boot-starter-webmvc-test</artifactId>
+
+            <scope>test</scope>
+
+        </dependency>
+
 
     </dependencies>
+
 
     <!-- =====================================================
          BUILD
          ===================================================== -->
+
     <build>
 
         <plugins>
 
-            <!-- Permite executar/empacotar o Spring Boot -->
+
+            <!-- =================================================
+                 PLUGIN DO SPRING BOOT
+
+                 Permite executar e empacotar a aplicacao
+                 como um projeto Spring Boot.
+                 ================================================= -->
+
             <plugin>
+
                 <groupId>org.springframework.boot</groupId>
+
                 <artifactId>spring-boot-maven-plugin</artifactId>
+
             </plugin>
+
 
         </plugins>
 
     </build>
+
 
 </project>

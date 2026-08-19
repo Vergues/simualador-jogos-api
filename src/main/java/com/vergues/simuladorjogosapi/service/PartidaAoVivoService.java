@@ -2,7 +2,9 @@ package com.vergues.simuladorjogosapi.service;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -15,70 +17,88 @@ import com.vergues.simuladorjogosapi.repository.JogoRepository;
 public class PartidaAoVivoService {
 
     /*
-     * Repository onde os jogos do calendário
-     * estão armazenados atualmente.
+     * =========================================================
+     * CALENDARIO ATUAL EM MEMORIA
+     * =========================================================
      *
-     * Por enquanto é memória.
+     * Ainda estamos usando temporariamente
+     * o JogoRepository atual.
      *
-     * Depois vamos substituir isso pelo banco.
+     * No proximo passo ele sera carregado
+     * usando o banco.
      */
     private final JogoRepository jogoRepository;
 
 
     /*
-     * Motor responsável por processar
-     * cada minuto de futebol.
+     * Motor da simulacao.
      */
     private final SimuladorService simuladorService;
 
 
     /*
-     * Injeção de dependência feita pelo Spring.
+     * Ponte entre o simulador e o H2.
+     */
+    private final PersistenciaService persistenciaService;
+
+
+    /*
+     * =========================================================
+     * CACHE DE PARTIDAS JA VERIFICADAS
+     * =========================================================
+     *
+     * Isso evita consultar o banco a cada
+     * 5 segundos para a mesma partida.
+     *
+     * IMPORTANTE:
+     *
+     * ele NAO e mais responsavel por impedir
+     * duplicidade permanentemente.
+     *
+     * O banco faz isso agora.
+     */
+    private final Set<Long> partidasPersistidas =
+            new HashSet<>();
+
+
+    /*
+     * =========================================================
+     * CONSTRUTOR
+     * =========================================================
      */
     public PartidaAoVivoService(
             JogoRepository jogoRepository,
-            SimuladorService simuladorService) {
+            SimuladorService simuladorService,
+            PersistenciaService persistenciaService) {
 
         this.jogoRepository =
                 jogoRepository;
 
         this.simuladorService =
                 simuladorService;
+
+        this.persistenciaService =
+                persistenciaService;
     }
 
 
     /*
      * =========================================================
-     * RELÓGIO GLOBAL
+     * RELOGIO GLOBAL
      * =========================================================
-     *
-     * O Spring executa este método
-     * automaticamente a cada 5 segundos.
-     *
-     * Ele verifica TODOS os jogos
-     * e atualiza seus estados.
      */
     @Scheduled(fixedRate = 5000)
     public void atualizarPartidas() {
 
-        /*
-         * Horário atual da máquina/servidor.
-         */
         LocalDateTime agora =
                 LocalDateTime.now();
 
 
-        /*
-         * Busca todo o calendário.
-         */
         List<Jogo> jogos =
                 jogoRepository
                         .listarTodos();
 
 
-        /*
-         * Atualiza cada partida individualmente.
-         */
         for (Jogo jogo : jogos) {
 
             atualizarJogo(
@@ -91,7 +111,7 @@ public class PartidaAoVivoService {
 
     /*
      * =========================================================
-     * ATUALIZA UMA PARTIDA
+     * ATUALIZA UM JOGO
      * =========================================================
      */
     private void atualizarJogo(
@@ -99,17 +119,17 @@ public class PartidaAoVivoService {
             LocalDateTime agora) {
 
         /*
-         * Segurança:
-         * jogo sem data não pode ser processado.
+         * Sem data, nao processamos.
          */
         if (jogo.getDataHora() == null) {
+
             return;
         }
 
 
         /*
          * =====================================================
-         * JOGO AINDA NÃO COMEÇOU
+         * AGENDADO
          * =====================================================
          */
         if (
@@ -131,8 +151,8 @@ public class PartidaAoVivoService {
 
 
         /*
-         * Calculamos quantos minutos reais
-         * passaram desde o horário marcado.
+         * Quantos minutos reais passaram
+         * desde o inicio previsto.
          */
         long minutosReais =
                 Duration.between(
@@ -145,8 +165,6 @@ public class PartidaAoVivoService {
          * =====================================================
          * PRIMEIRO TEMPO
          * =====================================================
-         *
-         * 0 a 44 minutos reais.
          */
         if (minutosReais < 45) {
 
@@ -159,16 +177,11 @@ public class PartidaAoVivoService {
                     StatusJogo.AO_VIVO
             );
 
-
             jogo.setMinutoAtual(
                     minutoJogo
             );
 
 
-            /*
-             * Processa todos os minutos
-             * que ainda não foram simulados.
-             */
             processarAteMinuto(
                     jogo,
                     minutoJogo
@@ -183,8 +196,6 @@ public class PartidaAoVivoService {
          * =====================================================
          * INTERVALO
          * =====================================================
-         *
-         * Usamos 15 minutos reais.
          */
         if (minutosReais < 60) {
 
@@ -192,16 +203,11 @@ public class PartidaAoVivoService {
                     StatusJogo.INTERVALO
             );
 
-
             jogo.setMinutoAtual(
                     45
             );
 
 
-            /*
-             * Garante que todo o primeiro tempo
-             * foi processado.
-             */
             processarAteMinuto(
                     jogo,
                     45
@@ -216,18 +222,9 @@ public class PartidaAoVivoService {
          * =====================================================
          * SEGUNDO TEMPO
          * =====================================================
-         *
-         * De 60 até 104 minutos após
-         * o horário marcado.
          */
         if (minutosReais < 105) {
 
-            /*
-             * Exemplo:
-             *
-             * 60 minutos reais = 46'
-             * 61 minutos reais = 47'
-             */
             int minutoJogo =
                     46
                     + (int) (
@@ -238,7 +235,6 @@ public class PartidaAoVivoService {
             jogo.setStatus(
                     StatusJogo.AO_VIVO
             );
-
 
             jogo.setMinutoAtual(
                     minutoJogo
@@ -260,10 +256,16 @@ public class PartidaAoVivoService {
          * FIM DE JOGO
          * =====================================================
          */
+
+        processarAteMinuto(
+                jogo,
+                90
+        );
+
+
         jogo.setStatus(
                 StatusJogo.ENCERRADO
         );
-
 
         jogo.setMinutoAtual(
                 90
@@ -271,37 +273,123 @@ public class PartidaAoVivoService {
 
 
         /*
-         * Se a aplicação foi ligada depois do jogo,
-         * ela simula automaticamente todos os minutos
-         * que ainda não tinham sido processados.
+         * Agora usamos a persistencia
+         * protegida contra duplicidade.
          */
-        processarAteMinuto(
-                jogo,
-                90
+        persistirPartidaSeNecessario(
+                jogo
         );
     }
 
 
     /*
      * =========================================================
-     * PROCESSADOR DE MINUTOS PENDENTES
+     * PERSISTENCIA SEGURA
      * =========================================================
-     *
-     * Isso é importantíssimo.
-     *
-     * Suponha que a aplicação começou quando
-     * o jogo já estava aos 67'.
-     *
-     * Em vez de simplesmente pular para 67,
-     * fazemos:
-     *
-     * 1
-     * 2
-     * 3
-     * ...
-     * 67
-     *
-     * e geramos todos os eventos da partida.
+     */
+    private void persistirPartidaSeNecessario(
+            Jogo jogo) {
+
+        /*
+         * Precisamos de ID para nosso cache.
+         */
+        if (jogo.getId() == null) {
+
+            return;
+        }
+
+
+        /*
+         * Se ja verificamos nesta execucao,
+         * nao fazemos mais nada.
+         */
+        if (
+                partidasPersistidas.contains(
+                        jogo.getId()
+                )
+        ) {
+
+            return;
+        }
+
+
+        /*
+         * =====================================================
+         * CONSULTA O BANCO
+         * =====================================================
+         *
+         * Isso resolve o problema de reiniciar o Spring.
+         *
+         * Mesmo que o HashSet esteja vazio novamente,
+         * consultamos o H2.
+         */
+        if (
+                persistenciaService
+                        .partidaJaExiste(
+                                jogo
+                        )
+        ) {
+
+            /*
+             * A partida ja existe no H2.
+             *
+             * Apenas colocamos no cache local.
+             */
+            partidasPersistidas.add(
+                    jogo.getId()
+            );
+
+
+            System.out.println(
+                    "Partida ja existe no banco: "
+                            + jogo.getTimeCasa()
+                                    .getNome()
+                            + " x "
+                            + jogo.getTimeFora()
+                                    .getNome()
+            );
+
+
+            return;
+        }
+
+
+        /*
+         * =====================================================
+         * PARTIDA AINDA NAO EXISTE
+         * =====================================================
+         */
+
+        persistenciaService
+                .salvarOuAtualizarPartida(
+                        jogo
+                );
+
+
+        partidasPersistidas.add(
+                jogo.getId()
+        );
+
+
+        System.out.println(
+                "Nova partida salva no banco: "
+                        + jogo.getTimeCasa()
+                                .getNome()
+                        + " "
+                        + jogo.getGolsCasa()
+                        + " x "
+                        + jogo.getGolsFora()
+                        + " "
+                        + jogo.getTimeFora()
+                                .getNome()
+        );
+    }
+
+
+    /*
+     * =========================================================
+     * PROCESSAMENTO DOS MINUTOS
+     * =========================================================
      */
     private void processarAteMinuto(
             Jogo jogo,
@@ -311,10 +399,6 @@ public class PartidaAoVivoService {
                 jogo.getUltimoMinutoProcessado();
 
 
-        /*
-         * Começa no minuto seguinte ao último
-         * que já foi simulado.
-         */
         for (
                 int minuto =
                         ultimoProcessado + 1;
@@ -324,9 +408,6 @@ public class PartidaAoVivoService {
                 minuto++
         ) {
 
-            /*
-             * Chama nosso motor.
-             */
             simuladorService
                     .processarMinutoAoVivo(
                             jogo,
@@ -334,13 +415,9 @@ public class PartidaAoVivoService {
                     );
 
 
-            /*
-             * Marca esse minuto como concluído
-             * para ele nunca ser gerado novamente.
-             */
             jogo.setUltimoMinutoProcessado(
                     minuto
             );
         }
     }
-}
+}	

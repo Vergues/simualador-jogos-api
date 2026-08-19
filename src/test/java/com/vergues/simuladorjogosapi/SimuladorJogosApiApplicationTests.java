@@ -1,4 +1,4 @@
-package com.vergues.simulador_jogos_api;
+package com.vergues.simuladorjogosapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -6,8 +6,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class SimuladorJogosApiApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
-
+    @Test
+    void contextLoads() {
+        // Verifica se o contexto do Spring sobe corretamente.
+    }
 }
