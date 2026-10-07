@@ -1,87 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#102920" />
     <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>Futebol ao Vivo</title>
-
-    <link
-        rel="stylesheet"
-        href="style.css?v=3"
-    >
-</head>
-
-<body>
-
-    <header class="topo">
-
-        <div class="logo">
-            Futebol ao Vivo
-        </div>
-
-        <nav class="menu">
-            <a href="#hoje">Hoje</a>
-            <a href="#proximos">Próximos</a>
-        </nav>
-
-    </header>
-
-
-    <main class="container">
-
-        <section id="hoje">
-
-            <div class="titulo-secao">
-
-                <div>
-                    <h1>Jogos de hoje</h1>
-
-                    <p>
-                        Partidas agendadas para hoje
-                    </p>
-                </div>
-
-            </div>
-
-            <div id="listaHoje">
-            </div>
-
-        </section>
-
-
-        <section
-            id="proximos"
-            class="secao"
+      name="description"
+      content="Resultados, calendário, classificação e números do futebol em um só lugar."
+    />
+    <title>Linha de Fundo · Futebol</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="/" aria-label="Linha de Fundo, início">
+          <span class="brand-mark" aria-hidden="true">LF<span></span></span>
+          <span>Linha de Fundo<small>O JOGO EM NÚMEROS</small></span>
+        </a>
+        <button
+          id="menuToggle"
+          class="menu-toggle"
+          aria-controls="menu"
+          aria-expanded="false"
         >
-
-            <div class="titulo-secao">
-
-                <div>
-                    <h2>Próximos jogos</h2>
-
-                    <p>
-                        Próximas partidas do Brasileirão
-                    </p>
-                </div>
-
-            </div>
-
-            <div id="listaProximos">
-            </div>
-
-        </section>
-
+          Menu ☰
+        </button>
+        <nav id="menu" aria-label="Navegação principal">
+          <a href="/">Início</a><a href="/jogos">Jogos</a
+          ><a href="/competicoes">Competições</a>
+          <a href="/classificacao">Classificação</a
+          ><a href="/artilharia">Artilharia</a><a href="/times">Times</a>
+        </nav>
+      </div>
+    </header>
+    <div class="context-bar">
+      <div class="context-inner">
+        <span><span class="live-dot"></span> Futebol, todos os dias</span>
+        <div class="context-actions">
+          <a href="/calendario">Calendário da temporada ↗</a>
+          <label for="temporadaGlobal">Temporada</label>
+          <select id="temporadaGlobal" aria-label="Temporada"></select>
+        </div>
+      </div>
+    </div>
+    <main id="conteudo" class="page" tabindex="-1">
+      <div class="loading" role="status">Carregando o futebol…</div>
     </main>
-
-
-    <script src="app.js?v=3"></script>
-
-</body>
-
+    <div id="erro" class="notice" role="alert" hidden></div>
+    <footer class="site-footer">
+      <div>
+        <strong>Linha de Fundo</strong
+        ><span>Resultados de uma temporada simulada · Projeto acadêmico</span>
+      </div>
+      <a href="/competicoes">Conheça as competições →</a>
+    </footer>
+  </body>
 </html>

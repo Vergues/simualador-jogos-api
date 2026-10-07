@@ -1,122 +1,64 @@
 [
-  {
-	    "nome": "Palmeiras",
-	    "sigla": "PAL",
-	    "forca": 95,
-	    "arquivo": "palmeiras.json"
-  },
-  {
-	    "nome": "Flamengo",
-	    "sigla": "FLA",
-	    "forca": 90,
-	    "arquivo": "flamengo.json"
-  },
-  {
-    "nome": "Corinthians",
-    "sigla": "COR",
-    "forca": 50,
-    "arquivo": "corinthians.json"
-  },
-  {
-    "nome": "Santos",
-    "sigla": "SAN",
-    "forca": 80,
-    "arquivo": "santos.json"
-  },
-  {
-    "nome": "São Paulo",
-    "sigla": "SAO",
-    "forca": 82,
-    "arquivo": "sao-paulo.json"
-  },
-  {
-    "nome": "Botafogo",
-    "sigla": "BOT",
-    "forca": 87,
-    "arquivo": "botafogo.json"
-  },
-  {
-    "nome": "Fluminense",
-    "sigla": "FLU",
-    "forca": 84,
-    "arquivo": "fluminense.json"
-  },
-  {
-    "nome": "Atlético-MG",
-    "sigla": "CAM",
-    "forca": 86,
-    "arquivo": "atletico-mg.json"
-  },
-  {
-    "nome": "Cruzeiro",
-    "sigla": "CRU",
-    "forca": 85,
-    "arquivo": "cruzeiro.json"
-  },
-  {
-    "nome": "Internacional",
-    "sigla": "INT",
-    "forca": 79,
-    "arquivo": "internacional.json"
-  },
-  {
-    "nome": "Bahia",
-    "sigla": "BAH",
-    "forca": 83,
-    "arquivo": "bahia.json"
-  },
-  {
-    "nome": "Grêmio",
-    "sigla": "GRE",
-    "forca": 76,
-    "arquivo": "grêmio.json"
-  },
-  {
-    "nome": "Vasco",
-    "sigla": "VAS",
-    "forca": 77,
-    "arquivo": "vasco.json"
-  },
-  {
-    "nome": "Athletico-PR",
-    "sigla": "CAP",
-    "forca": 78,
-    "arquivo": "athletico-pr.json"
-  },
-  {
-    "nome": "Red Bull Bragantino",
-    "sigla": "RBB",
-    "forca": 74,
-    "arquivo": "red-bull-bragantino.json"
-  },
-  {
-    "nome": "Fortaleza",
-    "sigla": "FOR",
-    "forca": 72,
-    "arquivo": "fortaleza.json"
-  },
-  {
-    "nome": "Ceará",
-    "sigla": "CEA",
-    "forca": 69,
-    "arquivo": "ceara.json"
-  },
-  {
-    "nome": "Vitória",
-    "sigla": "VIT",
-    "forca": 67,
-    "arquivo": "vitoria.json"
-  },
-  {
-    "nome": "Sport",
-    "sigla": "SPT",
-    "forca": 64,
-    "arquivo": "sport.json"
-  },
-  {
-    "nome": "Goiás",
-    "sigla": "GOI",
-    "forca": 62,
-    "arquivo": "goias.json"
-  }
+  "palmeiras.json",
+  "flamengo.json",
+  "corinthians.json",
+  "santos.json",
+  "sao-paulo.json",
+  "botafogo.json",
+  "fluminense.json",
+  "atletico-mg.json",
+  "cruzeiro.json",
+  "internacional.json",
+  "bahia.json",
+  "grêmio.json",
+  "vasco.json",
+  "athletico-pr.json",
+  "red-bull-bragantino.json",
+  "fortaleza.json",
+  "ceara.json",
+  "vitoria.json",
+  "sport.json",
+  "goias.json",
+  "mirassol.json",
+  "novorizontino.json",
+  "portuguesa.json",
+  "ponte-preta.json",
+  "guarani.json",
+  "botafogo-sp.json",
+  "ituano.json",
+  "inter-de-limeira.json",
+  "sao-bernardo.json",
+  "agua-santa.json",
+  "velo-clube.json",
+  "noroeste.json",
+  "juventude.json",
+  "cuiaba.json",
+  "coritiba.json",
+  "america-mg.json",
+  "remo.json",
+  "paysandu.json",
+  "crb.json",
+  "vila-nova.json",
+  "river-plate.json",
+  "boca-juniors.json",
+  "racing-club.json",
+  "estudiantes.json",
+  "velez-sarsfield.json",
+  "independiente-del-valle.json",
+  "ldu-quito.json",
+  "barcelona-sc.json",
+  "penarol.json",
+  "nacional.json",
+  "olimpia.json",
+  "cerro-porteno.json",
+  "libertad.json",
+  "atletico-nacional.json",
+  "millonarios.json",
+  "colo-colo.json",
+  "universidad-de-chile.json",
+  "bolivar.json",
+  "the-strongest.json",
+  "universitario.json",
+  "alianza-lima.json",
+  "sporting-cristal.json"
 ]

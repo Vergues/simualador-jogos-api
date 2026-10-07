@@ -2,7 +2,6 @@
   "nome": "Atlético-MG",
   "sigla": "CAM",
   "forca": 86,
-  "regraEspecial": "normal",
   "jogadores": [
     {
       "nome": "Everson",
@@ -11,8 +10,6 @@
       "ataque": 45,
       "defesa": 95,
       "finalizacao": 37,
-      "passe": 69,
-      "velocidade": 65,
       "fisico": 90
     },
     {
@@ -22,8 +19,6 @@
       "ataque": 46,
       "defesa": 96,
       "finalizacao": 38,
-      "passe": 70,
-      "velocidade": 66,
       "fisico": 91
     },
     {
@@ -33,8 +28,6 @@
       "ataque": 44,
       "defesa": 94,
       "finalizacao": 36,
-      "passe": 68,
-      "velocidade": 64,
       "fisico": 89
     },
     {
@@ -44,8 +37,6 @@
       "ataque": 64,
       "defesa": 98,
       "finalizacao": 56,
-      "passe": 80,
-      "velocidade": 82,
       "fisico": 96
     },
     {
@@ -55,8 +46,6 @@
       "ataque": 59,
       "defesa": 93,
       "finalizacao": 51,
-      "passe": 75,
-      "velocidade": 77,
       "fisico": 91
     },
     {
@@ -66,8 +55,6 @@
       "ataque": 60,
       "defesa": 94,
       "finalizacao": 52,
-      "passe": 76,
-      "velocidade": 78,
       "fisico": 92
     },
     {
@@ -77,8 +64,6 @@
       "ataque": 61,
       "defesa": 95,
       "finalizacao": 53,
-      "passe": 77,
-      "velocidade": 79,
       "fisico": 93
     },
     {
@@ -88,8 +73,6 @@
       "ataque": 87,
       "defesa": 93,
       "finalizacao": 73,
-      "passe": 92,
-      "velocidade": 98,
       "fisico": 91
     },
     {
@@ -99,8 +82,6 @@
       "ataque": 84,
       "defesa": 90,
       "finalizacao": 70,
-      "passe": 89,
-      "velocidade": 95,
       "fisico": 88
     },
     {
@@ -110,8 +91,6 @@
       "ataque": 84,
       "defesa": 90,
       "finalizacao": 70,
-      "passe": 89,
-      "velocidade": 95,
       "fisico": 88
     },
     {
@@ -121,8 +100,6 @@
       "ataque": 82,
       "defesa": 88,
       "finalizacao": 68,
-      "passe": 87,
-      "velocidade": 93,
       "fisico": 86
     },
     {
@@ -132,8 +109,6 @@
       "ataque": 74,
       "defesa": 89,
       "finalizacao": 66,
-      "passe": 87,
-      "velocidade": 82,
       "fisico": 88
     },
     {
@@ -143,8 +118,6 @@
       "ataque": 73,
       "defesa": 88,
       "finalizacao": 65,
-      "passe": 86,
-      "velocidade": 81,
       "fisico": 87
     },
     {
@@ -154,8 +127,6 @@
       "ataque": 76,
       "defesa": 91,
       "finalizacao": 68,
-      "passe": 89,
-      "velocidade": 84,
       "fisico": 90
     },
     {
@@ -165,8 +136,6 @@
       "ataque": 97,
       "defesa": 72,
       "finalizacao": 93,
-      "passe": 98,
-      "velocidade": 93,
       "fisico": 85
     },
     {
@@ -176,8 +145,6 @@
       "ataque": 90,
       "defesa": 65,
       "finalizacao": 86,
-      "passe": 91,
-      "velocidade": 86,
       "fisico": 78
     },
     {
@@ -187,8 +154,6 @@
       "ataque": 93,
       "defesa": 68,
       "finalizacao": 89,
-      "passe": 94,
-      "velocidade": 89,
       "fisico": 81
     },
     {
@@ -198,8 +163,6 @@
       "ataque": 91,
       "defesa": 66,
       "finalizacao": 87,
-      "passe": 92,
-      "velocidade": 87,
       "fisico": 79
     },
     {
@@ -209,8 +172,6 @@
       "ataque": 91,
       "defesa": 61,
       "finalizacao": 87,
-      "passe": 87,
-      "velocidade": 92,
       "fisico": 77
     },
     {
@@ -220,8 +181,6 @@
       "ataque": 92,
       "defesa": 62,
       "finalizacao": 88,
-      "passe": 88,
-      "velocidade": 93,
       "fisico": 78
     },
     {
@@ -231,8 +190,6 @@
       "ataque": 92,
       "defesa": 62,
       "finalizacao": 88,
-      "passe": 88,
-      "velocidade": 93,
       "fisico": 78
     },
     {
@@ -242,8 +199,6 @@
       "ataque": 99,
       "defesa": 59,
       "finalizacao": 99,
-      "passe": 85,
-      "velocidade": 92,
       "fisico": 93
     },
     {
@@ -253,8 +208,6 @@
       "ataque": 96,
       "defesa": 56,
       "finalizacao": 96,
-      "passe": 82,
-      "velocidade": 89,
       "fisico": 90
     },
     {
@@ -264,8 +217,6 @@
       "ataque": 94,
       "defesa": 54,
       "finalizacao": 94,
-      "passe": 80,
-      "velocidade": 87,
       "fisico": 88
     },
     {
@@ -275,8 +226,6 @@
       "ataque": 91,
       "defesa": 51,
       "finalizacao": 91,
-      "passe": 77,
-      "velocidade": 84,
       "fisico": 85
     }
   ]

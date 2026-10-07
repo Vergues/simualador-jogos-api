@@ -1,67 +1,19 @@
 package com.vergues.simuladorjogosapi.model;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.text.Normalizer;
+import java.util.Locale;
 
-public class Time {
-
-    private String nome;
-    private String sigla;
-    private int forca;
-    private String regraEspecial;
-
-    private List<Jogador> jogadores = new ArrayList<>();
-
-    public Time() {
+public record Time(String nome, String sigla, int forca, List<Jogador> jogadores,
+                   String slug, String pais, String escudo) {
+    public Time {
+        jogadores = List.copyOf(jogadores);
+        slug = slug == null ? Normalizer.normalize(nome, Normalizer.Form.NFD)
+                .replaceAll("\\p{M}", "").toLowerCase(Locale.ROOT).replaceAll("[^a-z0-9]+", "-") : slug;
+        pais = pais == null ? "Brasil" : pais;
     }
 
-    public Time(String nome, int forca) {
-        this.nome = nome;
-        this.forca = forca;
-        this.jogadores = new ArrayList<>();
-    }
-
-    public void adicionarJogador(Jogador jogador) {
-        jogadores.add(jogador);
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getSigla() {
-        return sigla;
-    }
-
-    public void setSigla(String sigla) {
-        this.sigla = sigla;
-    }
-
-    public int getForca() {
-        return forca;
-    }
-
-    public void setForca(int forca) {
-        this.forca = forca;
-    }
-
-    public String getRegraEspecial() {
-        return regraEspecial;
-    }
-
-    public void setRegraEspecial(String regraEspecial) {
-        this.regraEspecial = regraEspecial;
-    }
-
-    public List<Jogador> getJogadores() {
-        return jogadores;
-    }
-
-    public void setJogadores(List<Jogador> jogadores) {
-        this.jogadores = jogadores;
+    public record Jogador(String nome, String posicao, int overall, int ataque,
+                          int defesa, int finalizacao, int fisico) {
     }
 }
