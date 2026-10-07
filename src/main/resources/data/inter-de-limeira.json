@@ -1,0 +1,251 @@
+{
+  "nome": "Inter de Limeira",
+  "sigla": "IDL",
+  "forca": 63,
+  "jogadores": [
+    {
+      "nome": "Daniel Barbosa",
+      "posicao": "GOL",
+      "overall": 64,
+      "ataque": 21,
+      "defesa": 71,
+      "finalizacao": 12,
+      "fisico": 67
+    },
+    {
+      "nome": "Lucas Gomes",
+      "posicao": "GOL",
+      "overall": 66,
+      "ataque": 22,
+      "defesa": 74,
+      "finalizacao": 18,
+      "fisico": 67
+    },
+    {
+      "nome": "Gabriel Tavares",
+      "posicao": "GOL",
+      "overall": 63,
+      "ataque": 22,
+      "defesa": 70,
+      "finalizacao": 15,
+      "fisico": 65
+    },
+    {
+      "nome": "Diego Martins",
+      "posicao": "ZAG",
+      "overall": 64,
+      "ataque": 40,
+      "defesa": 71,
+      "finalizacao": 32,
+      "fisico": 70
+    },
+    {
+      "nome": "Henrique Freitas",
+      "posicao": "ZAG",
+      "overall": 61,
+      "ataque": 37,
+      "defesa": 69,
+      "finalizacao": 27,
+      "fisico": 68
+    },
+    {
+      "nome": "Pedro Azevedo",
+      "posicao": "ZAG",
+      "overall": 64,
+      "ataque": 38,
+      "defesa": 74,
+      "finalizacao": 28,
+      "fisico": 69
+    },
+    {
+      "nome": "Marcos Correia",
+      "posicao": "ZAG",
+      "overall": 66,
+      "ataque": 38,
+      "defesa": 75,
+      "finalizacao": 33,
+      "fisico": 72
+    },
+    {
+      "nome": "Henrique Souza",
+      "posicao": "ZAG",
+      "overall": 67,
+      "ataque": 41,
+      "defesa": 74,
+      "finalizacao": 31,
+      "fisico": 74
+    },
+    {
+      "nome": "João Moreira",
+      "posicao": "LE",
+      "overall": 66,
+      "ataque": 65,
+      "defesa": 70,
+      "finalizacao": 45,
+      "fisico": 67
+    },
+    {
+      "nome": "Pedro Machado",
+      "posicao": "LE",
+      "overall": 61,
+      "ataque": 60,
+      "defesa": 61,
+      "finalizacao": 43,
+      "fisico": 59
+    },
+    {
+      "nome": "Bruno Correia",
+      "posicao": "LD",
+      "overall": 66,
+      "ataque": 64,
+      "defesa": 71,
+      "finalizacao": 47,
+      "fisico": 67
+    },
+    {
+      "nome": "Renan Moreira",
+      "posicao": "LD",
+      "overall": 60,
+      "ataque": 57,
+      "defesa": 60,
+      "finalizacao": 40,
+      "fisico": 61
+    },
+    {
+      "nome": "Victor Cardoso",
+      "posicao": "VOL",
+      "overall": 65,
+      "ataque": 59,
+      "defesa": 68,
+      "finalizacao": 53,
+      "fisico": 69
+    },
+    {
+      "nome": "Wesley Pereira",
+      "posicao": "VOL",
+      "overall": 63,
+      "ataque": 56,
+      "defesa": 70,
+      "finalizacao": 47,
+      "fisico": 69
+    },
+    {
+      "nome": "Daniel Machado",
+      "posicao": "VOL",
+      "overall": 61,
+      "ataque": 52,
+      "defesa": 62,
+      "finalizacao": 47,
+      "fisico": 67
+    },
+    {
+      "nome": "Igor Correia",
+      "posicao": "MC",
+      "overall": 66,
+      "ataque": 69,
+      "defesa": 60,
+      "finalizacao": 60,
+      "fisico": 68
+    },
+    {
+      "nome": "Thiago Cunha",
+      "posicao": "MC",
+      "overall": 64,
+      "ataque": 67,
+      "defesa": 57,
+      "finalizacao": 55,
+      "fisico": 66
+    },
+    {
+      "nome": "Vinícius Cardoso",
+      "posicao": "MC",
+      "overall": 63,
+      "ataque": 62,
+      "defesa": 58,
+      "finalizacao": 54,
+      "fisico": 65
+    },
+    {
+      "nome": "Caio Ribeiro",
+      "posicao": "MC",
+      "overall": 58,
+      "ataque": 56,
+      "defesa": 50,
+      "finalizacao": 49,
+      "fisico": 55
+    },
+    {
+      "nome": "Gabriel Freitas",
+      "posicao": "MEI",
+      "overall": 60,
+      "ataque": 65,
+      "defesa": 44,
+      "finalizacao": 65,
+      "fisico": 54
+    },
+    {
+      "nome": "Carlos Azevedo",
+      "posicao": "MEI",
+      "overall": 61,
+      "ataque": 65,
+      "defesa": 43,
+      "finalizacao": 67,
+      "fisico": 57
+    },
+    {
+      "nome": "André Lopes",
+      "posicao": "PE",
+      "overall": 62,
+      "ataque": 70,
+      "defesa": 37,
+      "finalizacao": 66,
+      "fisico": 60
+    },
+    {
+      "nome": "Bruno Freitas",
+      "posicao": "PD",
+      "overall": 61,
+      "ataque": 68,
+      "defesa": 38,
+      "finalizacao": 63,
+      "fisico": 57
+    },
+    {
+      "nome": "Felipe Tavares",
+      "posicao": "ATA",
+      "overall": 62,
+      "ataque": 73,
+      "defesa": 32,
+      "finalizacao": 73,
+      "fisico": 68
+    },
+    {
+      "nome": "Felipe Teixeira",
+      "posicao": "ATA",
+      "overall": 65,
+      "ataque": 72,
+      "defesa": 33,
+      "finalizacao": 73,
+      "fisico": 71
+    },
+    {
+      "nome": "Felipe Machado",
+      "posicao": "ATA",
+      "overall": 63,
+      "ataque": 74,
+      "defesa": 35,
+      "finalizacao": 73,
+      "fisico": 68
+    },
+    {
+      "nome": "Leonardo Azevedo",
+      "posicao": "ATA",
+      "overall": 62,
+      "ataque": 72,
+      "defesa": 33,
+      "finalizacao": 70,
+      "fisico": 66
+    }
+  ],
+  "pais": "Brasil"
+}

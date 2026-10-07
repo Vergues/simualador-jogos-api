@@ -1,0 +1,251 @@
+{
+  "nome": "Vila Nova",
+  "sigla": "VNO",
+  "forca": 65,
+  "jogadores": [
+    {
+      "nome": "Vinícius Santos",
+      "posicao": "GOL",
+      "overall": 63,
+      "ataque": 19,
+      "defesa": 73,
+      "finalizacao": 13,
+      "fisico": 68
+    },
+    {
+      "nome": "Rafael Martins",
+      "posicao": "GOL",
+      "overall": 65,
+      "ataque": 21,
+      "defesa": 71,
+      "finalizacao": 16,
+      "fisico": 67
+    },
+    {
+      "nome": "Wesley Moreira",
+      "posicao": "GOL",
+      "overall": 64,
+      "ataque": 22,
+      "defesa": 71,
+      "finalizacao": 16,
+      "fisico": 67
+    },
+    {
+      "nome": "Gustavo Tavares",
+      "posicao": "ZAG",
+      "overall": 69,
+      "ataque": 42,
+      "defesa": 77,
+      "finalizacao": 37,
+      "fisico": 77
+    },
+    {
+      "nome": "Daniel Azevedo",
+      "posicao": "ZAG",
+      "overall": 65,
+      "ataque": 38,
+      "defesa": 72,
+      "finalizacao": 31,
+      "fisico": 70
+    },
+    {
+      "nome": "Bruno Cardoso",
+      "posicao": "ZAG",
+      "overall": 63,
+      "ataque": 35,
+      "defesa": 71,
+      "finalizacao": 29,
+      "fisico": 71
+    },
+    {
+      "nome": "Thiago Cunha",
+      "posicao": "ZAG",
+      "overall": 61,
+      "ataque": 33,
+      "defesa": 68,
+      "finalizacao": 25,
+      "fisico": 68
+    },
+    {
+      "nome": "André Martins",
+      "posicao": "ZAG",
+      "overall": 69,
+      "ataque": 43,
+      "defesa": 75,
+      "finalizacao": 36,
+      "fisico": 76
+    },
+    {
+      "nome": "Bruno Silva",
+      "posicao": "LE",
+      "overall": 62,
+      "ataque": 59,
+      "defesa": 62,
+      "finalizacao": 41,
+      "fisico": 63
+    },
+    {
+      "nome": "Igor Moura",
+      "posicao": "LE",
+      "overall": 60,
+      "ataque": 57,
+      "defesa": 59,
+      "finalizacao": 44,
+      "fisico": 61
+    },
+    {
+      "nome": "Samuel Tavares",
+      "posicao": "LD",
+      "overall": 68,
+      "ataque": 61,
+      "defesa": 68,
+      "finalizacao": 47,
+      "fisico": 69
+    },
+    {
+      "nome": "Vinícius Cunha",
+      "posicao": "LD",
+      "overall": 69,
+      "ataque": 65,
+      "defesa": 74,
+      "finalizacao": 51,
+      "fisico": 72
+    },
+    {
+      "nome": "Carlos Almeida",
+      "posicao": "VOL",
+      "overall": 60,
+      "ataque": 50,
+      "defesa": 63,
+      "finalizacao": 47,
+      "fisico": 63
+    },
+    {
+      "nome": "João Teixeira",
+      "posicao": "VOL",
+      "overall": 62,
+      "ataque": 57,
+      "defesa": 68,
+      "finalizacao": 44,
+      "fisico": 69
+    },
+    {
+      "nome": "Bruno Oliveira",
+      "posicao": "VOL",
+      "overall": 63,
+      "ataque": 52,
+      "defesa": 66,
+      "finalizacao": 45,
+      "fisico": 69
+    },
+    {
+      "nome": "Pedro Pereira",
+      "posicao": "MC",
+      "overall": 68,
+      "ataque": 70,
+      "defesa": 65,
+      "finalizacao": 60,
+      "fisico": 66
+    },
+    {
+      "nome": "Rodrigo Almeida",
+      "posicao": "MC",
+      "overall": 66,
+      "ataque": 64,
+      "defesa": 61,
+      "finalizacao": 57,
+      "fisico": 64
+    },
+    {
+      "nome": "Caio Melo",
+      "posicao": "MC",
+      "overall": 68,
+      "ataque": 72,
+      "defesa": 61,
+      "finalizacao": 60,
+      "fisico": 70
+    },
+    {
+      "nome": "Vinícius Costa",
+      "posicao": "MC",
+      "overall": 65,
+      "ataque": 69,
+      "defesa": 58,
+      "finalizacao": 56,
+      "fisico": 62
+    },
+    {
+      "nome": "João Moura",
+      "posicao": "MEI",
+      "overall": 61,
+      "ataque": 71,
+      "defesa": 43,
+      "finalizacao": 65,
+      "fisico": 59
+    },
+    {
+      "nome": "Pedro Nunes",
+      "posicao": "MEI",
+      "overall": 63,
+      "ataque": 67,
+      "defesa": 47,
+      "finalizacao": 64,
+      "fisico": 57
+    },
+    {
+      "nome": "Renan Souza",
+      "posicao": "PE",
+      "overall": 61,
+      "ataque": 68,
+      "defesa": 41,
+      "finalizacao": 66,
+      "fisico": 56
+    },
+    {
+      "nome": "Gabriel Vieira",
+      "posicao": "PD",
+      "overall": 67,
+      "ataque": 78,
+      "defesa": 48,
+      "finalizacao": 72,
+      "fisico": 64
+    },
+    {
+      "nome": "Carlos Lopes",
+      "posicao": "ATA",
+      "overall": 60,
+      "ataque": 67,
+      "defesa": 33,
+      "finalizacao": 67,
+      "fisico": 66
+    },
+    {
+      "nome": "Rafael Barbosa",
+      "posicao": "ATA",
+      "overall": 67,
+      "ataque": 80,
+      "defesa": 40,
+      "finalizacao": 79,
+      "fisico": 71
+    },
+    {
+      "nome": "Murilo Duarte",
+      "posicao": "ATA",
+      "overall": 64,
+      "ataque": 71,
+      "defesa": 36,
+      "finalizacao": 75,
+      "fisico": 68
+    },
+    {
+      "nome": "Pedro Moreira",
+      "posicao": "ATA",
+      "overall": 66,
+      "ataque": 79,
+      "defesa": 39,
+      "finalizacao": 76,
+      "fisico": 71
+    }
+  ],
+  "pais": "Brasil"
+}

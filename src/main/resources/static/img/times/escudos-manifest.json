@@ -1,0 +1,436 @@
+[
+  {
+    "nome": "Corinthians",
+    "sigla": "COR",
+    "arquivo": "/img/times/corinthians.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Santos",
+    "sigla": "SAN",
+    "arquivo": "/img/times/santos.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "São Paulo",
+    "sigla": "SAO",
+    "arquivo": "/img/times/sao-paulo.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Botafogo",
+    "sigla": "BOT",
+    "arquivo": "/img/times/botafogo.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Fluminense",
+    "sigla": "FLU",
+    "arquivo": "/img/times/fluminense.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Atlético-MG",
+    "sigla": "CAM",
+    "arquivo": "/img/times/atletico-mg.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Cruzeiro",
+    "sigla": "CRU",
+    "arquivo": "/img/times/cruzeiro.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Internacional",
+    "sigla": "INT",
+    "arquivo": "/img/times/internacional.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Bahia",
+    "sigla": "BAH",
+    "arquivo": "/img/times/bahia.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Grêmio",
+    "sigla": "GRE",
+    "arquivo": "/img/times/gremio.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Vasco",
+    "sigla": "VAS",
+    "arquivo": "/img/times/vasco.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Athletico-PR",
+    "sigla": "CAP",
+    "arquivo": "/img/times/athletico-pr.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Red Bull Bragantino",
+    "sigla": "RBB",
+    "arquivo": "/img/times/red-bull-bragantino.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Fortaleza",
+    "sigla": "FOR",
+    "arquivo": "/img/times/fortaleza.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Ceará",
+    "sigla": "CEA",
+    "arquivo": "/img/times/ceara.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Vitória",
+    "sigla": "VIT",
+    "arquivo": "/img/times/vitoria.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Sport",
+    "sigla": "SPT",
+    "arquivo": "/img/times/sport.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Goiás",
+    "sigla": "GOI",
+    "arquivo": "/img/times/goias.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Palmeiras",
+    "sigla": "PAL",
+    "arquivo": "/img/times/palmeiras.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Flamengo",
+    "sigla": "FLA",
+    "arquivo": "/img/times/flamengo.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Mirassol",
+    "sigla": "MIR",
+    "arquivo": "/img/times/mirassol.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Novorizontino",
+    "sigla": "NOV",
+    "arquivo": "/img/times/novorizontino.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Portuguesa",
+    "sigla": "POR",
+    "arquivo": "/img/times/portuguesa.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Ponte Preta",
+    "sigla": "PON",
+    "arquivo": "/img/times/ponte-preta.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Guarani",
+    "sigla": "GUA",
+    "arquivo": "/img/times/guarani.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Botafogo-SP",
+    "sigla": "BPS",
+    "arquivo": "/img/times/botafogo-sp.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Ituano",
+    "sigla": "ITU",
+    "arquivo": "/img/times/ituano.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Inter de Limeira",
+    "sigla": "IDL",
+    "arquivo": "/img/times/inter-de-limeira.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "São Bernardo",
+    "sigla": "SBE",
+    "arquivo": "/img/times/sao-bernardo.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Água Santa",
+    "sigla": "AGU",
+    "arquivo": "/img/times/agua-santa.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Velo Clube",
+    "sigla": "VEL",
+    "arquivo": "/img/times/velo-clube.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Noroeste",
+    "sigla": "NOR",
+    "arquivo": "/img/times/noroeste.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Juventude",
+    "sigla": "JUV",
+    "arquivo": "/img/times/juventude.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Cuiabá",
+    "sigla": "CUI",
+    "arquivo": "/img/times/cuiaba.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Coritiba",
+    "sigla": "CFC",
+    "arquivo": "/img/times/coritiba.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "América-MG",
+    "sigla": "AMG",
+    "arquivo": "/img/times/america-mg.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Remo",
+    "sigla": "REM",
+    "arquivo": "/img/times/remo.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Paysandu",
+    "sigla": "PAY",
+    "arquivo": "/img/times/paysandu.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "CRB",
+    "sigla": "CRB",
+    "arquivo": "/img/times/crb.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Vila Nova",
+    "sigla": "VNO",
+    "arquivo": "/img/times/vila-nova.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "River Plate",
+    "sigla": "RIV",
+    "arquivo": "/img/times/river-plate.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Boca Juniors",
+    "sigla": "BOC",
+    "arquivo": "/img/times/boca-juniors.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Racing Club",
+    "sigla": "RAC",
+    "arquivo": "/img/times/racing-club.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Estudiantes",
+    "sigla": "EST",
+    "arquivo": "/img/times/estudiantes.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Vélez Sarsfield",
+    "sigla": "VELZ",
+    "arquivo": "/img/times/velez-sarsfield.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Independiente del Valle",
+    "sigla": "IDV",
+    "arquivo": "/img/times/independiente-del-valle.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "LDU Quito",
+    "sigla": "LDU",
+    "arquivo": "/img/times/ldu-quito.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Barcelona SC",
+    "sigla": "BSC",
+    "arquivo": "/img/times/barcelona-sc.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Peñarol",
+    "sigla": "PEN",
+    "arquivo": "/img/times/penarol.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Nacional",
+    "sigla": "NAC",
+    "arquivo": "/img/times/nacional.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Olimpia",
+    "sigla": "OLI",
+    "arquivo": "/img/times/olimpia.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Cerro Porteño",
+    "sigla": "CER",
+    "arquivo": "/img/times/cerro-porteno.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Libertad",
+    "sigla": "LIB",
+    "arquivo": "/img/times/libertad.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Atlético Nacional",
+    "sigla": "ATN",
+    "arquivo": "/img/times/atletico-nacional.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Millonarios",
+    "sigla": "MIL",
+    "arquivo": "/img/times/millonarios.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Colo-Colo",
+    "sigla": "COL",
+    "arquivo": "/img/times/colo-colo.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Universidad de Chile",
+    "sigla": "UCH",
+    "arquivo": "/img/times/universidad-de-chile.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Bolívar",
+    "sigla": "BOL",
+    "arquivo": "/img/times/bolivar.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "The Strongest",
+    "sigla": "STR",
+    "arquivo": "/img/times/the-strongest.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Universitario",
+    "sigla": "UNI",
+    "arquivo": "/img/times/universitario.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Alianza Lima",
+    "sigla": "ALI",
+    "arquivo": "/img/times/alianza-lima.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  },
+  {
+    "nome": "Sporting Cristal",
+    "sigla": "SCR",
+    "arquivo": "/img/times/sporting-cristal.svg",
+    "tipo": "placeholder-local",
+    "observacao": "Escudo vetorial local estilizado; pode ser substituído pelo escudo oficial mantendo o mesmo nome de arquivo."
+  }
+]

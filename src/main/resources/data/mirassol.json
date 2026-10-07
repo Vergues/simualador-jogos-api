@@ -1,0 +1,251 @@
+{
+  "nome": "Mirassol",
+  "sigla": "MIR",
+  "forca": 78,
+  "jogadores": [
+    {
+      "nome": "Wesley Moura",
+      "posicao": "GOL",
+      "overall": 79,
+      "ataque": 37,
+      "defesa": 86,
+      "finalizacao": 27,
+      "fisico": 81
+    },
+    {
+      "nome": "Matheus Moreira",
+      "posicao": "GOL",
+      "overall": 82,
+      "ataque": 38,
+      "defesa": 91,
+      "finalizacao": 33,
+      "fisico": 86
+    },
+    {
+      "nome": "Diego Moura",
+      "posicao": "GOL",
+      "overall": 75,
+      "ataque": 34,
+      "defesa": 84,
+      "finalizacao": 25,
+      "fisico": 79
+    },
+    {
+      "nome": "Thiago Souza",
+      "posicao": "ZAG",
+      "overall": 75,
+      "ataque": 50,
+      "defesa": 85,
+      "finalizacao": 43,
+      "fisico": 83
+    },
+    {
+      "nome": "Thiago Cardoso",
+      "posicao": "ZAG",
+      "overall": 82,
+      "ataque": 55,
+      "defesa": 88,
+      "finalizacao": 49,
+      "fisico": 89
+    },
+    {
+      "nome": "Leonardo Cunha",
+      "posicao": "ZAG",
+      "overall": 78,
+      "ataque": 53,
+      "defesa": 84,
+      "finalizacao": 43,
+      "fisico": 84
+    },
+    {
+      "nome": "Carlos Costa",
+      "posicao": "ZAG",
+      "overall": 74,
+      "ataque": 48,
+      "defesa": 81,
+      "finalizacao": 42,
+      "fisico": 78
+    },
+    {
+      "nome": "Rodrigo Barbosa",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 53,
+      "defesa": 90,
+      "finalizacao": 46,
+      "fisico": 84
+    },
+    {
+      "nome": "Gabriel Nunes",
+      "posicao": "LE",
+      "overall": 75,
+      "ataque": 70,
+      "defesa": 75,
+      "finalizacao": 57,
+      "fisico": 75
+    },
+    {
+      "nome": "Gabriel Rocha",
+      "posicao": "LE",
+      "overall": 82,
+      "ataque": 77,
+      "defesa": 81,
+      "finalizacao": 66,
+      "fisico": 86
+    },
+    {
+      "nome": "Vinícius Machado",
+      "posicao": "LD",
+      "overall": 76,
+      "ataque": 73,
+      "defesa": 78,
+      "finalizacao": 58,
+      "fisico": 74
+    },
+    {
+      "nome": "Arthur Gomes",
+      "posicao": "LD",
+      "overall": 82,
+      "ataque": 77,
+      "defesa": 84,
+      "finalizacao": 66,
+      "fisico": 86
+    },
+    {
+      "nome": "Rafael Melo",
+      "posicao": "VOL",
+      "overall": 76,
+      "ataque": 70,
+      "defesa": 77,
+      "finalizacao": 60,
+      "fisico": 77
+    },
+    {
+      "nome": "Daniel Cunha",
+      "posicao": "VOL",
+      "overall": 78,
+      "ataque": 67,
+      "defesa": 81,
+      "finalizacao": 62,
+      "fisico": 84
+    },
+    {
+      "nome": "Marcos Freitas",
+      "posicao": "VOL",
+      "overall": 75,
+      "ataque": 67,
+      "defesa": 80,
+      "finalizacao": 59,
+      "fisico": 80
+    },
+    {
+      "nome": "Renan Martins",
+      "posicao": "MC",
+      "overall": 74,
+      "ataque": 73,
+      "defesa": 67,
+      "finalizacao": 65,
+      "fisico": 73
+    },
+    {
+      "nome": "André Santos",
+      "posicao": "MC",
+      "overall": 75,
+      "ataque": 74,
+      "defesa": 68,
+      "finalizacao": 69,
+      "fisico": 72
+    },
+    {
+      "nome": "André Rocha",
+      "posicao": "MC",
+      "overall": 77,
+      "ataque": 75,
+      "defesa": 74,
+      "finalizacao": 73,
+      "fisico": 79
+    },
+    {
+      "nome": "Murilo Costa",
+      "posicao": "MC",
+      "overall": 81,
+      "ataque": 85,
+      "defesa": 77,
+      "finalizacao": 77,
+      "fisico": 83
+    },
+    {
+      "nome": "Samuel Martins",
+      "posicao": "MEI",
+      "overall": 73,
+      "ataque": 81,
+      "defesa": 53,
+      "finalizacao": 75,
+      "fisico": 67
+    },
+    {
+      "nome": "Bruno Farias",
+      "posicao": "MEI",
+      "overall": 76,
+      "ataque": 81,
+      "defesa": 55,
+      "finalizacao": 79,
+      "fisico": 71
+    },
+    {
+      "nome": "Igor Azevedo",
+      "posicao": "PE",
+      "overall": 80,
+      "ataque": 85,
+      "defesa": 59,
+      "finalizacao": 82,
+      "fisico": 79
+    },
+    {
+      "nome": "Marcos Costa",
+      "posicao": "PD",
+      "overall": 77,
+      "ataque": 84,
+      "defesa": 55,
+      "finalizacao": 79,
+      "fisico": 74
+    },
+    {
+      "nome": "Henrique Pereira",
+      "posicao": "ATA",
+      "overall": 75,
+      "ataque": 82,
+      "defesa": 45,
+      "finalizacao": 85,
+      "fisico": 78
+    },
+    {
+      "nome": "Alex Souza",
+      "posicao": "ATA",
+      "overall": 74,
+      "ataque": 84,
+      "defesa": 44,
+      "finalizacao": 83,
+      "fisico": 81
+    },
+    {
+      "nome": "Pedro Duarte",
+      "posicao": "ATA",
+      "overall": 78,
+      "ataque": 88,
+      "defesa": 47,
+      "finalizacao": 90,
+      "fisico": 80
+    },
+    {
+      "nome": "Daniel Lopes",
+      "posicao": "ATA",
+      "overall": 82,
+      "ataque": 94,
+      "defesa": 55,
+      "finalizacao": 91,
+      "fisico": 86
+    }
+  ],
+  "pais": "Brasil"
+}

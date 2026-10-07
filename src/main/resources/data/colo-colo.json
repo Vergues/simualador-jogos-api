@@ -1,0 +1,251 @@
+{
+  "nome": "Colo-Colo",
+  "sigla": "COL",
+  "forca": 81,
+  "jogadores": [
+    {
+      "nome": "Diego Álvarez",
+      "posicao": "GOL",
+      "overall": 81,
+      "ataque": 38,
+      "defesa": 90,
+      "finalizacao": 31,
+      "fisico": 82
+    },
+    {
+      "nome": "Valentín Quiroga",
+      "posicao": "GOL",
+      "overall": 78,
+      "ataque": 36,
+      "defesa": 86,
+      "finalizacao": 29,
+      "fisico": 83
+    },
+    {
+      "nome": "Ramiro Díaz",
+      "posicao": "GOL",
+      "overall": 81,
+      "ataque": 40,
+      "defesa": 91,
+      "finalizacao": 31,
+      "fisico": 82
+    },
+    {
+      "nome": "Bruno Medina",
+      "posicao": "ZAG",
+      "overall": 83,
+      "ataque": 58,
+      "defesa": 89,
+      "finalizacao": 49,
+      "fisico": 88
+    },
+    {
+      "nome": "Ramiro López",
+      "posicao": "ZAG",
+      "overall": 82,
+      "ataque": 56,
+      "defesa": 88,
+      "finalizacao": 49,
+      "fisico": 88
+    },
+    {
+      "nome": "Federico Mendoza",
+      "posicao": "ZAG",
+      "overall": 82,
+      "ataque": 55,
+      "defesa": 90,
+      "finalizacao": 50,
+      "fisico": 90
+    },
+    {
+      "nome": "Luis Castro",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 53,
+      "defesa": 89,
+      "finalizacao": 48,
+      "fisico": 87
+    },
+    {
+      "nome": "Agustín López",
+      "posicao": "ZAG",
+      "overall": 85,
+      "ataque": 57,
+      "defesa": 94,
+      "finalizacao": 53,
+      "fisico": 93
+    },
+    {
+      "nome": "Federico García",
+      "posicao": "LE",
+      "overall": 83,
+      "ataque": 80,
+      "defesa": 87,
+      "finalizacao": 62,
+      "fisico": 82
+    },
+    {
+      "nome": "José Medina",
+      "posicao": "LE",
+      "overall": 81,
+      "ataque": 79,
+      "defesa": 81,
+      "finalizacao": 64,
+      "fisico": 81
+    },
+    {
+      "nome": "Gonzalo Pérez",
+      "posicao": "LD",
+      "overall": 77,
+      "ataque": 70,
+      "defesa": 81,
+      "finalizacao": 58,
+      "fisico": 79
+    },
+    {
+      "nome": "Mateo Paredes",
+      "posicao": "LD",
+      "overall": 77,
+      "ataque": 73,
+      "defesa": 79,
+      "finalizacao": 61,
+      "fisico": 79
+    },
+    {
+      "nome": "Andrés Cabrera",
+      "posicao": "VOL",
+      "overall": 82,
+      "ataque": 74,
+      "defesa": 89,
+      "finalizacao": 66,
+      "fisico": 87
+    },
+    {
+      "nome": "Santiago Paredes",
+      "posicao": "VOL",
+      "overall": 76,
+      "ataque": 69,
+      "defesa": 77,
+      "finalizacao": 63,
+      "fisico": 79
+    },
+    {
+      "nome": "Ángel González",
+      "posicao": "VOL",
+      "overall": 80,
+      "ataque": 72,
+      "defesa": 84,
+      "finalizacao": 62,
+      "fisico": 81
+    },
+    {
+      "nome": "Tomás Vargas",
+      "posicao": "MC",
+      "overall": 82,
+      "ataque": 83,
+      "defesa": 78,
+      "finalizacao": 79,
+      "fisico": 80
+    },
+    {
+      "nome": "Carlos Rodríguez",
+      "posicao": "MC",
+      "overall": 79,
+      "ataque": 79,
+      "defesa": 71,
+      "finalizacao": 74,
+      "fisico": 78
+    },
+    {
+      "nome": "Valentín García",
+      "posicao": "MC",
+      "overall": 77,
+      "ataque": 78,
+      "defesa": 75,
+      "finalizacao": 73,
+      "fisico": 74
+    },
+    {
+      "nome": "Andrés Romero",
+      "posicao": "MC",
+      "overall": 83,
+      "ataque": 84,
+      "defesa": 78,
+      "finalizacao": 75,
+      "fisico": 86
+    },
+    {
+      "nome": "Ángel Vargas",
+      "posicao": "MEI",
+      "overall": 83,
+      "ataque": 93,
+      "defesa": 63,
+      "finalizacao": 88,
+      "fisico": 80
+    },
+    {
+      "nome": "Agustín Villalba",
+      "posicao": "MEI",
+      "overall": 83,
+      "ataque": 92,
+      "defesa": 66,
+      "finalizacao": 87,
+      "fisico": 76
+    },
+    {
+      "nome": "Facundo Silva",
+      "posicao": "PE",
+      "overall": 77,
+      "ataque": 82,
+      "defesa": 56,
+      "finalizacao": 80,
+      "fisico": 75
+    },
+    {
+      "nome": "Miguel Paredes",
+      "posicao": "PD",
+      "overall": 80,
+      "ataque": 90,
+      "defesa": 61,
+      "finalizacao": 85,
+      "fisico": 79
+    },
+    {
+      "nome": "Lucas Medina",
+      "posicao": "ATA",
+      "overall": 79,
+      "ataque": 90,
+      "defesa": 52,
+      "finalizacao": 87,
+      "fisico": 80
+    },
+    {
+      "nome": "Carlos Mendoza",
+      "posicao": "ATA",
+      "overall": 85,
+      "ataque": 92,
+      "defesa": 55,
+      "finalizacao": 98,
+      "fisico": 87
+    },
+    {
+      "nome": "Facundo Martínez",
+      "posicao": "ATA",
+      "overall": 85,
+      "ataque": 96,
+      "defesa": 58,
+      "finalizacao": 96,
+      "fisico": 87
+    },
+    {
+      "nome": "Carlos Cabrera",
+      "posicao": "ATA",
+      "overall": 79,
+      "ataque": 92,
+      "defesa": 50,
+      "finalizacao": 90,
+      "fisico": 84
+    }
+  ],
+  "pais": "Chile"
+}

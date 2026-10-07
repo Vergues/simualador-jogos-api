@@ -1,0 +1,251 @@
+{
+  "nome": "Botafogo-SP",
+  "sigla": "BPS",
+  "forca": 67,
+  "jogadores": [
+    {
+      "nome": "Vinícius Lima",
+      "posicao": "GOL",
+      "overall": 66,
+      "ataque": 26,
+      "defesa": 75,
+      "finalizacao": 17,
+      "fisico": 67
+    },
+    {
+      "nome": "Renan Nunes",
+      "posicao": "GOL",
+      "overall": 68,
+      "ataque": 25,
+      "defesa": 75,
+      "finalizacao": 18,
+      "fisico": 71
+    },
+    {
+      "nome": "Carlos Moreira",
+      "posicao": "GOL",
+      "overall": 69,
+      "ataque": 27,
+      "defesa": 79,
+      "finalizacao": 21,
+      "fisico": 71
+    },
+    {
+      "nome": "Arthur Duarte",
+      "posicao": "ZAG",
+      "overall": 66,
+      "ataque": 40,
+      "defesa": 74,
+      "finalizacao": 31,
+      "fisico": 70
+    },
+    {
+      "nome": "Pedro Machado",
+      "posicao": "ZAG",
+      "overall": 67,
+      "ataque": 42,
+      "defesa": 73,
+      "finalizacao": 35,
+      "fisico": 71
+    },
+    {
+      "nome": "Carlos Azevedo",
+      "posicao": "ZAG",
+      "overall": 70,
+      "ataque": 46,
+      "defesa": 78,
+      "finalizacao": 34,
+      "fisico": 74
+    },
+    {
+      "nome": "João Teixeira",
+      "posicao": "ZAG",
+      "overall": 63,
+      "ataque": 35,
+      "defesa": 71,
+      "finalizacao": 27,
+      "fisico": 71
+    },
+    {
+      "nome": "Marcos Barbosa",
+      "posicao": "ZAG",
+      "overall": 63,
+      "ataque": 35,
+      "defesa": 71,
+      "finalizacao": 28,
+      "fisico": 67
+    },
+    {
+      "nome": "André Melo",
+      "posicao": "LE",
+      "overall": 68,
+      "ataque": 61,
+      "defesa": 73,
+      "finalizacao": 48,
+      "fisico": 70
+    },
+    {
+      "nome": "Pedro Azevedo",
+      "posicao": "LE",
+      "overall": 64,
+      "ataque": 58,
+      "defesa": 66,
+      "finalizacao": 45,
+      "fisico": 66
+    },
+    {
+      "nome": "Bruno Melo",
+      "posicao": "LD",
+      "overall": 68,
+      "ataque": 62,
+      "defesa": 71,
+      "finalizacao": 50,
+      "fisico": 69
+    },
+    {
+      "nome": "Henrique Teixeira",
+      "posicao": "LD",
+      "overall": 63,
+      "ataque": 56,
+      "defesa": 62,
+      "finalizacao": 47,
+      "fisico": 65
+    },
+    {
+      "nome": "Daniel Machado",
+      "posicao": "VOL",
+      "overall": 71,
+      "ataque": 64,
+      "defesa": 76,
+      "finalizacao": 59,
+      "fisico": 73
+    },
+    {
+      "nome": "Renan Teixeira",
+      "posicao": "VOL",
+      "overall": 66,
+      "ataque": 60,
+      "defesa": 68,
+      "finalizacao": 54,
+      "fisico": 68
+    },
+    {
+      "nome": "Matheus Farias",
+      "posicao": "VOL",
+      "overall": 66,
+      "ataque": 59,
+      "defesa": 70,
+      "finalizacao": 54,
+      "fisico": 72
+    },
+    {
+      "nome": "Carlos Correia",
+      "posicao": "MC",
+      "overall": 62,
+      "ataque": 62,
+      "defesa": 59,
+      "finalizacao": 54,
+      "fisico": 63
+    },
+    {
+      "nome": "Diego Melo",
+      "posicao": "MC",
+      "overall": 64,
+      "ataque": 65,
+      "defesa": 59,
+      "finalizacao": 61,
+      "fisico": 61
+    },
+    {
+      "nome": "Nathan Lima",
+      "posicao": "MC",
+      "overall": 71,
+      "ataque": 71,
+      "defesa": 69,
+      "finalizacao": 67,
+      "fisico": 68
+    },
+    {
+      "nome": "Matheus Cunha",
+      "posicao": "MC",
+      "overall": 69,
+      "ataque": 71,
+      "defesa": 62,
+      "finalizacao": 62,
+      "fisico": 68
+    },
+    {
+      "nome": "Samuel Nunes",
+      "posicao": "MEI",
+      "overall": 69,
+      "ataque": 76,
+      "defesa": 50,
+      "finalizacao": 72,
+      "fisico": 64
+    },
+    {
+      "nome": "Bruno Duarte",
+      "posicao": "MEI",
+      "overall": 71,
+      "ataque": 79,
+      "defesa": 53,
+      "finalizacao": 77,
+      "fisico": 65
+    },
+    {
+      "nome": "Leonardo Pereira",
+      "posicao": "PE",
+      "overall": 62,
+      "ataque": 71,
+      "defesa": 41,
+      "finalizacao": 65,
+      "fisico": 58
+    },
+    {
+      "nome": "Gabriel Nunes",
+      "posicao": "PD",
+      "overall": 68,
+      "ataque": 79,
+      "defesa": 44,
+      "finalizacao": 71,
+      "fisico": 68
+    },
+    {
+      "nome": "Murilo Teixeira",
+      "posicao": "ATA",
+      "overall": 69,
+      "ataque": 79,
+      "defesa": 36,
+      "finalizacao": 80,
+      "fisico": 75
+    },
+    {
+      "nome": "Marcos Azevedo",
+      "posicao": "ATA",
+      "overall": 71,
+      "ataque": 79,
+      "defesa": 39,
+      "finalizacao": 79,
+      "fisico": 78
+    },
+    {
+      "nome": "Marcos Nunes",
+      "posicao": "ATA",
+      "overall": 66,
+      "ataque": 77,
+      "defesa": 37,
+      "finalizacao": 74,
+      "fisico": 70
+    },
+    {
+      "nome": "Thiago Cardoso",
+      "posicao": "ATA",
+      "overall": 71,
+      "ataque": 80,
+      "defesa": 43,
+      "finalizacao": 78,
+      "fisico": 72
+    }
+  ],
+  "pais": "Brasil"
+}

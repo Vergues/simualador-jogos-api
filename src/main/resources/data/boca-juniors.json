@@ -1,0 +1,251 @@
+{
+  "nome": "Boca Juniors",
+  "sigla": "BOC",
+  "forca": 88,
+  "jogadores": [
+    {
+      "nome": "Martín Navarro",
+      "posicao": "GOL",
+      "overall": 84,
+      "ataque": 43,
+      "defesa": 92,
+      "finalizacao": 32,
+      "fisico": 88
+    },
+    {
+      "nome": "Diego Torres",
+      "posicao": "GOL",
+      "overall": 87,
+      "ataque": 43,
+      "defesa": 95,
+      "finalizacao": 35,
+      "fisico": 92
+    },
+    {
+      "nome": "Agustín Torres",
+      "posicao": "GOL",
+      "overall": 86,
+      "ataque": 45,
+      "defesa": 93,
+      "finalizacao": 36,
+      "fisico": 87
+    },
+    {
+      "nome": "Matías Ortiz",
+      "posicao": "ZAG",
+      "overall": 86,
+      "ataque": 60,
+      "defesa": 92,
+      "finalizacao": 52,
+      "fisico": 90
+    },
+    {
+      "nome": "Franco Álvarez",
+      "posicao": "ZAG",
+      "overall": 83,
+      "ataque": 55,
+      "defesa": 91,
+      "finalizacao": 49,
+      "fisico": 89
+    },
+    {
+      "nome": "Lautaro Benítez",
+      "posicao": "ZAG",
+      "overall": 84,
+      "ataque": 58,
+      "defesa": 94,
+      "finalizacao": 48,
+      "fisico": 91
+    },
+    {
+      "nome": "Emiliano Castro",
+      "posicao": "ZAG",
+      "overall": 86,
+      "ataque": 60,
+      "defesa": 95,
+      "finalizacao": 50,
+      "fisico": 92
+    },
+    {
+      "nome": "José Mendoza",
+      "posicao": "ZAG",
+      "overall": 92,
+      "ataque": 66,
+      "defesa": 99,
+      "finalizacao": 57,
+      "fisico": 97
+    },
+    {
+      "nome": "Tomás Benítez",
+      "posicao": "LE",
+      "overall": 84,
+      "ataque": 77,
+      "defesa": 85,
+      "finalizacao": 64,
+      "fisico": 86
+    },
+    {
+      "nome": "Ramiro Benítez",
+      "posicao": "LE",
+      "overall": 83,
+      "ataque": 77,
+      "defesa": 86,
+      "finalizacao": 68,
+      "fisico": 83
+    },
+    {
+      "nome": "Valentín Romero",
+      "posicao": "LD",
+      "overall": 92,
+      "ataque": 90,
+      "defesa": 96,
+      "finalizacao": 77,
+      "fisico": 96
+    },
+    {
+      "nome": "Valentín Álvarez",
+      "posicao": "LD",
+      "overall": 90,
+      "ataque": 86,
+      "defesa": 90,
+      "finalizacao": 69,
+      "fisico": 88
+    },
+    {
+      "nome": "Miguel Torres",
+      "posicao": "VOL",
+      "overall": 84,
+      "ataque": 74,
+      "defesa": 88,
+      "finalizacao": 67,
+      "fisico": 91
+    },
+    {
+      "nome": "Santiago García",
+      "posicao": "VOL",
+      "overall": 85,
+      "ataque": 80,
+      "defesa": 87,
+      "finalizacao": 68,
+      "fisico": 87
+    },
+    {
+      "nome": "Sebastián Mendoza",
+      "posicao": "VOL",
+      "overall": 90,
+      "ataque": 80,
+      "defesa": 97,
+      "finalizacao": 78,
+      "fisico": 95
+    },
+    {
+      "nome": "Facundo González",
+      "posicao": "MC",
+      "overall": 83,
+      "ataque": 81,
+      "defesa": 76,
+      "finalizacao": 75,
+      "fisico": 84
+    },
+    {
+      "nome": "Facundo Acosta",
+      "posicao": "MC",
+      "overall": 88,
+      "ataque": 87,
+      "defesa": 84,
+      "finalizacao": 81,
+      "fisico": 87
+    },
+    {
+      "nome": "Tomás Rojas",
+      "posicao": "MC",
+      "overall": 85,
+      "ataque": 89,
+      "defesa": 80,
+      "finalizacao": 77,
+      "fisico": 87
+    },
+    {
+      "nome": "Lautaro Molina",
+      "posicao": "MC",
+      "overall": 91,
+      "ataque": 93,
+      "defesa": 88,
+      "finalizacao": 87,
+      "fisico": 93
+    },
+    {
+      "nome": "Facundo Molina",
+      "posicao": "MEI",
+      "overall": 86,
+      "ataque": 94,
+      "defesa": 67,
+      "finalizacao": 92,
+      "fisico": 82
+    },
+    {
+      "nome": "Emiliano Molina",
+      "posicao": "MEI",
+      "overall": 83,
+      "ataque": 93,
+      "defesa": 66,
+      "finalizacao": 87,
+      "fisico": 76
+    },
+    {
+      "nome": "Diego Castro",
+      "posicao": "PE",
+      "overall": 87,
+      "ataque": 94,
+      "defesa": 66,
+      "finalizacao": 92,
+      "fisico": 86
+    },
+    {
+      "nome": "Agustín Romero",
+      "posicao": "PD",
+      "overall": 91,
+      "ataque": 96,
+      "defesa": 67,
+      "finalizacao": 94,
+      "fisico": 89
+    },
+    {
+      "nome": "Mateo Rojas",
+      "posicao": "ATA",
+      "overall": 84,
+      "ataque": 96,
+      "defesa": 53,
+      "finalizacao": 97,
+      "fisico": 89
+    },
+    {
+      "nome": "Diego Navarro",
+      "posicao": "ATA",
+      "overall": 86,
+      "ataque": 93,
+      "defesa": 54,
+      "finalizacao": 99,
+      "fisico": 91
+    },
+    {
+      "nome": "Ángel Suárez",
+      "posicao": "ATA",
+      "overall": 88,
+      "ataque": 99,
+      "defesa": 56,
+      "finalizacao": 97,
+      "fisico": 89
+    },
+    {
+      "nome": "Martín Medina",
+      "posicao": "ATA",
+      "overall": 92,
+      "ataque": 99,
+      "defesa": 64,
+      "finalizacao": 99,
+      "fisico": 96
+    }
+  ],
+  "pais": "Argentina"
+}

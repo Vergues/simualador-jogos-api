@@ -1,0 +1,251 @@
+{
+  "nome": "Universidad de Chile",
+  "sigla": "UCH",
+  "forca": 78,
+  "jogadores": [
+    {
+      "nome": "Santiago Rodríguez",
+      "posicao": "GOL",
+      "overall": 75,
+      "ataque": 33,
+      "defesa": 82,
+      "finalizacao": 26,
+      "fisico": 79
+    },
+    {
+      "nome": "Lucas Álvarez",
+      "posicao": "GOL",
+      "overall": 75,
+      "ataque": 31,
+      "defesa": 81,
+      "finalizacao": 25,
+      "fisico": 78
+    },
+    {
+      "nome": "Ángel Ortiz",
+      "posicao": "GOL",
+      "overall": 74,
+      "ataque": 33,
+      "defesa": 84,
+      "finalizacao": 26,
+      "fisico": 78
+    },
+    {
+      "nome": "Martín Martínez",
+      "posicao": "ZAG",
+      "overall": 73,
+      "ataque": 46,
+      "defesa": 79,
+      "finalizacao": 40,
+      "fisico": 81
+    },
+    {
+      "nome": "Cristian Vargas",
+      "posicao": "ZAG",
+      "overall": 75,
+      "ataque": 50,
+      "defesa": 84,
+      "finalizacao": 39,
+      "fisico": 79
+    },
+    {
+      "nome": "Lucas Molina",
+      "posicao": "ZAG",
+      "overall": 79,
+      "ataque": 52,
+      "defesa": 89,
+      "finalizacao": 45,
+      "fisico": 83
+    },
+    {
+      "nome": "Martín Mendoza",
+      "posicao": "ZAG",
+      "overall": 78,
+      "ataque": 54,
+      "defesa": 85,
+      "finalizacao": 42,
+      "fisico": 85
+    },
+    {
+      "nome": "Mateo Rodríguez",
+      "posicao": "ZAG",
+      "overall": 76,
+      "ataque": 49,
+      "defesa": 83,
+      "finalizacao": 42,
+      "fisico": 84
+    },
+    {
+      "nome": "Franco Paredes",
+      "posicao": "LE",
+      "overall": 76,
+      "ataque": 70,
+      "defesa": 75,
+      "finalizacao": 55,
+      "fisico": 75
+    },
+    {
+      "nome": "Thiago Martínez",
+      "posicao": "LE",
+      "overall": 78,
+      "ataque": 77,
+      "defesa": 78,
+      "finalizacao": 57,
+      "fisico": 77
+    },
+    {
+      "nome": "Federico Fernández",
+      "posicao": "LD",
+      "overall": 79,
+      "ataque": 76,
+      "defesa": 79,
+      "finalizacao": 59,
+      "fisico": 78
+    },
+    {
+      "nome": "Agustín Medina",
+      "posicao": "LD",
+      "overall": 74,
+      "ataque": 70,
+      "defesa": 75,
+      "finalizacao": 58,
+      "fisico": 72
+    },
+    {
+      "nome": "Luis Villalba",
+      "posicao": "VOL",
+      "overall": 80,
+      "ataque": 73,
+      "defesa": 82,
+      "finalizacao": 66,
+      "fisico": 86
+    },
+    {
+      "nome": "Tomás Martínez",
+      "posicao": "VOL",
+      "overall": 82,
+      "ataque": 73,
+      "defesa": 89,
+      "finalizacao": 69,
+      "fisico": 88
+    },
+    {
+      "nome": "Miguel Pérez",
+      "posicao": "VOL",
+      "overall": 77,
+      "ataque": 71,
+      "defesa": 82,
+      "finalizacao": 59,
+      "fisico": 84
+    },
+    {
+      "nome": "Facundo Álvarez",
+      "posicao": "MC",
+      "overall": 74,
+      "ataque": 78,
+      "defesa": 68,
+      "finalizacao": 66,
+      "fisico": 73
+    },
+    {
+      "nome": "Matías Castro",
+      "posicao": "MC",
+      "overall": 82,
+      "ataque": 82,
+      "defesa": 75,
+      "finalizacao": 78,
+      "fisico": 80
+    },
+    {
+      "nome": "Agustín Molina",
+      "posicao": "MC",
+      "overall": 73,
+      "ataque": 76,
+      "defesa": 71,
+      "finalizacao": 68,
+      "fisico": 73
+    },
+    {
+      "nome": "Gonzalo Molina",
+      "posicao": "MC",
+      "overall": 79,
+      "ataque": 82,
+      "defesa": 77,
+      "finalizacao": 72,
+      "fisico": 77
+    },
+    {
+      "nome": "José Cabrera",
+      "posicao": "MEI",
+      "overall": 74,
+      "ataque": 79,
+      "defesa": 59,
+      "finalizacao": 81,
+      "fisico": 71
+    },
+    {
+      "nome": "Sebastián Suárez",
+      "posicao": "MEI",
+      "overall": 76,
+      "ataque": 85,
+      "defesa": 57,
+      "finalizacao": 82,
+      "fisico": 72
+    },
+    {
+      "nome": "Ángel Rojas",
+      "posicao": "PE",
+      "overall": 77,
+      "ataque": 82,
+      "defesa": 58,
+      "finalizacao": 83,
+      "fisico": 76
+    },
+    {
+      "nome": "Miguel Fernández",
+      "posicao": "PD",
+      "overall": 78,
+      "ataque": 88,
+      "defesa": 58,
+      "finalizacao": 80,
+      "fisico": 73
+    },
+    {
+      "nome": "Federico García",
+      "posicao": "ATA",
+      "overall": 75,
+      "ataque": 83,
+      "defesa": 48,
+      "finalizacao": 83,
+      "fisico": 81
+    },
+    {
+      "nome": "José Molina",
+      "posicao": "ATA",
+      "overall": 73,
+      "ataque": 83,
+      "defesa": 44,
+      "finalizacao": 84,
+      "fisico": 76
+    },
+    {
+      "nome": "Agustín Rodríguez",
+      "posicao": "ATA",
+      "overall": 79,
+      "ataque": 92,
+      "defesa": 49,
+      "finalizacao": 89,
+      "fisico": 80
+    },
+    {
+      "nome": "Andrés Quiroga",
+      "posicao": "ATA",
+      "overall": 75,
+      "ataque": 84,
+      "defesa": 45,
+      "finalizacao": 83,
+      "fisico": 76
+    }
+  ],
+  "pais": "Chile"
+}

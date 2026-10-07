@@ -1,0 +1,251 @@
+{
+  "nome": "Paysandu",
+  "sigla": "PAY",
+  "forca": 64,
+  "jogadores": [
+    {
+      "nome": "João Moreira",
+      "posicao": "GOL",
+      "overall": 66,
+      "ataque": 26,
+      "defesa": 72,
+      "finalizacao": 18,
+      "fisico": 67
+    },
+    {
+      "nome": "Renan Souza",
+      "posicao": "GOL",
+      "overall": 62,
+      "ataque": 20,
+      "defesa": 72,
+      "finalizacao": 14,
+      "fisico": 65
+    },
+    {
+      "nome": "Gustavo Lima",
+      "posicao": "GOL",
+      "overall": 68,
+      "ataque": 24,
+      "defesa": 74,
+      "finalizacao": 18,
+      "fisico": 73
+    },
+    {
+      "nome": "Lucas Teixeira",
+      "posicao": "ZAG",
+      "overall": 64,
+      "ataque": 37,
+      "defesa": 72,
+      "finalizacao": 30,
+      "fisico": 69
+    },
+    {
+      "nome": "Pedro Almeida",
+      "posicao": "ZAG",
+      "overall": 61,
+      "ataque": 34,
+      "defesa": 67,
+      "finalizacao": 25,
+      "fisico": 67
+    },
+    {
+      "nome": "Nathan Cardoso",
+      "posicao": "ZAG",
+      "overall": 64,
+      "ataque": 38,
+      "defesa": 73,
+      "finalizacao": 30,
+      "fisico": 72
+    },
+    {
+      "nome": "Henrique Farias",
+      "posicao": "ZAG",
+      "overall": 60,
+      "ataque": 36,
+      "defesa": 70,
+      "finalizacao": 26,
+      "fisico": 65
+    },
+    {
+      "nome": "Wesley Santos",
+      "posicao": "ZAG",
+      "overall": 59,
+      "ataque": 32,
+      "defesa": 68,
+      "finalizacao": 23,
+      "fisico": 64
+    },
+    {
+      "nome": "Rafael Farias",
+      "posicao": "LE",
+      "overall": 68,
+      "ataque": 62,
+      "defesa": 67,
+      "finalizacao": 53,
+      "fisico": 67
+    },
+    {
+      "nome": "Rafael Lopes",
+      "posicao": "LE",
+      "overall": 66,
+      "ataque": 61,
+      "defesa": 69,
+      "finalizacao": 51,
+      "fisico": 64
+    },
+    {
+      "nome": "Rodrigo Vieira",
+      "posicao": "LD",
+      "overall": 63,
+      "ataque": 62,
+      "defesa": 64,
+      "finalizacao": 44,
+      "fisico": 63
+    },
+    {
+      "nome": "Alex Nunes",
+      "posicao": "LD",
+      "overall": 66,
+      "ataque": 59,
+      "defesa": 69,
+      "finalizacao": 51,
+      "fisico": 65
+    },
+    {
+      "nome": "Nathan Melo",
+      "posicao": "VOL",
+      "overall": 60,
+      "ataque": 53,
+      "defesa": 65,
+      "finalizacao": 46,
+      "fisico": 66
+    },
+    {
+      "nome": "Eduardo Gomes",
+      "posicao": "VOL",
+      "overall": 60,
+      "ataque": 51,
+      "defesa": 67,
+      "finalizacao": 48,
+      "fisico": 67
+    },
+    {
+      "nome": "Eduardo Farias",
+      "posicao": "VOL",
+      "overall": 60,
+      "ataque": 55,
+      "defesa": 61,
+      "finalizacao": 44,
+      "fisico": 66
+    },
+    {
+      "nome": "Alex Martins",
+      "posicao": "MC",
+      "overall": 61,
+      "ataque": 63,
+      "defesa": 56,
+      "finalizacao": 57,
+      "fisico": 59
+    },
+    {
+      "nome": "Carlos Pereira",
+      "posicao": "MC",
+      "overall": 65,
+      "ataque": 68,
+      "defesa": 63,
+      "finalizacao": 60,
+      "fisico": 64
+    },
+    {
+      "nome": "Gustavo Freitas",
+      "posicao": "MC",
+      "overall": 62,
+      "ataque": 63,
+      "defesa": 57,
+      "finalizacao": 55,
+      "fisico": 59
+    },
+    {
+      "nome": "Pedro Nunes",
+      "posicao": "MC",
+      "overall": 67,
+      "ataque": 69,
+      "defesa": 63,
+      "finalizacao": 60,
+      "fisico": 70
+    },
+    {
+      "nome": "Renan Cunha",
+      "posicao": "MEI",
+      "overall": 64,
+      "ataque": 74,
+      "defesa": 47,
+      "finalizacao": 66,
+      "fisico": 57
+    },
+    {
+      "nome": "Victor Martins",
+      "posicao": "MEI",
+      "overall": 63,
+      "ataque": 68,
+      "defesa": 44,
+      "finalizacao": 67,
+      "fisico": 61
+    },
+    {
+      "nome": "Wesley Correia",
+      "posicao": "PE",
+      "overall": 61,
+      "ataque": 70,
+      "defesa": 42,
+      "finalizacao": 62,
+      "fisico": 58
+    },
+    {
+      "nome": "Daniel Costa",
+      "posicao": "PD",
+      "overall": 65,
+      "ataque": 74,
+      "defesa": 43,
+      "finalizacao": 67,
+      "fisico": 65
+    },
+    {
+      "nome": "Matheus Lima",
+      "posicao": "ATA",
+      "overall": 65,
+      "ataque": 74,
+      "defesa": 35,
+      "finalizacao": 74,
+      "fisico": 69
+    },
+    {
+      "nome": "Felipe Gomes",
+      "posicao": "ATA",
+      "overall": 60,
+      "ataque": 67,
+      "defesa": 29,
+      "finalizacao": 70,
+      "fisico": 65
+    },
+    {
+      "nome": "Vinícius Machado",
+      "posicao": "ATA",
+      "overall": 63,
+      "ataque": 75,
+      "defesa": 36,
+      "finalizacao": 73,
+      "fisico": 69
+    },
+    {
+      "nome": "Alex Farias",
+      "posicao": "ATA",
+      "overall": 68,
+      "ataque": 80,
+      "defesa": 36,
+      "finalizacao": 77,
+      "fisico": 69
+    }
+  ],
+  "pais": "Brasil"
+}

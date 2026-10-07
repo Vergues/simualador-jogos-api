@@ -1,0 +1,251 @@
+{
+  "nome": "Velo Clube",
+  "sigla": "VEL",
+  "forca": 61,
+  "jogadores": [
+    {
+      "nome": "Renan Lopes",
+      "posicao": "GOL",
+      "overall": 59,
+      "ataque": 18,
+      "defesa": 68,
+      "finalizacao": 10,
+      "fisico": 62
+    },
+    {
+      "nome": "Carlos Silva",
+      "posicao": "GOL",
+      "overall": 59,
+      "ataque": 16,
+      "defesa": 69,
+      "finalizacao": 8,
+      "fisico": 63
+    },
+    {
+      "nome": "Daniel Lima",
+      "posicao": "GOL",
+      "overall": 56,
+      "ataque": 16,
+      "defesa": 62,
+      "finalizacao": 7,
+      "fisico": 60
+    },
+    {
+      "nome": "Eduardo Teixeira",
+      "posicao": "ZAG",
+      "overall": 63,
+      "ataque": 37,
+      "defesa": 69,
+      "finalizacao": 30,
+      "fisico": 71
+    },
+    {
+      "nome": "Nathan Rocha",
+      "posicao": "ZAG",
+      "overall": 62,
+      "ataque": 36,
+      "defesa": 70,
+      "finalizacao": 28,
+      "fisico": 67
+    },
+    {
+      "nome": "Bruno Souza",
+      "posicao": "ZAG",
+      "overall": 59,
+      "ataque": 35,
+      "defesa": 65,
+      "finalizacao": 25,
+      "fisico": 67
+    },
+    {
+      "nome": "Wesley Nunes",
+      "posicao": "ZAG",
+      "overall": 59,
+      "ataque": 31,
+      "defesa": 65,
+      "finalizacao": 24,
+      "fisico": 63
+    },
+    {
+      "nome": "Gustavo Azevedo",
+      "posicao": "ZAG",
+      "overall": 61,
+      "ataque": 37,
+      "defesa": 69,
+      "finalizacao": 26,
+      "fisico": 69
+    },
+    {
+      "nome": "Felipe Lima",
+      "posicao": "LE",
+      "overall": 62,
+      "ataque": 61,
+      "defesa": 66,
+      "finalizacao": 42,
+      "fisico": 66
+    },
+    {
+      "nome": "Gustavo Santos",
+      "posicao": "LE",
+      "overall": 60,
+      "ataque": 59,
+      "defesa": 65,
+      "finalizacao": 45,
+      "fisico": 61
+    },
+    {
+      "nome": "Lucas Souza",
+      "posicao": "LD",
+      "overall": 59,
+      "ataque": 57,
+      "defesa": 62,
+      "finalizacao": 40,
+      "fisico": 60
+    },
+    {
+      "nome": "Samuel Lima",
+      "posicao": "LD",
+      "overall": 56,
+      "ataque": 51,
+      "defesa": 57,
+      "finalizacao": 40,
+      "fisico": 54
+    },
+    {
+      "nome": "Daniel Cardoso",
+      "posicao": "VOL",
+      "overall": 59,
+      "ataque": 50,
+      "defesa": 64,
+      "finalizacao": 47,
+      "fisico": 60
+    },
+    {
+      "nome": "Samuel Silva",
+      "posicao": "VOL",
+      "overall": 56,
+      "ataque": 49,
+      "defesa": 60,
+      "finalizacao": 38,
+      "fisico": 62
+    },
+    {
+      "nome": "Renan Almeida",
+      "posicao": "VOL",
+      "overall": 62,
+      "ataque": 53,
+      "defesa": 64,
+      "finalizacao": 45,
+      "fisico": 66
+    },
+    {
+      "nome": "Rodrigo Santos",
+      "posicao": "MC",
+      "overall": 60,
+      "ataque": 64,
+      "defesa": 58,
+      "finalizacao": 55,
+      "fisico": 60
+    },
+    {
+      "nome": "Gustavo Cunha",
+      "posicao": "MC",
+      "overall": 62,
+      "ataque": 60,
+      "defesa": 59,
+      "finalizacao": 55,
+      "fisico": 60
+    },
+    {
+      "nome": "Caio Souza",
+      "posicao": "MC",
+      "overall": 57,
+      "ataque": 59,
+      "defesa": 54,
+      "finalizacao": 50,
+      "fisico": 58
+    },
+    {
+      "nome": "Rafael Vieira",
+      "posicao": "MC",
+      "overall": 61,
+      "ataque": 59,
+      "defesa": 58,
+      "finalizacao": 56,
+      "fisico": 63
+    },
+    {
+      "nome": "André Azevedo",
+      "posicao": "MEI",
+      "overall": 57,
+      "ataque": 63,
+      "defesa": 38,
+      "finalizacao": 58,
+      "fisico": 56
+    },
+    {
+      "nome": "André Teixeira",
+      "posicao": "MEI",
+      "overall": 57,
+      "ataque": 61,
+      "defesa": 41,
+      "finalizacao": 63,
+      "fisico": 55
+    },
+    {
+      "nome": "Caio Cardoso",
+      "posicao": "PE",
+      "overall": 57,
+      "ataque": 62,
+      "defesa": 36,
+      "finalizacao": 64,
+      "fisico": 52
+    },
+    {
+      "nome": "Rodrigo Moreira",
+      "posicao": "PD",
+      "overall": 59,
+      "ataque": 69,
+      "defesa": 37,
+      "finalizacao": 62,
+      "fisico": 59
+    },
+    {
+      "nome": "Eduardo Lopes",
+      "posicao": "ATA",
+      "overall": 59,
+      "ataque": 67,
+      "defesa": 26,
+      "finalizacao": 68,
+      "fisico": 61
+    },
+    {
+      "nome": "Felipe Rocha",
+      "posicao": "ATA",
+      "overall": 64,
+      "ataque": 75,
+      "defesa": 34,
+      "finalizacao": 76,
+      "fisico": 66
+    },
+    {
+      "nome": "Alex Cardoso",
+      "posicao": "ATA",
+      "overall": 61,
+      "ataque": 74,
+      "defesa": 33,
+      "finalizacao": 72,
+      "fisico": 66
+    },
+    {
+      "nome": "Bruno Cunha",
+      "posicao": "ATA",
+      "overall": 60,
+      "ataque": 68,
+      "defesa": 28,
+      "finalizacao": 71,
+      "fisico": 62
+    }
+  ],
+  "pais": "Brasil"
+}

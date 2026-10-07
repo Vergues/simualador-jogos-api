@@ -1,0 +1,251 @@
+{
+  "nome": "Vélez Sarsfield",
+  "sigla": "VELZ",
+  "forca": 82,
+  "jogadores": [
+    {
+      "nome": "Facundo García",
+      "posicao": "GOL",
+      "overall": 84,
+      "ataque": 44,
+      "defesa": 90,
+      "finalizacao": 34,
+      "fisico": 85
+    },
+    {
+      "nome": "Ángel Ramírez",
+      "posicao": "GOL",
+      "overall": 79,
+      "ataque": 39,
+      "defesa": 85,
+      "finalizacao": 29,
+      "fisico": 82
+    },
+    {
+      "nome": "Andrés García",
+      "posicao": "GOL",
+      "overall": 84,
+      "ataque": 43,
+      "defesa": 94,
+      "finalizacao": 35,
+      "fisico": 88
+    },
+    {
+      "nome": "Ramiro Ortiz",
+      "posicao": "ZAG",
+      "overall": 82,
+      "ataque": 56,
+      "defesa": 92,
+      "finalizacao": 47,
+      "fisico": 86
+    },
+    {
+      "nome": "Agustín Fernández",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 52,
+      "defesa": 89,
+      "finalizacao": 44,
+      "fisico": 88
+    },
+    {
+      "nome": "José Cabrera",
+      "posicao": "ZAG",
+      "overall": 82,
+      "ataque": 57,
+      "defesa": 91,
+      "finalizacao": 50,
+      "fisico": 86
+    },
+    {
+      "nome": "Matías Herrera",
+      "posicao": "ZAG",
+      "overall": 84,
+      "ataque": 57,
+      "defesa": 91,
+      "finalizacao": 52,
+      "fisico": 90
+    },
+    {
+      "nome": "Cristian Castro",
+      "posicao": "ZAG",
+      "overall": 84,
+      "ataque": 58,
+      "defesa": 94,
+      "finalizacao": 52,
+      "fisico": 92
+    },
+    {
+      "nome": "Thiago Acosta",
+      "posicao": "LE",
+      "overall": 79,
+      "ataque": 78,
+      "defesa": 81,
+      "finalizacao": 62,
+      "fisico": 82
+    },
+    {
+      "nome": "Carlos Ramírez",
+      "posicao": "LE",
+      "overall": 84,
+      "ataque": 80,
+      "defesa": 84,
+      "finalizacao": 67,
+      "fisico": 82
+    },
+    {
+      "nome": "Andrés Medina",
+      "posicao": "LD",
+      "overall": 81,
+      "ataque": 77,
+      "defesa": 83,
+      "finalizacao": 66,
+      "fisico": 85
+    },
+    {
+      "nome": "Agustín García",
+      "posicao": "LD",
+      "overall": 82,
+      "ataque": 78,
+      "defesa": 86,
+      "finalizacao": 63,
+      "fisico": 86
+    },
+    {
+      "nome": "Mateo Álvarez",
+      "posicao": "VOL",
+      "overall": 77,
+      "ataque": 72,
+      "defesa": 83,
+      "finalizacao": 60,
+      "fisico": 82
+    },
+    {
+      "nome": "Ramiro Villalba",
+      "posicao": "VOL",
+      "overall": 85,
+      "ataque": 74,
+      "defesa": 90,
+      "finalizacao": 71,
+      "fisico": 86
+    },
+    {
+      "nome": "Thiago Ramírez",
+      "posicao": "VOL",
+      "overall": 77,
+      "ataque": 72,
+      "defesa": 83,
+      "finalizacao": 62,
+      "fisico": 82
+    },
+    {
+      "nome": "Bruno Pérez",
+      "posicao": "MC",
+      "overall": 79,
+      "ataque": 77,
+      "defesa": 77,
+      "finalizacao": 70,
+      "fisico": 79
+    },
+    {
+      "nome": "Juan Acosta",
+      "posicao": "MC",
+      "overall": 81,
+      "ataque": 79,
+      "defesa": 75,
+      "finalizacao": 74,
+      "fisico": 83
+    },
+    {
+      "nome": "Ángel Benítez",
+      "posicao": "MC",
+      "overall": 83,
+      "ataque": 84,
+      "defesa": 81,
+      "finalizacao": 79,
+      "fisico": 82
+    },
+    {
+      "nome": "Mateo González",
+      "posicao": "MC",
+      "overall": 86,
+      "ataque": 84,
+      "defesa": 79,
+      "finalizacao": 79,
+      "fisico": 89
+    },
+    {
+      "nome": "Nicolás Castro",
+      "posicao": "MEI",
+      "overall": 78,
+      "ataque": 83,
+      "defesa": 63,
+      "finalizacao": 79,
+      "fisico": 72
+    },
+    {
+      "nome": "Lucas Villalba",
+      "posicao": "MEI",
+      "overall": 77,
+      "ataque": 86,
+      "defesa": 61,
+      "finalizacao": 78,
+      "fisico": 74
+    },
+    {
+      "nome": "Kevin Vargas",
+      "posicao": "PE",
+      "overall": 77,
+      "ataque": 88,
+      "defesa": 54,
+      "finalizacao": 84,
+      "fisico": 74
+    },
+    {
+      "nome": "Ramiro Suárez",
+      "posicao": "PD",
+      "overall": 79,
+      "ataque": 86,
+      "defesa": 54,
+      "finalizacao": 80,
+      "fisico": 77
+    },
+    {
+      "nome": "Sebastián Pérez",
+      "posicao": "ATA",
+      "overall": 85,
+      "ataque": 98,
+      "defesa": 53,
+      "finalizacao": 94,
+      "fisico": 92
+    },
+    {
+      "nome": "Santiago Rojas",
+      "posicao": "ATA",
+      "overall": 79,
+      "ataque": 92,
+      "defesa": 50,
+      "finalizacao": 89,
+      "fisico": 85
+    },
+    {
+      "nome": "Bruno Romero",
+      "posicao": "ATA",
+      "overall": 85,
+      "ataque": 94,
+      "defesa": 57,
+      "finalizacao": 98,
+      "fisico": 87
+    },
+    {
+      "nome": "Gonzalo Rojas",
+      "posicao": "ATA",
+      "overall": 77,
+      "ataque": 89,
+      "defesa": 48,
+      "finalizacao": 90,
+      "fisico": 81
+    }
+  ],
+  "pais": "Argentina"
+}

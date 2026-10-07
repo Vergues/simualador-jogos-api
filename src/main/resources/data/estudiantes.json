@@ -1,0 +1,251 @@
+{
+  "nome": "Estudiantes",
+  "sigla": "EST",
+  "forca": 84,
+  "jogadores": [
+    {
+      "nome": "Nicolás Álvarez",
+      "posicao": "GOL",
+      "overall": 82,
+      "ataque": 41,
+      "defesa": 91,
+      "finalizacao": 31,
+      "fisico": 86
+    },
+    {
+      "nome": "Mateo Álvarez",
+      "posicao": "GOL",
+      "overall": 80,
+      "ataque": 37,
+      "defesa": 86,
+      "finalizacao": 30,
+      "fisico": 81
+    },
+    {
+      "nome": "Tomás Silva",
+      "posicao": "GOL",
+      "overall": 81,
+      "ataque": 40,
+      "defesa": 91,
+      "finalizacao": 33,
+      "fisico": 83
+    },
+    {
+      "nome": "Nicolás Quiroga",
+      "posicao": "ZAG",
+      "overall": 87,
+      "ataque": 60,
+      "defesa": 95,
+      "finalizacao": 51,
+      "fisico": 95
+    },
+    {
+      "nome": "Facundo Vargas",
+      "posicao": "ZAG",
+      "overall": 79,
+      "ataque": 55,
+      "defesa": 88,
+      "finalizacao": 45,
+      "fisico": 83
+    },
+    {
+      "nome": "Martín Medina",
+      "posicao": "ZAG",
+      "overall": 87,
+      "ataque": 60,
+      "defesa": 93,
+      "finalizacao": 54,
+      "fisico": 94
+    },
+    {
+      "nome": "Luis Rodríguez",
+      "posicao": "ZAG",
+      "overall": 87,
+      "ataque": 60,
+      "defesa": 94,
+      "finalizacao": 51,
+      "fisico": 92
+    },
+    {
+      "nome": "Lucas Vargas",
+      "posicao": "ZAG",
+      "overall": 84,
+      "ataque": 59,
+      "defesa": 90,
+      "finalizacao": 49,
+      "fisico": 88
+    },
+    {
+      "nome": "Tomás Medina",
+      "posicao": "LE",
+      "overall": 84,
+      "ataque": 81,
+      "defesa": 85,
+      "finalizacao": 68,
+      "fisico": 82
+    },
+    {
+      "nome": "Carlos Rojas",
+      "posicao": "LE",
+      "overall": 80,
+      "ataque": 73,
+      "defesa": 80,
+      "finalizacao": 62,
+      "fisico": 78
+    },
+    {
+      "nome": "Cristian Herrera",
+      "posicao": "LD",
+      "overall": 82,
+      "ataque": 75,
+      "defesa": 85,
+      "finalizacao": 66,
+      "fisico": 81
+    },
+    {
+      "nome": "Sebastián Ramírez",
+      "posicao": "LD",
+      "overall": 85,
+      "ataque": 83,
+      "defesa": 84,
+      "finalizacao": 69,
+      "fisico": 85
+    },
+    {
+      "nome": "Tomás Díaz",
+      "posicao": "VOL",
+      "overall": 83,
+      "ataque": 76,
+      "defesa": 87,
+      "finalizacao": 70,
+      "fisico": 86
+    },
+    {
+      "nome": "Miguel Navarro",
+      "posicao": "VOL",
+      "overall": 87,
+      "ataque": 77,
+      "defesa": 94,
+      "finalizacao": 72,
+      "fisico": 92
+    },
+    {
+      "nome": "Emiliano Álvarez",
+      "posicao": "VOL",
+      "overall": 82,
+      "ataque": 71,
+      "defesa": 84,
+      "finalizacao": 68,
+      "fisico": 84
+    },
+    {
+      "nome": "Federico Quiroga",
+      "posicao": "MC",
+      "overall": 80,
+      "ataque": 79,
+      "defesa": 72,
+      "finalizacao": 75,
+      "fisico": 78
+    },
+    {
+      "nome": "Gonzalo Ortiz",
+      "posicao": "MC",
+      "overall": 81,
+      "ataque": 82,
+      "defesa": 77,
+      "finalizacao": 73,
+      "fisico": 80
+    },
+    {
+      "nome": "Federico Rojas",
+      "posicao": "MC",
+      "overall": 86,
+      "ataque": 86,
+      "defesa": 79,
+      "finalizacao": 83,
+      "fisico": 89
+    },
+    {
+      "nome": "José Castro",
+      "posicao": "MC",
+      "overall": 79,
+      "ataque": 77,
+      "defesa": 77,
+      "finalizacao": 72,
+      "fisico": 81
+    },
+    {
+      "nome": "Carlos Benítez",
+      "posicao": "MEI",
+      "overall": 80,
+      "ataque": 86,
+      "defesa": 63,
+      "finalizacao": 87,
+      "fisico": 76
+    },
+    {
+      "nome": "Martín Rojas",
+      "posicao": "MEI",
+      "overall": 83,
+      "ataque": 92,
+      "defesa": 63,
+      "finalizacao": 86,
+      "fisico": 77
+    },
+    {
+      "nome": "Agustín Mendoza",
+      "posicao": "PE",
+      "overall": 79,
+      "ataque": 84,
+      "defesa": 54,
+      "finalizacao": 85,
+      "fisico": 77
+    },
+    {
+      "nome": "Thiago Herrera",
+      "posicao": "PD",
+      "overall": 84,
+      "ataque": 89,
+      "defesa": 63,
+      "finalizacao": 89,
+      "fisico": 82
+    },
+    {
+      "nome": "Juan Quiroga",
+      "posicao": "ATA",
+      "overall": 79,
+      "ataque": 90,
+      "defesa": 51,
+      "finalizacao": 88,
+      "fisico": 81
+    },
+    {
+      "nome": "Gonzalo Fernández",
+      "posicao": "ATA",
+      "overall": 80,
+      "ataque": 88,
+      "defesa": 53,
+      "finalizacao": 88,
+      "fisico": 87
+    },
+    {
+      "nome": "Lucas García",
+      "posicao": "ATA",
+      "overall": 82,
+      "ataque": 92,
+      "defesa": 49,
+      "finalizacao": 92,
+      "fisico": 88
+    },
+    {
+      "nome": "José Suárez",
+      "posicao": "ATA",
+      "overall": 83,
+      "ataque": 91,
+      "defesa": 51,
+      "finalizacao": 90,
+      "fisico": 86
+    }
+  ],
+  "pais": "Argentina"
+}

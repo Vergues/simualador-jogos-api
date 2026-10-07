@@ -1,0 +1,251 @@
+{
+  "nome": "Independiente del Valle",
+  "sigla": "IDV",
+  "forca": 85,
+  "jogadores": [
+    {
+      "nome": "Thiago Silva",
+      "posicao": "GOL",
+      "overall": 89,
+      "ataque": 49,
+      "defesa": 98,
+      "finalizacao": 41,
+      "fisico": 93
+    },
+    {
+      "nome": "Sebastián Paredes",
+      "posicao": "GOL",
+      "overall": 89,
+      "ataque": 47,
+      "defesa": 97,
+      "finalizacao": 39,
+      "fisico": 92
+    },
+    {
+      "nome": "Martín Fernández",
+      "posicao": "GOL",
+      "overall": 81,
+      "ataque": 37,
+      "defesa": 91,
+      "finalizacao": 32,
+      "fisico": 83
+    },
+    {
+      "nome": "Thiago García",
+      "posicao": "ZAG",
+      "overall": 87,
+      "ataque": 62,
+      "defesa": 93,
+      "finalizacao": 51,
+      "fisico": 93
+    },
+    {
+      "nome": "Agustín Ramírez",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 55,
+      "defesa": 89,
+      "finalizacao": 46,
+      "fisico": 84
+    },
+    {
+      "nome": "José Fernández",
+      "posicao": "ZAG",
+      "overall": 88,
+      "ataque": 62,
+      "defesa": 96,
+      "finalizacao": 54,
+      "fisico": 94
+    },
+    {
+      "nome": "Martín Suárez",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 56,
+      "defesa": 89,
+      "finalizacao": 45,
+      "fisico": 88
+    },
+    {
+      "nome": "Ángel Pérez",
+      "posicao": "ZAG",
+      "overall": 85,
+      "ataque": 61,
+      "defesa": 95,
+      "finalizacao": 49,
+      "fisico": 93
+    },
+    {
+      "nome": "Luis Cabrera",
+      "posicao": "LE",
+      "overall": 89,
+      "ataque": 85,
+      "defesa": 90,
+      "finalizacao": 68,
+      "fisico": 88
+    },
+    {
+      "nome": "Diego Ortiz",
+      "posicao": "LE",
+      "overall": 84,
+      "ataque": 83,
+      "defesa": 89,
+      "finalizacao": 67,
+      "fisico": 82
+    },
+    {
+      "nome": "Diego Cabrera",
+      "posicao": "LD",
+      "overall": 85,
+      "ataque": 79,
+      "defesa": 84,
+      "finalizacao": 70,
+      "fisico": 87
+    },
+    {
+      "nome": "Matías Quiroga",
+      "posicao": "LD",
+      "overall": 88,
+      "ataque": 85,
+      "defesa": 93,
+      "finalizacao": 73,
+      "fisico": 89
+    },
+    {
+      "nome": "Santiago Navarro",
+      "posicao": "VOL",
+      "overall": 88,
+      "ataque": 78,
+      "defesa": 89,
+      "finalizacao": 76,
+      "fisico": 89
+    },
+    {
+      "nome": "Franco Suárez",
+      "posicao": "VOL",
+      "overall": 89,
+      "ataque": 84,
+      "defesa": 96,
+      "finalizacao": 73,
+      "fisico": 93
+    },
+    {
+      "nome": "Diego Romero",
+      "posicao": "VOL",
+      "overall": 82,
+      "ataque": 73,
+      "defesa": 88,
+      "finalizacao": 64,
+      "fisico": 85
+    },
+    {
+      "nome": "Mateo Martínez",
+      "posicao": "MC",
+      "overall": 86,
+      "ataque": 90,
+      "defesa": 82,
+      "finalizacao": 82,
+      "fisico": 86
+    },
+    {
+      "nome": "Ramiro Silva",
+      "posicao": "MC",
+      "overall": 85,
+      "ataque": 88,
+      "defesa": 78,
+      "finalizacao": 78,
+      "fisico": 87
+    },
+    {
+      "nome": "Facundo Romero",
+      "posicao": "MC",
+      "overall": 81,
+      "ataque": 82,
+      "defesa": 73,
+      "finalizacao": 73,
+      "fisico": 79
+    },
+    {
+      "nome": "Agustín García",
+      "posicao": "MC",
+      "overall": 82,
+      "ataque": 83,
+      "defesa": 76,
+      "finalizacao": 79,
+      "fisico": 81
+    },
+    {
+      "nome": "Martín García",
+      "posicao": "MEI",
+      "overall": 85,
+      "ataque": 95,
+      "defesa": 69,
+      "finalizacao": 86,
+      "fisico": 82
+    },
+    {
+      "nome": "Mateo Cabrera",
+      "posicao": "MEI",
+      "overall": 87,
+      "ataque": 96,
+      "defesa": 70,
+      "finalizacao": 91,
+      "fisico": 81
+    },
+    {
+      "nome": "Juan Ramírez",
+      "posicao": "PE",
+      "overall": 81,
+      "ataque": 89,
+      "defesa": 57,
+      "finalizacao": 86,
+      "fisico": 75
+    },
+    {
+      "nome": "Andrés Castro",
+      "posicao": "PD",
+      "overall": 87,
+      "ataque": 96,
+      "defesa": 65,
+      "finalizacao": 88,
+      "fisico": 84
+    },
+    {
+      "nome": "Franco Díaz",
+      "posicao": "ATA",
+      "overall": 81,
+      "ataque": 90,
+      "defesa": 52,
+      "finalizacao": 90,
+      "fisico": 84
+    },
+    {
+      "nome": "Kevin Díaz",
+      "posicao": "ATA",
+      "overall": 82,
+      "ataque": 90,
+      "defesa": 55,
+      "finalizacao": 89,
+      "fisico": 84
+    },
+    {
+      "nome": "Miguel Pérez",
+      "posicao": "ATA",
+      "overall": 81,
+      "ataque": 93,
+      "defesa": 54,
+      "finalizacao": 89,
+      "fisico": 85
+    },
+    {
+      "nome": "Gonzalo Navarro",
+      "posicao": "ATA",
+      "overall": 86,
+      "ataque": 97,
+      "defesa": 56,
+      "finalizacao": 97,
+      "fisico": 90
+    }
+  ],
+  "pais": "Equador"
+}

@@ -1,0 +1,251 @@
+{
+  "nome": "Olimpia",
+  "sigla": "OLI",
+  "forca": 80,
+  "jogadores": [
+    {
+      "nome": "Diego Romero",
+      "posicao": "GOL",
+      "overall": 83,
+      "ataque": 40,
+      "defesa": 90,
+      "finalizacao": 34,
+      "fisico": 86
+    },
+    {
+      "nome": "Agustín Pérez",
+      "posicao": "GOL",
+      "overall": 81,
+      "ataque": 37,
+      "defesa": 91,
+      "finalizacao": 31,
+      "fisico": 85
+    },
+    {
+      "nome": "Miguel Martínez",
+      "posicao": "GOL",
+      "overall": 78,
+      "ataque": 37,
+      "defesa": 87,
+      "finalizacao": 29,
+      "fisico": 82
+    },
+    {
+      "nome": "Cristian Sánchez",
+      "posicao": "ZAG",
+      "overall": 78,
+      "ataque": 51,
+      "defesa": 85,
+      "finalizacao": 44,
+      "fisico": 86
+    },
+    {
+      "nome": "Mateo Suárez",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 52,
+      "defesa": 86,
+      "finalizacao": 47,
+      "fisico": 84
+    },
+    {
+      "nome": "Lucas Herrera",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 54,
+      "defesa": 87,
+      "finalizacao": 48,
+      "fisico": 88
+    },
+    {
+      "nome": "Ramiro Paredes",
+      "posicao": "ZAG",
+      "overall": 75,
+      "ataque": 51,
+      "defesa": 81,
+      "finalizacao": 43,
+      "fisico": 79
+    },
+    {
+      "nome": "Tomás Molina",
+      "posicao": "ZAG",
+      "overall": 78,
+      "ataque": 54,
+      "defesa": 84,
+      "finalizacao": 43,
+      "fisico": 86
+    },
+    {
+      "nome": "Cristian Torres",
+      "posicao": "LE",
+      "overall": 79,
+      "ataque": 72,
+      "defesa": 81,
+      "finalizacao": 60,
+      "fisico": 81
+    },
+    {
+      "nome": "Santiago Quiroga",
+      "posicao": "LE",
+      "overall": 80,
+      "ataque": 74,
+      "defesa": 84,
+      "finalizacao": 61,
+      "fisico": 79
+    },
+    {
+      "nome": "Cristian Ortiz",
+      "posicao": "LD",
+      "overall": 79,
+      "ataque": 77,
+      "defesa": 84,
+      "finalizacao": 64,
+      "fisico": 78
+    },
+    {
+      "nome": "Valentín Mendoza",
+      "posicao": "LD",
+      "overall": 82,
+      "ataque": 81,
+      "defesa": 81,
+      "finalizacao": 61,
+      "fisico": 83
+    },
+    {
+      "nome": "Ángel Romero",
+      "posicao": "VOL",
+      "overall": 76,
+      "ataque": 65,
+      "defesa": 81,
+      "finalizacao": 59,
+      "fisico": 80
+    },
+    {
+      "nome": "Gonzalo Fernández",
+      "posicao": "VOL",
+      "overall": 75,
+      "ataque": 66,
+      "defesa": 82,
+      "finalizacao": 63,
+      "fisico": 80
+    },
+    {
+      "nome": "Santiago Vargas",
+      "posicao": "VOL",
+      "overall": 80,
+      "ataque": 70,
+      "defesa": 85,
+      "finalizacao": 63,
+      "fisico": 85
+    },
+    {
+      "nome": "Sebastián Díaz",
+      "posicao": "MC",
+      "overall": 76,
+      "ataque": 75,
+      "defesa": 70,
+      "finalizacao": 69,
+      "fisico": 79
+    },
+    {
+      "nome": "Federico Martínez",
+      "posicao": "MC",
+      "overall": 83,
+      "ataque": 84,
+      "defesa": 78,
+      "finalizacao": 78,
+      "fisico": 82
+    },
+    {
+      "nome": "Joaquín Paredes",
+      "posicao": "MC",
+      "overall": 75,
+      "ataque": 79,
+      "defesa": 73,
+      "finalizacao": 71,
+      "fisico": 72
+    },
+    {
+      "nome": "Facundo Torres",
+      "posicao": "MC",
+      "overall": 84,
+      "ataque": 82,
+      "defesa": 79,
+      "finalizacao": 77,
+      "fisico": 82
+    },
+    {
+      "nome": "Gonzalo Castro",
+      "posicao": "MEI",
+      "overall": 78,
+      "ataque": 87,
+      "defesa": 61,
+      "finalizacao": 82,
+      "fisico": 71
+    },
+    {
+      "nome": "Ángel Castro",
+      "posicao": "MEI",
+      "overall": 76,
+      "ataque": 84,
+      "defesa": 60,
+      "finalizacao": 80,
+      "fisico": 74
+    },
+    {
+      "nome": "Luis Castro",
+      "posicao": "PE",
+      "overall": 76,
+      "ataque": 82,
+      "defesa": 56,
+      "finalizacao": 80,
+      "fisico": 72
+    },
+    {
+      "nome": "Matías Martínez",
+      "posicao": "PD",
+      "overall": 81,
+      "ataque": 89,
+      "defesa": 57,
+      "finalizacao": 85,
+      "fisico": 78
+    },
+    {
+      "nome": "Luis Ramírez",
+      "posicao": "ATA",
+      "overall": 77,
+      "ataque": 86,
+      "defesa": 45,
+      "finalizacao": 84,
+      "fisico": 81
+    },
+    {
+      "nome": "Joaquín Medina",
+      "posicao": "ATA",
+      "overall": 83,
+      "ataque": 96,
+      "defesa": 52,
+      "finalizacao": 93,
+      "fisico": 85
+    },
+    {
+      "nome": "Bruno Fernández",
+      "posicao": "ATA",
+      "overall": 84,
+      "ataque": 97,
+      "defesa": 55,
+      "finalizacao": 95,
+      "fisico": 86
+    },
+    {
+      "nome": "Valentín Castro",
+      "posicao": "ATA",
+      "overall": 84,
+      "ataque": 94,
+      "defesa": 54,
+      "finalizacao": 93,
+      "fisico": 89
+    }
+  ],
+  "pais": "Paraguai"
+}

@@ -1,0 +1,251 @@
+{
+  "nome": "América-MG",
+  "sigla": "AMG",
+  "forca": 70,
+  "jogadores": [
+    {
+      "nome": "João Martins",
+      "posicao": "GOL",
+      "overall": 67,
+      "ataque": 25,
+      "defesa": 76,
+      "finalizacao": 17,
+      "fisico": 68
+    },
+    {
+      "nome": "Carlos Melo",
+      "posicao": "GOL",
+      "overall": 65,
+      "ataque": 21,
+      "defesa": 74,
+      "finalizacao": 17,
+      "fisico": 68
+    },
+    {
+      "nome": "Rafael Almeida",
+      "posicao": "GOL",
+      "overall": 65,
+      "ataque": 23,
+      "defesa": 73,
+      "finalizacao": 13,
+      "fisico": 68
+    },
+    {
+      "nome": "Bruno Duarte",
+      "posicao": "ZAG",
+      "overall": 68,
+      "ataque": 41,
+      "defesa": 74,
+      "finalizacao": 34,
+      "fisico": 72
+    },
+    {
+      "nome": "Rodrigo Farias",
+      "posicao": "ZAG",
+      "overall": 71,
+      "ataque": 44,
+      "defesa": 78,
+      "finalizacao": 35,
+      "fisico": 75
+    },
+    {
+      "nome": "Arthur Santos",
+      "posicao": "ZAG",
+      "overall": 66,
+      "ataque": 41,
+      "defesa": 73,
+      "finalizacao": 32,
+      "fisico": 74
+    },
+    {
+      "nome": "Daniel Duarte",
+      "posicao": "ZAG",
+      "overall": 68,
+      "ataque": 44,
+      "defesa": 78,
+      "finalizacao": 35,
+      "fisico": 73
+    },
+    {
+      "nome": "Carlos Nunes",
+      "posicao": "ZAG",
+      "overall": 70,
+      "ataque": 45,
+      "defesa": 78,
+      "finalizacao": 38,
+      "fisico": 74
+    },
+    {
+      "nome": "Nathan Lopes",
+      "posicao": "LE",
+      "overall": 70,
+      "ataque": 67,
+      "defesa": 72,
+      "finalizacao": 54,
+      "fisico": 72
+    },
+    {
+      "nome": "Matheus Nunes",
+      "posicao": "LE",
+      "overall": 71,
+      "ataque": 69,
+      "defesa": 72,
+      "finalizacao": 53,
+      "fisico": 70
+    },
+    {
+      "nome": "Daniel Tavares",
+      "posicao": "LD",
+      "overall": 70,
+      "ataque": 67,
+      "defesa": 70,
+      "finalizacao": 52,
+      "fisico": 72
+    },
+    {
+      "nome": "André Oliveira",
+      "posicao": "LD",
+      "overall": 66,
+      "ataque": 61,
+      "defesa": 66,
+      "finalizacao": 51,
+      "fisico": 65
+    },
+    {
+      "nome": "Pedro Lima",
+      "posicao": "VOL",
+      "overall": 65,
+      "ataque": 54,
+      "defesa": 69,
+      "finalizacao": 52,
+      "fisico": 72
+    },
+    {
+      "nome": "Nathan Tavares",
+      "posicao": "VOL",
+      "overall": 68,
+      "ataque": 60,
+      "defesa": 74,
+      "finalizacao": 51,
+      "fisico": 75
+    },
+    {
+      "nome": "Marcos Freitas",
+      "posicao": "VOL",
+      "overall": 71,
+      "ataque": 64,
+      "defesa": 76,
+      "finalizacao": 55,
+      "fisico": 72
+    },
+    {
+      "nome": "Wesley Rocha",
+      "posicao": "MC",
+      "overall": 67,
+      "ataque": 70,
+      "defesa": 59,
+      "finalizacao": 62,
+      "fisico": 67
+    },
+    {
+      "nome": "Thiago Pereira",
+      "posicao": "MC",
+      "overall": 71,
+      "ataque": 73,
+      "defesa": 66,
+      "finalizacao": 63,
+      "fisico": 71
+    },
+    {
+      "nome": "Murilo Nunes",
+      "posicao": "MC",
+      "overall": 74,
+      "ataque": 75,
+      "defesa": 68,
+      "finalizacao": 67,
+      "fisico": 74
+    },
+    {
+      "nome": "Lucas Cunha",
+      "posicao": "MC",
+      "overall": 66,
+      "ataque": 67,
+      "defesa": 62,
+      "finalizacao": 61,
+      "fisico": 63
+    },
+    {
+      "nome": "Eduardo Vieira",
+      "posicao": "MEI",
+      "overall": 73,
+      "ataque": 82,
+      "defesa": 58,
+      "finalizacao": 80,
+      "fisico": 67
+    },
+    {
+      "nome": "Rodrigo Moura",
+      "posicao": "MEI",
+      "overall": 71,
+      "ataque": 78,
+      "defesa": 54,
+      "finalizacao": 77,
+      "fisico": 69
+    },
+    {
+      "nome": "Daniel Silva",
+      "posicao": "PE",
+      "overall": 68,
+      "ataque": 73,
+      "defesa": 45,
+      "finalizacao": 73,
+      "fisico": 68
+    },
+    {
+      "nome": "Diego Nunes",
+      "posicao": "PD",
+      "overall": 73,
+      "ataque": 78,
+      "defesa": 49,
+      "finalizacao": 80,
+      "fisico": 67
+    },
+    {
+      "nome": "Leonardo Vieira",
+      "posicao": "ATA",
+      "overall": 69,
+      "ataque": 81,
+      "defesa": 41,
+      "finalizacao": 79,
+      "fisico": 74
+    },
+    {
+      "nome": "Felipe Santos",
+      "posicao": "ATA",
+      "overall": 70,
+      "ataque": 82,
+      "defesa": 40,
+      "finalizacao": 82,
+      "fisico": 72
+    },
+    {
+      "nome": "Henrique Cardoso",
+      "posicao": "ATA",
+      "overall": 70,
+      "ataque": 80,
+      "defesa": 38,
+      "finalizacao": 80,
+      "fisico": 77
+    },
+    {
+      "nome": "Thiago Freitas",
+      "posicao": "ATA",
+      "overall": 65,
+      "ataque": 73,
+      "defesa": 33,
+      "finalizacao": 77,
+      "fisico": 68
+    }
+  ],
+  "pais": "Brasil"
+}

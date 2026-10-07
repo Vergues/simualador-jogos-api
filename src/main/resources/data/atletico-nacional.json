@@ -1,0 +1,251 @@
+{
+  "nome": "Atlético Nacional",
+  "sigla": "ATN",
+  "forca": 84,
+  "jogadores": [
+    {
+      "nome": "Martín Acosta",
+      "posicao": "GOL",
+      "overall": 84,
+      "ataque": 42,
+      "defesa": 94,
+      "finalizacao": 33,
+      "fisico": 89
+    },
+    {
+      "nome": "Bruno Herrera",
+      "posicao": "GOL",
+      "overall": 80,
+      "ataque": 37,
+      "defesa": 90,
+      "finalizacao": 31,
+      "fisico": 82
+    },
+    {
+      "nome": "Santiago Silva",
+      "posicao": "GOL",
+      "overall": 80,
+      "ataque": 38,
+      "defesa": 87,
+      "finalizacao": 29,
+      "fisico": 82
+    },
+    {
+      "nome": "Agustín Romero",
+      "posicao": "ZAG",
+      "overall": 87,
+      "ataque": 63,
+      "defesa": 96,
+      "finalizacao": 55,
+      "fisico": 95
+    },
+    {
+      "nome": "Juan Cabrera",
+      "posicao": "ZAG",
+      "overall": 83,
+      "ataque": 56,
+      "defesa": 92,
+      "finalizacao": 51,
+      "fisico": 89
+    },
+    {
+      "nome": "Luis Torres",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 53,
+      "defesa": 86,
+      "finalizacao": 48,
+      "fisico": 88
+    },
+    {
+      "nome": "Tomás Ortiz",
+      "posicao": "ZAG",
+      "overall": 86,
+      "ataque": 62,
+      "defesa": 92,
+      "finalizacao": 53,
+      "fisico": 91
+    },
+    {
+      "nome": "Diego García",
+      "posicao": "ZAG",
+      "overall": 84,
+      "ataque": 59,
+      "defesa": 92,
+      "finalizacao": 50,
+      "fisico": 88
+    },
+    {
+      "nome": "Carlos Medina",
+      "posicao": "LE",
+      "overall": 87,
+      "ataque": 82,
+      "defesa": 92,
+      "finalizacao": 67,
+      "fisico": 85
+    },
+    {
+      "nome": "Agustín Sánchez",
+      "posicao": "LE",
+      "overall": 87,
+      "ataque": 84,
+      "defesa": 90,
+      "finalizacao": 71,
+      "fisico": 91
+    },
+    {
+      "nome": "Mateo Rojas",
+      "posicao": "LD",
+      "overall": 85,
+      "ataque": 82,
+      "defesa": 89,
+      "finalizacao": 65,
+      "fisico": 84
+    },
+    {
+      "nome": "Nicolás Acosta",
+      "posicao": "LD",
+      "overall": 84,
+      "ataque": 78,
+      "defesa": 84,
+      "finalizacao": 63,
+      "fisico": 88
+    },
+    {
+      "nome": "Kevin Herrera",
+      "posicao": "VOL",
+      "overall": 81,
+      "ataque": 73,
+      "defesa": 85,
+      "finalizacao": 67,
+      "fisico": 85
+    },
+    {
+      "nome": "Kevin Fernández",
+      "posicao": "VOL",
+      "overall": 80,
+      "ataque": 75,
+      "defesa": 83,
+      "finalizacao": 65,
+      "fisico": 82
+    },
+    {
+      "nome": "Emiliano Mendoza",
+      "posicao": "VOL",
+      "overall": 86,
+      "ataque": 81,
+      "defesa": 90,
+      "finalizacao": 73,
+      "fisico": 89
+    },
+    {
+      "nome": "Ramiro López",
+      "posicao": "MC",
+      "overall": 80,
+      "ataque": 78,
+      "defesa": 72,
+      "finalizacao": 73,
+      "fisico": 82
+    },
+    {
+      "nome": "Agustín Ortiz",
+      "posicao": "MC",
+      "overall": 83,
+      "ataque": 83,
+      "defesa": 76,
+      "finalizacao": 75,
+      "fisico": 84
+    },
+    {
+      "nome": "Franco Acosta",
+      "posicao": "MC",
+      "overall": 81,
+      "ataque": 83,
+      "defesa": 78,
+      "finalizacao": 77,
+      "fisico": 81
+    },
+    {
+      "nome": "Carlos Ramírez",
+      "posicao": "MC",
+      "overall": 80,
+      "ataque": 82,
+      "defesa": 75,
+      "finalizacao": 72,
+      "fisico": 82
+    },
+    {
+      "nome": "José López",
+      "posicao": "MEI",
+      "overall": 79,
+      "ataque": 87,
+      "defesa": 59,
+      "finalizacao": 83,
+      "fisico": 77
+    },
+    {
+      "nome": "Federico Pérez",
+      "posicao": "MEI",
+      "overall": 82,
+      "ataque": 87,
+      "defesa": 65,
+      "finalizacao": 89,
+      "fisico": 76
+    },
+    {
+      "nome": "Carlos Díaz",
+      "posicao": "PE",
+      "overall": 85,
+      "ataque": 95,
+      "defesa": 61,
+      "finalizacao": 92,
+      "fisico": 82
+    },
+    {
+      "nome": "Lautaro Molina",
+      "posicao": "PD",
+      "overall": 79,
+      "ataque": 87,
+      "defesa": 59,
+      "finalizacao": 86,
+      "fisico": 78
+    },
+    {
+      "nome": "Sebastián Molina",
+      "posicao": "ATA",
+      "overall": 80,
+      "ataque": 87,
+      "defesa": 52,
+      "finalizacao": 89,
+      "fisico": 87
+    },
+    {
+      "nome": "Ángel Álvarez",
+      "posicao": "ATA",
+      "overall": 82,
+      "ataque": 92,
+      "defesa": 49,
+      "finalizacao": 89,
+      "fisico": 85
+    },
+    {
+      "nome": "Nicolás Torres",
+      "posicao": "ATA",
+      "overall": 86,
+      "ataque": 99,
+      "defesa": 53,
+      "finalizacao": 93,
+      "fisico": 91
+    },
+    {
+      "nome": "Ramiro Martínez",
+      "posicao": "ATA",
+      "overall": 86,
+      "ataque": 96,
+      "defesa": 59,
+      "finalizacao": 93,
+      "fisico": 89
+    }
+  ],
+  "pais": "Colômbia"
+}

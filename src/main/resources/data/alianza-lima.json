@@ -1,0 +1,251 @@
+{
+  "nome": "Alianza Lima",
+  "sigla": "ALI",
+  "forca": 75,
+  "jogadores": [
+    {
+      "nome": "Carlos Quiroga",
+      "posicao": "GOL",
+      "overall": 78,
+      "ataque": 36,
+      "defesa": 88,
+      "finalizacao": 30,
+      "fisico": 81
+    },
+    {
+      "nome": "Valentín Castro",
+      "posicao": "GOL",
+      "overall": 75,
+      "ataque": 33,
+      "defesa": 84,
+      "finalizacao": 24,
+      "fisico": 78
+    },
+    {
+      "nome": "Juan Vargas",
+      "posicao": "GOL",
+      "overall": 76,
+      "ataque": 32,
+      "defesa": 86,
+      "finalizacao": 26,
+      "fisico": 79
+    },
+    {
+      "nome": "Kevin González",
+      "posicao": "ZAG",
+      "overall": 75,
+      "ataque": 51,
+      "defesa": 81,
+      "finalizacao": 42,
+      "fisico": 81
+    },
+    {
+      "nome": "Kevin Navarro",
+      "posicao": "ZAG",
+      "overall": 79,
+      "ataque": 54,
+      "defesa": 89,
+      "finalizacao": 45,
+      "fisico": 87
+    },
+    {
+      "nome": "Nicolás Castro",
+      "posicao": "ZAG",
+      "overall": 78,
+      "ataque": 54,
+      "defesa": 88,
+      "finalizacao": 42,
+      "fisico": 86
+    },
+    {
+      "nome": "Mateo Medina",
+      "posicao": "ZAG",
+      "overall": 70,
+      "ataque": 43,
+      "defesa": 77,
+      "finalizacao": 34,
+      "fisico": 77
+    },
+    {
+      "nome": "José Quiroga",
+      "posicao": "ZAG",
+      "overall": 79,
+      "ataque": 53,
+      "defesa": 85,
+      "finalizacao": 47,
+      "fisico": 87
+    },
+    {
+      "nome": "Gonzalo Romero",
+      "posicao": "LE",
+      "overall": 78,
+      "ataque": 71,
+      "defesa": 83,
+      "finalizacao": 61,
+      "fisico": 78
+    },
+    {
+      "nome": "Cristian Villalba",
+      "posicao": "LE",
+      "overall": 73,
+      "ataque": 70,
+      "defesa": 73,
+      "finalizacao": 56,
+      "fisico": 72
+    },
+    {
+      "nome": "Matías Medina",
+      "posicao": "LD",
+      "overall": 70,
+      "ataque": 68,
+      "defesa": 72,
+      "finalizacao": 54,
+      "fisico": 71
+    },
+    {
+      "nome": "Ángel González",
+      "posicao": "LD",
+      "overall": 78,
+      "ataque": 74,
+      "defesa": 81,
+      "finalizacao": 63,
+      "fisico": 78
+    },
+    {
+      "nome": "José Herrera",
+      "posicao": "VOL",
+      "overall": 79,
+      "ataque": 73,
+      "defesa": 82,
+      "finalizacao": 63,
+      "fisico": 81
+    },
+    {
+      "nome": "Mateo Villalba",
+      "posicao": "VOL",
+      "overall": 72,
+      "ataque": 63,
+      "defesa": 79,
+      "finalizacao": 54,
+      "fisico": 77
+    },
+    {
+      "nome": "Federico Díaz",
+      "posicao": "VOL",
+      "overall": 70,
+      "ataque": 63,
+      "defesa": 72,
+      "finalizacao": 55,
+      "fisico": 76
+    },
+    {
+      "nome": "Ángel Quiroga",
+      "posicao": "MC",
+      "overall": 70,
+      "ataque": 71,
+      "defesa": 64,
+      "finalizacao": 66,
+      "fisico": 72
+    },
+    {
+      "nome": "Bruno Ramírez",
+      "posicao": "MC",
+      "overall": 76,
+      "ataque": 74,
+      "defesa": 69,
+      "finalizacao": 69,
+      "fisico": 78
+    },
+    {
+      "nome": "Carlos Díaz",
+      "posicao": "MC",
+      "overall": 73,
+      "ataque": 72,
+      "defesa": 66,
+      "finalizacao": 67,
+      "fisico": 73
+    },
+    {
+      "nome": "Diego Díaz",
+      "posicao": "MC",
+      "overall": 72,
+      "ataque": 71,
+      "defesa": 69,
+      "finalizacao": 69,
+      "fisico": 73
+    },
+    {
+      "nome": "Martín Molina",
+      "posicao": "MEI",
+      "overall": 79,
+      "ataque": 86,
+      "defesa": 59,
+      "finalizacao": 85,
+      "fisico": 77
+    },
+    {
+      "nome": "Miguel Álvarez",
+      "posicao": "MEI",
+      "overall": 70,
+      "ataque": 74,
+      "defesa": 53,
+      "finalizacao": 75,
+      "fisico": 66
+    },
+    {
+      "nome": "Emiliano Silva",
+      "posicao": "PE",
+      "overall": 78,
+      "ataque": 85,
+      "defesa": 59,
+      "finalizacao": 82,
+      "fisico": 73
+    },
+    {
+      "nome": "Ramiro Torres",
+      "posicao": "PD",
+      "overall": 77,
+      "ataque": 86,
+      "defesa": 55,
+      "finalizacao": 83,
+      "fisico": 75
+    },
+    {
+      "nome": "Matías Ortiz",
+      "posicao": "ATA",
+      "overall": 73,
+      "ataque": 83,
+      "defesa": 46,
+      "finalizacao": 85,
+      "fisico": 79
+    },
+    {
+      "nome": "Santiago Álvarez",
+      "posicao": "ATA",
+      "overall": 71,
+      "ataque": 84,
+      "defesa": 40,
+      "finalizacao": 81,
+      "fisico": 76
+    },
+    {
+      "nome": "Ramiro Sánchez",
+      "posicao": "ATA",
+      "overall": 72,
+      "ataque": 79,
+      "defesa": 45,
+      "finalizacao": 83,
+      "fisico": 74
+    },
+    {
+      "nome": "Miguel Acosta",
+      "posicao": "ATA",
+      "overall": 71,
+      "ataque": 83,
+      "defesa": 39,
+      "finalizacao": 80,
+      "fisico": 78
+    }
+  ],
+  "pais": "Peru"
+}

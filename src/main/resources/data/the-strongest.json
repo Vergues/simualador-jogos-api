@@ -1,0 +1,251 @@
+{
+  "nome": "The Strongest",
+  "sigla": "STR",
+  "forca": 76,
+  "jogadores": [
+    {
+      "nome": "Santiago Cabrera",
+      "posicao": "GOL",
+      "overall": 76,
+      "ataque": 36,
+      "defesa": 85,
+      "finalizacao": 27,
+      "fisico": 78
+    },
+    {
+      "nome": "Lucas Navarro",
+      "posicao": "GOL",
+      "overall": 77,
+      "ataque": 37,
+      "defesa": 85,
+      "finalizacao": 25,
+      "fisico": 80
+    },
+    {
+      "nome": "Gonzalo Acosta",
+      "posicao": "GOL",
+      "overall": 78,
+      "ataque": 34,
+      "defesa": 88,
+      "finalizacao": 30,
+      "fisico": 81
+    },
+    {
+      "nome": "Bruno Silva",
+      "posicao": "ZAG",
+      "overall": 73,
+      "ataque": 47,
+      "defesa": 79,
+      "finalizacao": 41,
+      "fisico": 79
+    },
+    {
+      "nome": "Carlos Cabrera",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 56,
+      "defesa": 87,
+      "finalizacao": 47,
+      "fisico": 85
+    },
+    {
+      "nome": "Kevin Rodríguez",
+      "posicao": "ZAG",
+      "overall": 73,
+      "ataque": 47,
+      "defesa": 81,
+      "finalizacao": 39,
+      "fisico": 79
+    },
+    {
+      "nome": "Lautaro Villalba",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 55,
+      "defesa": 88,
+      "finalizacao": 44,
+      "fisico": 85
+    },
+    {
+      "nome": "Joaquín Molina",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 53,
+      "defesa": 90,
+      "finalizacao": 46,
+      "fisico": 86
+    },
+    {
+      "nome": "Facundo Vargas",
+      "posicao": "LE",
+      "overall": 74,
+      "ataque": 72,
+      "defesa": 79,
+      "finalizacao": 54,
+      "fisico": 72
+    },
+    {
+      "nome": "Gonzalo García",
+      "posicao": "LE",
+      "overall": 76,
+      "ataque": 75,
+      "defesa": 80,
+      "finalizacao": 57,
+      "fisico": 80
+    },
+    {
+      "nome": "Matías Paredes",
+      "posicao": "LD",
+      "overall": 77,
+      "ataque": 72,
+      "defesa": 82,
+      "finalizacao": 60,
+      "fisico": 76
+    },
+    {
+      "nome": "Martín Medina",
+      "posicao": "LD",
+      "overall": 71,
+      "ataque": 70,
+      "defesa": 70,
+      "finalizacao": 50,
+      "fisico": 69
+    },
+    {
+      "nome": "Bruno Torres",
+      "posicao": "VOL",
+      "overall": 73,
+      "ataque": 63,
+      "defesa": 80,
+      "finalizacao": 59,
+      "fisico": 76
+    },
+    {
+      "nome": "Carlos Torres",
+      "posicao": "VOL",
+      "overall": 75,
+      "ataque": 69,
+      "defesa": 81,
+      "finalizacao": 62,
+      "fisico": 81
+    },
+    {
+      "nome": "Matías Romero",
+      "posicao": "VOL",
+      "overall": 72,
+      "ataque": 64,
+      "defesa": 75,
+      "finalizacao": 57,
+      "fisico": 75
+    },
+    {
+      "nome": "Federico Cabrera",
+      "posicao": "MC",
+      "overall": 80,
+      "ataque": 84,
+      "defesa": 77,
+      "finalizacao": 75,
+      "fisico": 82
+    },
+    {
+      "nome": "Bruno Pérez",
+      "posicao": "MC",
+      "overall": 76,
+      "ataque": 78,
+      "defesa": 73,
+      "finalizacao": 72,
+      "fisico": 78
+    },
+    {
+      "nome": "Tomás Paredes",
+      "posicao": "MC",
+      "overall": 79,
+      "ataque": 83,
+      "defesa": 75,
+      "finalizacao": 73,
+      "fisico": 77
+    },
+    {
+      "nome": "Federico Silva",
+      "posicao": "MC",
+      "overall": 75,
+      "ataque": 77,
+      "defesa": 73,
+      "finalizacao": 67,
+      "fisico": 74
+    },
+    {
+      "nome": "Cristian Villalba",
+      "posicao": "MEI",
+      "overall": 78,
+      "ataque": 88,
+      "defesa": 58,
+      "finalizacao": 81,
+      "fisico": 77
+    },
+    {
+      "nome": "Federico Díaz",
+      "posicao": "MEI",
+      "overall": 79,
+      "ataque": 86,
+      "defesa": 61,
+      "finalizacao": 81,
+      "fisico": 77
+    },
+    {
+      "nome": "Joaquín Pérez",
+      "posicao": "PE",
+      "overall": 80,
+      "ataque": 85,
+      "defesa": 59,
+      "finalizacao": 83,
+      "fisico": 79
+    },
+    {
+      "nome": "Santiago Molina",
+      "posicao": "PD",
+      "overall": 74,
+      "ataque": 83,
+      "defesa": 50,
+      "finalizacao": 81,
+      "fisico": 71
+    },
+    {
+      "nome": "Franco Molina",
+      "posicao": "ATA",
+      "overall": 79,
+      "ataque": 89,
+      "defesa": 51,
+      "finalizacao": 90,
+      "fisico": 81
+    },
+    {
+      "nome": "Andrés Castro",
+      "posicao": "ATA",
+      "overall": 74,
+      "ataque": 82,
+      "defesa": 42,
+      "finalizacao": 83,
+      "fisico": 80
+    },
+    {
+      "nome": "Emiliano Vargas",
+      "posicao": "ATA",
+      "overall": 74,
+      "ataque": 87,
+      "defesa": 47,
+      "finalizacao": 81,
+      "fisico": 80
+    },
+    {
+      "nome": "Tomás Cabrera",
+      "posicao": "ATA",
+      "overall": 77,
+      "ataque": 87,
+      "defesa": 47,
+      "finalizacao": 90,
+      "fisico": 78
+    }
+  ],
+  "pais": "Bolívia"
+}

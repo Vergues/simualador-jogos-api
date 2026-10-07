@@ -1,0 +1,255 @@
+[
+  {
+    "id": "brasileirao",
+    "nome": "Campeonato Brasileiro",
+    "formato": "LIGA",
+    "descricao": "20 clubes, 38 rodadas e turno e returno.",
+    "clubes": [
+      "PAL",
+      "FLA",
+      "COR",
+      "SAN",
+      "SAO",
+      "BOT",
+      "FLU",
+      "CAM",
+      "CRU",
+      "INT",
+      "BAH",
+      "GRE",
+      "VAS",
+      "CAP",
+      "RBB",
+      "FOR",
+      "CEA",
+      "VIT",
+      "SPT",
+      "GOI"
+    ],
+    "faseInicial": "Pontos corridos",
+    "mesInicio": 4,
+    "diaInicio": 4,
+    "intervaloDias": 7,
+    "returno": true,
+    "grupos": 0,
+    "classificadosPorGrupo": 0,
+    "finais": []
+  },
+  {
+    "id": "paulista",
+    "nome": "Campeonato Paulista",
+    "formato": "GRUPOS",
+    "descricao": "16 clubes paulistas em quatro grupos de quatro, turno e returno. Os dois primeiros por grupo avançam às quartas, semifinal e final em jogo único.",
+    "clubes": [
+      "PAL",
+      "COR",
+      "SAN",
+      "SAO",
+      "RBB",
+      "MIR",
+      "NOV",
+      "POR",
+      "PON",
+      "GUA",
+      "BPS",
+      "ITU",
+      "SBE",
+      "AGU",
+      "VEL",
+      "NOR"
+    ],
+    "faseInicial": "Primeira fase",
+    "mesInicio": 1,
+    "diaInicio": 10,
+    "intervaloDias": 7,
+    "returno": true,
+    "grupos": 4,
+    "classificadosPorGrupo": 2,
+    "finais": [
+      {
+        "nome": "Quartas",
+        "mes": 2,
+        "dia": 28,
+        "idaVolta": false
+      },
+      {
+        "nome": "Semifinal",
+        "mes": 3,
+        "dia": 7,
+        "idaVolta": false
+      },
+      {
+        "nome": "Final",
+        "mes": 3,
+        "dia": 14,
+        "idaVolta": false
+      }
+    ]
+  },
+  {
+    "id": "copa-do-brasil",
+    "nome": "Copa do Brasil",
+    "formato": "ELIMINATORIA",
+    "descricao": "40 clubes brasileiros. Preliminar com 16 clubes e 24 isentos, seguida de dezesseis avos, oitavas, quartas e semifinal com ida e volta. Final única; empate no agregado decidido nos pênaltis.",
+    "clubes": [
+      "PAL",
+      "FLA",
+      "COR",
+      "SAN",
+      "SAO",
+      "BOT",
+      "FLU",
+      "CAM",
+      "CRU",
+      "INT",
+      "BAH",
+      "GRE",
+      "VAS",
+      "CAP",
+      "RBB",
+      "FOR",
+      "CEA",
+      "VIT",
+      "SPT",
+      "GOI",
+      "MIR",
+      "NOV",
+      "POR",
+      "PON",
+      "GUA",
+      "BPS",
+      "ITU",
+      "IDL",
+      "SBE",
+      "AGU",
+      "VEL",
+      "NOR",
+      "JUV",
+      "CUI",
+      "CFC",
+      "AMG",
+      "REM",
+      "PAY",
+      "CRB",
+      "VNO"
+    ],
+    "faseInicial": "Preliminar",
+    "mesInicio": 3,
+    "diaInicio": 4,
+    "intervaloDias": 7,
+    "returno": false,
+    "grupos": 0,
+    "classificadosPorGrupo": 0,
+    "finais": [
+      {
+        "nome": "Preliminar",
+        "mes": 3,
+        "dia": 4,
+        "idaVolta": true
+      },
+      {
+        "nome": "Dezesseis avos",
+        "mes": 3,
+        "dia": 25,
+        "idaVolta": true
+      },
+      {
+        "nome": "Oitavas",
+        "mes": 5,
+        "dia": 6,
+        "idaVolta": true
+      },
+      {
+        "nome": "Quartas",
+        "mes": 7,
+        "dia": 1,
+        "idaVolta": true
+      },
+      {
+        "nome": "Semifinal",
+        "mes": 8,
+        "dia": 5,
+        "idaVolta": true
+      },
+      {
+        "nome": "Final",
+        "mes": 9,
+        "dia": 23,
+        "idaVolta": false
+      }
+    ]
+  },
+  {
+    "id": "libertadores",
+    "nome": "Libertadores",
+    "formato": "GRUPOS",
+    "descricao": "32 clubes de nove países, em oito grupos de quatro, turno e returno. Os dois primeiros por grupo vão às oitavas; ida e volta até a semifinal e final única.",
+    "clubes": [
+      "PAL",
+      "FLA",
+      "BOT",
+      "FLU",
+      "CAM",
+      "CRU",
+      "INT",
+      "BAH",
+      "SAO",
+      "SAN",
+      "RIV",
+      "BOC",
+      "RAC",
+      "EST",
+      "VELZ",
+      "IDV",
+      "LDU",
+      "BSC",
+      "PEN",
+      "NAC",
+      "OLI",
+      "CER",
+      "LIB",
+      "ATN",
+      "MIL",
+      "COL",
+      "UCH",
+      "BOL",
+      "STR",
+      "UNI",
+      "ALI",
+      "SCR"
+    ],
+    "faseInicial": "Fase de grupos",
+    "mesInicio": 4,
+    "diaInicio": 7,
+    "intervaloDias": 14,
+    "returno": true,
+    "grupos": 8,
+    "classificadosPorGrupo": 2,
+    "finais": [
+      {
+        "nome": "Oitavas",
+        "mes": 9,
+        "dia": 1,
+        "idaVolta": true
+      },
+      {
+        "nome": "Quartas",
+        "mes": 10,
+        "dia": 6,
+        "idaVolta": true
+      },
+      {
+        "nome": "Semifinal",
+        "mes": 11,
+        "dia": 3,
+        "idaVolta": true
+      },
+      {
+        "nome": "Final",
+        "mes": 11,
+        "dia": 28,
+        "idaVolta": false
+      }
+    ]
+  }
+]

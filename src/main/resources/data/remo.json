@@ -1,0 +1,251 @@
+{
+  "nome": "Remo",
+  "sigla": "REM",
+  "forca": 65,
+  "jogadores": [
+    {
+      "nome": "Wesley Gomes",
+      "posicao": "GOL",
+      "overall": 65,
+      "ataque": 22,
+      "defesa": 72,
+      "finalizacao": 17,
+      "fisico": 70
+    },
+    {
+      "nome": "Bruno Teixeira",
+      "posicao": "GOL",
+      "overall": 64,
+      "ataque": 21,
+      "defesa": 71,
+      "finalizacao": 14,
+      "fisico": 69
+    },
+    {
+      "nome": "Eduardo Azevedo",
+      "posicao": "GOL",
+      "overall": 61,
+      "ataque": 21,
+      "defesa": 67,
+      "finalizacao": 10,
+      "fisico": 64
+    },
+    {
+      "nome": "Eduardo Silva",
+      "posicao": "ZAG",
+      "overall": 62,
+      "ataque": 34,
+      "defesa": 71,
+      "finalizacao": 27,
+      "fisico": 68
+    },
+    {
+      "nome": "Samuel Cardoso",
+      "posicao": "ZAG",
+      "overall": 66,
+      "ataque": 40,
+      "defesa": 72,
+      "finalizacao": 33,
+      "fisico": 74
+    },
+    {
+      "nome": "Marcos Martins",
+      "posicao": "ZAG",
+      "overall": 67,
+      "ataque": 43,
+      "defesa": 77,
+      "finalizacao": 32,
+      "fisico": 75
+    },
+    {
+      "nome": "Henrique Mendes",
+      "posicao": "ZAG",
+      "overall": 67,
+      "ataque": 43,
+      "defesa": 77,
+      "finalizacao": 34,
+      "fisico": 71
+    },
+    {
+      "nome": "Carlos Farias",
+      "posicao": "ZAG",
+      "overall": 68,
+      "ataque": 43,
+      "defesa": 76,
+      "finalizacao": 33,
+      "fisico": 76
+    },
+    {
+      "nome": "Caio Oliveira",
+      "posicao": "LE",
+      "overall": 68,
+      "ataque": 62,
+      "defesa": 68,
+      "finalizacao": 50,
+      "fisico": 68
+    },
+    {
+      "nome": "Matheus Farias",
+      "posicao": "LE",
+      "overall": 62,
+      "ataque": 59,
+      "defesa": 62,
+      "finalizacao": 42,
+      "fisico": 65
+    },
+    {
+      "nome": "Gabriel Oliveira",
+      "posicao": "LD",
+      "overall": 68,
+      "ataque": 63,
+      "defesa": 69,
+      "finalizacao": 49,
+      "fisico": 67
+    },
+    {
+      "nome": "Daniel Farias",
+      "posicao": "LD",
+      "overall": 63,
+      "ataque": 60,
+      "defesa": 63,
+      "finalizacao": 43,
+      "fisico": 61
+    },
+    {
+      "nome": "Vinícius Mendes",
+      "posicao": "VOL",
+      "overall": 68,
+      "ataque": 62,
+      "defesa": 74,
+      "finalizacao": 54,
+      "fisico": 70
+    },
+    {
+      "nome": "Leonardo Mendes",
+      "posicao": "VOL",
+      "overall": 65,
+      "ataque": 60,
+      "defesa": 72,
+      "finalizacao": 49,
+      "fisico": 70
+    },
+    {
+      "nome": "Leonardo Santos",
+      "posicao": "VOL",
+      "overall": 67,
+      "ataque": 59,
+      "defesa": 74,
+      "finalizacao": 53,
+      "fisico": 69
+    },
+    {
+      "nome": "Murilo Machado",
+      "posicao": "MC",
+      "overall": 68,
+      "ataque": 70,
+      "defesa": 62,
+      "finalizacao": 61,
+      "fisico": 65
+    },
+    {
+      "nome": "Rafael Martins",
+      "posicao": "MC",
+      "overall": 65,
+      "ataque": 65,
+      "defesa": 63,
+      "finalizacao": 58,
+      "fisico": 68
+    },
+    {
+      "nome": "Pedro Santos",
+      "posicao": "MC",
+      "overall": 63,
+      "ataque": 67,
+      "defesa": 57,
+      "finalizacao": 60,
+      "fisico": 61
+    },
+    {
+      "nome": "Nathan Mendes",
+      "posicao": "MC",
+      "overall": 67,
+      "ataque": 68,
+      "defesa": 59,
+      "finalizacao": 64,
+      "fisico": 66
+    },
+    {
+      "nome": "Daniel Machado",
+      "posicao": "MEI",
+      "overall": 68,
+      "ataque": 75,
+      "defesa": 47,
+      "finalizacao": 70,
+      "fisico": 62
+    },
+    {
+      "nome": "Matheus Lopes",
+      "posicao": "MEI",
+      "overall": 68,
+      "ataque": 75,
+      "defesa": 48,
+      "finalizacao": 71,
+      "fisico": 63
+    },
+    {
+      "nome": "Samuel Silva",
+      "posicao": "PE",
+      "overall": 67,
+      "ataque": 76,
+      "defesa": 46,
+      "finalizacao": 74,
+      "fisico": 61
+    },
+    {
+      "nome": "Renan Ribeiro",
+      "posicao": "PD",
+      "overall": 61,
+      "ataque": 68,
+      "defesa": 41,
+      "finalizacao": 68,
+      "fisico": 59
+    },
+    {
+      "nome": "Vinícius Cunha",
+      "posicao": "ATA",
+      "overall": 67,
+      "ataque": 79,
+      "defesa": 37,
+      "finalizacao": 80,
+      "fisico": 71
+    },
+    {
+      "nome": "Rodrigo Nunes",
+      "posicao": "ATA",
+      "overall": 63,
+      "ataque": 73,
+      "defesa": 30,
+      "finalizacao": 71,
+      "fisico": 70
+    },
+    {
+      "nome": "Eduardo Pereira",
+      "posicao": "ATA",
+      "overall": 69,
+      "ataque": 78,
+      "defesa": 37,
+      "finalizacao": 78,
+      "fisico": 70
+    },
+    {
+      "nome": "Rafael Ribeiro",
+      "posicao": "ATA",
+      "overall": 64,
+      "ataque": 77,
+      "defesa": 36,
+      "finalizacao": 77,
+      "fisico": 71
+    }
+  ],
+  "pais": "Brasil"
+}

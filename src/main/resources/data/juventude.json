@@ -1,0 +1,251 @@
+{
+  "nome": "Juventude",
+  "sigla": "JUV",
+  "forca": 73,
+  "jogadores": [
+    {
+      "nome": "Carlos Farias",
+      "posicao": "GOL",
+      "overall": 69,
+      "ataque": 29,
+      "defesa": 76,
+      "finalizacao": 20,
+      "fisico": 72
+    },
+    {
+      "nome": "Caio Correia",
+      "posicao": "GOL",
+      "overall": 69,
+      "ataque": 29,
+      "defesa": 75,
+      "finalizacao": 17,
+      "fisico": 74
+    },
+    {
+      "nome": "Marcos Vieira",
+      "posicao": "GOL",
+      "overall": 69,
+      "ataque": 27,
+      "defesa": 79,
+      "finalizacao": 19,
+      "fisico": 73
+    },
+    {
+      "nome": "André Costa",
+      "posicao": "ZAG",
+      "overall": 74,
+      "ataque": 48,
+      "defesa": 83,
+      "finalizacao": 42,
+      "fisico": 79
+    },
+    {
+      "nome": "Bruno Vieira",
+      "posicao": "ZAG",
+      "overall": 76,
+      "ataque": 48,
+      "defesa": 86,
+      "finalizacao": 41,
+      "fisico": 82
+    },
+    {
+      "nome": "Renan Silva",
+      "posicao": "ZAG",
+      "overall": 68,
+      "ataque": 42,
+      "defesa": 74,
+      "finalizacao": 34,
+      "fisico": 73
+    },
+    {
+      "nome": "Felipe Nunes",
+      "posicao": "ZAG",
+      "overall": 68,
+      "ataque": 42,
+      "defesa": 78,
+      "finalizacao": 32,
+      "fisico": 73
+    },
+    {
+      "nome": "Rodrigo Lopes",
+      "posicao": "ZAG",
+      "overall": 68,
+      "ataque": 44,
+      "defesa": 78,
+      "finalizacao": 36,
+      "fisico": 72
+    },
+    {
+      "nome": "Henrique Moreira",
+      "posicao": "LE",
+      "overall": 69,
+      "ataque": 64,
+      "defesa": 72,
+      "finalizacao": 51,
+      "fisico": 71
+    },
+    {
+      "nome": "Samuel Moura",
+      "posicao": "LE",
+      "overall": 74,
+      "ataque": 72,
+      "defesa": 79,
+      "finalizacao": 57,
+      "fisico": 78
+    },
+    {
+      "nome": "Rafael Melo",
+      "posicao": "LD",
+      "overall": 70,
+      "ataque": 69,
+      "defesa": 72,
+      "finalizacao": 54,
+      "fisico": 72
+    },
+    {
+      "nome": "Gustavo Vieira",
+      "posicao": "LD",
+      "overall": 72,
+      "ataque": 66,
+      "defesa": 74,
+      "finalizacao": 52,
+      "fisico": 73
+    },
+    {
+      "nome": "Matheus Souza",
+      "posicao": "VOL",
+      "overall": 68,
+      "ataque": 60,
+      "defesa": 72,
+      "finalizacao": 53,
+      "fisico": 74
+    },
+    {
+      "nome": "Rafael Freitas",
+      "posicao": "VOL",
+      "overall": 68,
+      "ataque": 60,
+      "defesa": 69,
+      "finalizacao": 52,
+      "fisico": 72
+    },
+    {
+      "nome": "Caio Oliveira",
+      "posicao": "VOL",
+      "overall": 77,
+      "ataque": 71,
+      "defesa": 80,
+      "finalizacao": 65,
+      "fisico": 78
+    },
+    {
+      "nome": "Murilo Azevedo",
+      "posicao": "MC",
+      "overall": 74,
+      "ataque": 78,
+      "defesa": 72,
+      "finalizacao": 65,
+      "fisico": 72
+    },
+    {
+      "nome": "Rodrigo Costa",
+      "posicao": "MC",
+      "overall": 75,
+      "ataque": 76,
+      "defesa": 68,
+      "finalizacao": 68,
+      "fisico": 75
+    },
+    {
+      "nome": "Wesley Gomes",
+      "posicao": "MC",
+      "overall": 75,
+      "ataque": 77,
+      "defesa": 71,
+      "finalizacao": 71,
+      "fisico": 75
+    },
+    {
+      "nome": "Renan Cardoso",
+      "posicao": "MC",
+      "overall": 70,
+      "ataque": 68,
+      "defesa": 63,
+      "finalizacao": 62,
+      "fisico": 73
+    },
+    {
+      "nome": "Samuel Costa",
+      "posicao": "MEI",
+      "overall": 71,
+      "ataque": 75,
+      "defesa": 55,
+      "finalizacao": 75,
+      "fisico": 69
+    },
+    {
+      "nome": "Daniel Ribeiro",
+      "posicao": "MEI",
+      "overall": 70,
+      "ataque": 74,
+      "defesa": 53,
+      "finalizacao": 76,
+      "fisico": 65
+    },
+    {
+      "nome": "Murilo Martins",
+      "posicao": "PE",
+      "overall": 71,
+      "ataque": 77,
+      "defesa": 46,
+      "finalizacao": 77,
+      "fisico": 66
+    },
+    {
+      "nome": "Caio Freitas",
+      "posicao": "PD",
+      "overall": 73,
+      "ataque": 80,
+      "defesa": 54,
+      "finalizacao": 75,
+      "fisico": 70
+    },
+    {
+      "nome": "Pedro Machado",
+      "posicao": "ATA",
+      "overall": 75,
+      "ataque": 82,
+      "defesa": 42,
+      "finalizacao": 88,
+      "fisico": 79
+    },
+    {
+      "nome": "Thiago Pereira",
+      "posicao": "ATA",
+      "overall": 72,
+      "ataque": 84,
+      "defesa": 42,
+      "finalizacao": 82,
+      "fisico": 74
+    },
+    {
+      "nome": "Victor Martins",
+      "posicao": "ATA",
+      "overall": 73,
+      "ataque": 81,
+      "defesa": 43,
+      "finalizacao": 86,
+      "fisico": 75
+    },
+    {
+      "nome": "Nathan Santos",
+      "posicao": "ATA",
+      "overall": 75,
+      "ataque": 84,
+      "defesa": 44,
+      "finalizacao": 82,
+      "fisico": 79
+    }
+  ],
+  "pais": "Brasil"
+}

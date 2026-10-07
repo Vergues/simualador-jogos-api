@@ -1,0 +1,251 @@
+{
+  "nome": "Cerro Porteño",
+  "sigla": "CER",
+  "forca": 79,
+  "jogadores": [
+    {
+      "nome": "Ramiro Rodríguez",
+      "posicao": "GOL",
+      "overall": 79,
+      "ataque": 36,
+      "defesa": 87,
+      "finalizacao": 30,
+      "fisico": 80
+    },
+    {
+      "nome": "Federico Herrera",
+      "posicao": "GOL",
+      "overall": 75,
+      "ataque": 31,
+      "defesa": 81,
+      "finalizacao": 25,
+      "fisico": 80
+    },
+    {
+      "nome": "Mateo Medina",
+      "posicao": "GOL",
+      "overall": 77,
+      "ataque": 37,
+      "defesa": 85,
+      "finalizacao": 28,
+      "fisico": 80
+    },
+    {
+      "nome": "Lautaro Castro",
+      "posicao": "ZAG",
+      "overall": 74,
+      "ataque": 47,
+      "defesa": 80,
+      "finalizacao": 39,
+      "fisico": 80
+    },
+    {
+      "nome": "Cristian García",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 53,
+      "defesa": 86,
+      "finalizacao": 47,
+      "fisico": 87
+    },
+    {
+      "nome": "Mateo Rodríguez",
+      "posicao": "ZAG",
+      "overall": 75,
+      "ataque": 50,
+      "defesa": 82,
+      "finalizacao": 43,
+      "fisico": 81
+    },
+    {
+      "nome": "Federico Rojas",
+      "posicao": "ZAG",
+      "overall": 83,
+      "ataque": 57,
+      "defesa": 89,
+      "finalizacao": 47,
+      "fisico": 91
+    },
+    {
+      "nome": "Franco López",
+      "posicao": "ZAG",
+      "overall": 83,
+      "ataque": 57,
+      "defesa": 93,
+      "finalizacao": 47,
+      "fisico": 89
+    },
+    {
+      "nome": "Matías Sánchez",
+      "posicao": "LE",
+      "overall": 81,
+      "ataque": 79,
+      "defesa": 81,
+      "finalizacao": 65,
+      "fisico": 80
+    },
+    {
+      "nome": "Joaquín García",
+      "posicao": "LE",
+      "overall": 79,
+      "ataque": 73,
+      "defesa": 82,
+      "finalizacao": 62,
+      "fisico": 80
+    },
+    {
+      "nome": "Sebastián González",
+      "posicao": "LD",
+      "overall": 75,
+      "ataque": 70,
+      "defesa": 75,
+      "finalizacao": 57,
+      "fisico": 77
+    },
+    {
+      "nome": "Tomás Rojas",
+      "posicao": "LD",
+      "overall": 77,
+      "ataque": 71,
+      "defesa": 82,
+      "finalizacao": 61,
+      "fisico": 78
+    },
+    {
+      "nome": "Lautaro Mendoza",
+      "posicao": "VOL",
+      "overall": 81,
+      "ataque": 76,
+      "defesa": 84,
+      "finalizacao": 67,
+      "fisico": 85
+    },
+    {
+      "nome": "Facundo Díaz",
+      "posicao": "VOL",
+      "overall": 78,
+      "ataque": 69,
+      "defesa": 84,
+      "finalizacao": 65,
+      "fisico": 80
+    },
+    {
+      "nome": "Valentín Ramírez",
+      "posicao": "VOL",
+      "overall": 77,
+      "ataque": 68,
+      "defesa": 78,
+      "finalizacao": 65,
+      "fisico": 84
+    },
+    {
+      "nome": "José Herrera",
+      "posicao": "MC",
+      "overall": 76,
+      "ataque": 79,
+      "defesa": 68,
+      "finalizacao": 69,
+      "fisico": 73
+    },
+    {
+      "nome": "Diego Herrera",
+      "posicao": "MC",
+      "overall": 80,
+      "ataque": 84,
+      "defesa": 77,
+      "finalizacao": 76,
+      "fisico": 79
+    },
+    {
+      "nome": "Ángel Romero",
+      "posicao": "MC",
+      "overall": 79,
+      "ataque": 77,
+      "defesa": 71,
+      "finalizacao": 74,
+      "fisico": 81
+    },
+    {
+      "nome": "Valentín Navarro",
+      "posicao": "MC",
+      "overall": 74,
+      "ataque": 73,
+      "defesa": 70,
+      "finalizacao": 70,
+      "fisico": 75
+    },
+    {
+      "nome": "Joaquín Acosta",
+      "posicao": "MEI",
+      "overall": 77,
+      "ataque": 82,
+      "defesa": 60,
+      "finalizacao": 81,
+      "fisico": 71
+    },
+    {
+      "nome": "Ramiro Torres",
+      "posicao": "MEI",
+      "overall": 77,
+      "ataque": 86,
+      "defesa": 62,
+      "finalizacao": 79,
+      "fisico": 71
+    },
+    {
+      "nome": "Cristian López",
+      "posicao": "PE",
+      "overall": 76,
+      "ataque": 84,
+      "defesa": 53,
+      "finalizacao": 80,
+      "fisico": 70
+    },
+    {
+      "nome": "Matías Ramírez",
+      "posicao": "PD",
+      "overall": 76,
+      "ataque": 81,
+      "defesa": 52,
+      "finalizacao": 79,
+      "fisico": 75
+    },
+    {
+      "nome": "Martín Álvarez",
+      "posicao": "ATA",
+      "overall": 81,
+      "ataque": 92,
+      "defesa": 53,
+      "finalizacao": 88,
+      "fisico": 83
+    },
+    {
+      "nome": "Tomás Pérez",
+      "posicao": "ATA",
+      "overall": 81,
+      "ataque": 93,
+      "defesa": 54,
+      "finalizacao": 91,
+      "fisico": 88
+    },
+    {
+      "nome": "Gonzalo Ramírez",
+      "posicao": "ATA",
+      "overall": 75,
+      "ataque": 87,
+      "defesa": 48,
+      "finalizacao": 86,
+      "fisico": 77
+    },
+    {
+      "nome": "Martín López",
+      "posicao": "ATA",
+      "overall": 75,
+      "ataque": 82,
+      "defesa": 44,
+      "finalizacao": 88,
+      "fisico": 76
+    }
+  ],
+  "pais": "Paraguai"
+}

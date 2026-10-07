@@ -1,0 +1,251 @@
+{
+  "nome": "Libertad",
+  "sigla": "LIB",
+  "forca": 80,
+  "jogadores": [
+    {
+      "nome": "Facundo Vargas",
+      "posicao": "GOL",
+      "overall": 84,
+      "ataque": 42,
+      "defesa": 90,
+      "finalizacao": 35,
+      "fisico": 85
+    },
+    {
+      "nome": "José Paredes",
+      "posicao": "GOL",
+      "overall": 80,
+      "ataque": 37,
+      "defesa": 89,
+      "finalizacao": 28,
+      "fisico": 84
+    },
+    {
+      "nome": "José Díaz",
+      "posicao": "GOL",
+      "overall": 81,
+      "ataque": 39,
+      "defesa": 87,
+      "finalizacao": 30,
+      "fisico": 85
+    },
+    {
+      "nome": "Ángel Rodríguez",
+      "posicao": "ZAG",
+      "overall": 77,
+      "ataque": 53,
+      "defesa": 84,
+      "finalizacao": 41,
+      "fisico": 85
+    },
+    {
+      "nome": "Miguel Fernández",
+      "posicao": "ZAG",
+      "overall": 82,
+      "ataque": 57,
+      "defesa": 90,
+      "finalizacao": 49,
+      "fisico": 90
+    },
+    {
+      "nome": "Juan Martínez",
+      "posicao": "ZAG",
+      "overall": 76,
+      "ataque": 49,
+      "defesa": 86,
+      "finalizacao": 44,
+      "fisico": 83
+    },
+    {
+      "nome": "José Suárez",
+      "posicao": "ZAG",
+      "overall": 80,
+      "ataque": 56,
+      "defesa": 89,
+      "finalizacao": 46,
+      "fisico": 86
+    },
+    {
+      "nome": "Martín Medina",
+      "posicao": "ZAG",
+      "overall": 77,
+      "ataque": 51,
+      "defesa": 84,
+      "finalizacao": 45,
+      "fisico": 85
+    },
+    {
+      "nome": "Martín López",
+      "posicao": "LE",
+      "overall": 78,
+      "ataque": 75,
+      "defesa": 78,
+      "finalizacao": 60,
+      "fisico": 76
+    },
+    {
+      "nome": "Thiago González",
+      "posicao": "LE",
+      "overall": 75,
+      "ataque": 68,
+      "defesa": 77,
+      "finalizacao": 56,
+      "fisico": 79
+    },
+    {
+      "nome": "Santiago Ortiz",
+      "posicao": "LD",
+      "overall": 81,
+      "ataque": 75,
+      "defesa": 83,
+      "finalizacao": 60,
+      "fisico": 81
+    },
+    {
+      "nome": "Agustín Quiroga",
+      "posicao": "LD",
+      "overall": 83,
+      "ataque": 78,
+      "defesa": 83,
+      "finalizacao": 65,
+      "fisico": 83
+    },
+    {
+      "nome": "Miguel Navarro",
+      "posicao": "VOL",
+      "overall": 75,
+      "ataque": 69,
+      "defesa": 80,
+      "finalizacao": 60,
+      "fisico": 77
+    },
+    {
+      "nome": "Bruno Mendoza",
+      "posicao": "VOL",
+      "overall": 82,
+      "ataque": 77,
+      "defesa": 88,
+      "finalizacao": 69,
+      "fisico": 84
+    },
+    {
+      "nome": "Gonzalo López",
+      "posicao": "VOL",
+      "overall": 77,
+      "ataque": 68,
+      "defesa": 78,
+      "finalizacao": 62,
+      "fisico": 84
+    },
+    {
+      "nome": "Gonzalo Benítez",
+      "posicao": "MC",
+      "overall": 84,
+      "ataque": 86,
+      "defesa": 76,
+      "finalizacao": 77,
+      "fisico": 83
+    },
+    {
+      "nome": "Lucas Medina",
+      "posicao": "MC",
+      "overall": 84,
+      "ataque": 86,
+      "defesa": 76,
+      "finalizacao": 76,
+      "fisico": 81
+    },
+    {
+      "nome": "Matías Castro",
+      "posicao": "MC",
+      "overall": 79,
+      "ataque": 81,
+      "defesa": 74,
+      "finalizacao": 71,
+      "fisico": 77
+    },
+    {
+      "nome": "Facundo Castro",
+      "posicao": "MC",
+      "overall": 82,
+      "ataque": 80,
+      "defesa": 78,
+      "finalizacao": 77,
+      "fisico": 81
+    },
+    {
+      "nome": "Mateo Álvarez",
+      "posicao": "MEI",
+      "overall": 77,
+      "ataque": 83,
+      "defesa": 56,
+      "finalizacao": 83,
+      "fisico": 72
+    },
+    {
+      "nome": "Ángel Navarro",
+      "posicao": "MEI",
+      "overall": 76,
+      "ataque": 81,
+      "defesa": 56,
+      "finalizacao": 81,
+      "fisico": 70
+    },
+    {
+      "nome": "Kevin Pérez",
+      "posicao": "PE",
+      "overall": 75,
+      "ataque": 80,
+      "defesa": 50,
+      "finalizacao": 80,
+      "fisico": 70
+    },
+    {
+      "nome": "Lautaro Mendoza",
+      "posicao": "PD",
+      "overall": 75,
+      "ataque": 86,
+      "defesa": 53,
+      "finalizacao": 78,
+      "fisico": 73
+    },
+    {
+      "nome": "Mateo González",
+      "posicao": "ATA",
+      "overall": 83,
+      "ataque": 93,
+      "defesa": 53,
+      "finalizacao": 91,
+      "fisico": 84
+    },
+    {
+      "nome": "Luis Acosta",
+      "posicao": "ATA",
+      "overall": 76,
+      "ataque": 88,
+      "defesa": 43,
+      "finalizacao": 89,
+      "fisico": 80
+    },
+    {
+      "nome": "Facundo Molina",
+      "posicao": "ATA",
+      "overall": 84,
+      "ataque": 92,
+      "defesa": 54,
+      "finalizacao": 96,
+      "fisico": 88
+    },
+    {
+      "nome": "Lucas Sánchez",
+      "posicao": "ATA",
+      "overall": 84,
+      "ataque": 92,
+      "defesa": 53,
+      "finalizacao": 95,
+      "fisico": 85
+    }
+  ],
+  "pais": "Paraguai"
+}
