@@ -1,0 +1,19 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2026-11-17T19:00:00.000Z",
+  "__export_source": "insomnia.desktop.app:v10.0.0",
+  "resources": [
+    {"_id":"wrk_brasileirao","_type":"workspace","name":"API Resultados do Brasileirão","description":"Coleção das oito rotas especificadas na A2."},
+    {"_id":"env_brasileirao","_type":"environment","parentId":"wrk_brasileirao","name":"Base Environment","data":{"base_url":"http://localhost:8080","partida_id":"1","rodada":"1"}},
+    {"_id":"fld_consultas","_type":"request_group","parentId":"wrk_brasileirao","name":"Consultas A2"},
+    {"_id":"req_times","_type":"request","parentId":"fld_consultas","name":"Listar times","method":"GET","url":"{{ _.base_url }}/api/v1/times","headers":[],"parameters":[]},
+    {"_id":"req_jogos","_type":"request","parentId":"fld_consultas","name":"Listar partidas","method":"GET","url":"{{ _.base_url }}/api/v1/jogos","headers":[],"parameters":[{"name":"limite","value":"20","disabled":false}]},
+    {"_id":"req_jogo","_type":"request","parentId":"fld_consultas","name":"Consultar partida","method":"GET","url":"{{ _.base_url }}/api/v1/jogos/{{ _.partida_id }}","headers":[],"parameters":[]},
+    {"_id":"req_rodada","_type":"request","parentId":"fld_consultas","name":"Partidas da rodada","method":"GET","url":"{{ _.base_url }}/api/v1/jogos/rodada/{{ _.rodada }}","headers":[],"parameters":[]},
+    {"_id":"req_live","_type":"request","parentId":"fld_consultas","name":"Partidas ao vivo","method":"GET","url":"{{ _.base_url }}/api/v1/jogos/ao-vivo","headers":[],"parameters":[]},
+    {"_id":"req_events","_type":"request","parentId":"fld_consultas","name":"Eventos da partida","method":"GET","url":"{{ _.base_url }}/api/v1/jogos/{{ _.partida_id }}/eventos","headers":[],"parameters":[]},
+    {"_id":"req_table","_type":"request","parentId":"fld_consultas","name":"Classificação","method":"GET","url":"{{ _.base_url }}/api/v1/classificacao","headers":[],"parameters":[]},
+    {"_id":"req_update","_type":"request","parentId":"fld_consultas","name":"Atualização enviada pelo simulador","method":"POST","url":"{{ _.base_url }}/api/v1/jogos/{{ _.partida_id }}/atualizacoes","headers":[{"name":"Content-Type","value":"application/json"}],"body":{"mimeType":"application/json","text":"{\n  \"minuto\": 30,\n  \"golsMandante\": 1,\n  \"golsVisitante\": 0,\n  \"status\": \"AO_VIVO\",\n  \"novoEvento\": {\n    \"minuto\": 30,\n    \"tipo\": \"GOL\",\n    \"descricao\": \"Gol simulado do mandante\"\n  }\n}"},"parameters":[]}
+  ]
+}
