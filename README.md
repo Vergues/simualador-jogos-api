@@ -1,108 +1,93 @@
-# Linha de Fundo
+# API de Resultados do Brasileirão
 
-Portal acadêmico de futebol: resultados, jogos ao vivo, calendário, classificação, artilharia e desempenho dos clubes. Interface de consulta em HTML/CSS/JavaScript, sem frameworks.
+Projeto acadêmico de partidas simuladas do Campeonato Brasileiro, baseado no planejamento A1 e na especificação A2. A API usa Java 21, Spring Boot, Spring Data JPA e H2. O projeto de demonstração em `simulador/` é uma aplicação Spring Boot independente que envia atualizações à API por HTTP.
 
-## Executar
-
-Java 21 e `JAVA_HOME` configurado para o JDK 21. O Maven Wrapper está incluído.
-
-```powershell
-.\mvnw.cmd spring-boot:run
-```
-
-Abra http://localhost:8080. Para testar e gerar o JAR:
-
-```powershell
-.\mvnw.cmd clean verify
-java -jar target/simulador-jogos-api-0.0.1-SNAPSHOT.jar
-```
-
-No Linux/macOS, use `./mvnw`. Tecnologias: Java 21, Spring Boot 4.1, Spring MVC, JPA e H2.
-
-## Páginas
-
-- `/`: jogos de hoje, próximos jogos, últimos resultados, classificação e artilheiros.
-- `/jogos`: filtros por competição, temporada, rodada, fase, clube, data e status; histórico completo.
-- `/competicoes` e `/competicoes/{id}`: formatos, jogos, tabelas e fases.
-- `/classificacao`, `/artilharia` e `/calendario`: tabelas e calendário mensal geral.
-- `/times` e `/times/palmeiras`: elenco, desempenho, posição e jogos do clube.
-- `/partidas/{id}`: placar, eventos, estatísticas, cartões e situação dos jogadores. O endereço antigo `/partida.html?id=...` continua funcionando.
-
-## Competições e calendário
-
-Regras simplificadas para apresentação acadêmica, sem pretensão de reproduzir os regulamentos oficiais:
-
-| Competição | Formato |
-|---|---|
-| Brasileirão (`brasileirao`) | 20 clubes, turno e returno, 38 rodadas e 380 jogos, a partir de abril. |
-| Paulista (`paulista`) | 16 clubes, quatro grupos de quatro, turno e returno; dois por grupo avançam às quartas, semifinal e final únicas. Janeiro–março, 55 jogos. |
-| Copa do Brasil (`copa-do-brasil`) | 40 clubes; 16 disputam preliminar e 24 entram nos dezesseis avos. Ida e volta até a semifinal; final única. 77 jogos. |
-| Libertadores (`libertadores`) | 32 clubes de nove países, oito grupos de quatro, turno e returno; dois por grupo passam às oitavas. Ida e volta até a semifinal; final única. 125 jogos. |
-
-O calendário evita jogos do mesmo clube com menos de 48 horas de intervalo. Datas-base ficam em `src/main/resources/data/competicoes.json`; conflitos deslocam partidas para o próximo dia disponível. As fases eliminatórias são geradas somente após definição dos classificados. Empates no agregado são decididos por pênaltis persistidos; não há gol qualificado fora de casa. Uma temporada completa no formato ampliado tem 637 jogos. Calendários iniciados permanecem com seus participantes e resultados; nesta instalação, a expansão completa está disponível em 2027. Escolha essa temporada no topo.
-
-## API
-
-Todos os endpoints de consulta usam GET:
-
-| Endpoint | Consulta |
-|---|---|
-| `/api/portal?temporada=2026` | Resumo da página inicial |
-| `/api/competicoes?temporada=2026` | Formatos, clubes, fases e campeões |
-| `/api/jogos` | Filtros `temporada`, `competicao`, `rodada`, `fase`, `time`, `data`, `status`, `limite` |
-| `/api/jogos/{id}` | Detalhe de uma partida |
-| `/api/classificacao?competicao=brasileirao` | Liga ou grupos; o mata-mata aparece pelos confrontos |
-| `/api/artilharia` | Artilharia geral; filtro opcional `competicao` e `temporada` |
-| `/api/times` e `/api/times/{slug}` | Clubes e desempenho na temporada |
-
-Datas usam `AAAA-MM-DD`. Status: `proximos`, `andamento`, `encerrados`. Em `/api/jogos`, `temporada=0` consulta todo o histórico; limite de 1 a 1500. Anos: 2000 a 2100. Respostas de erro têm `status` e `erro`.
-
-Os endpoints antigos `/api/brasileirao/...` foram preservados. Operações administrativas continuam disponíveis via POST, sem botões no portal: `/api/competicoes/calendario?ano=2026`, `/api/brasileirao/gerar-calendario?ano=2026`, `/api/brasileirao/jogo/{id}/simular` e `/api/jogos/simular?casa=PAL&fora=COR`. São recursos locais de demonstração, sem autenticação.
-
-## Simulação e persistência
-
-Ao iniciar, a aplicação prepara as quatro competições do ano atual e do próximo e atualiza os jogos cuja data já chegou. Um agendamento acompanha o relógio: partidas antigas encerram automaticamente; partidas atuais avançam minuto a minuto. Resultados, eventos, escalações atuais e decisões eliminatórias ficam no H2 `data/futebol-portal.mv.db`, ignorado pelo Git. Reiniciar não sorteia novamente resultados existentes.
-
-Esta versão usa um schema novo de desenvolvimento. O antigo `data/simulador.mv.db` não é lido. Estatísticas acumuladas são derivadas dos resultados e eventos, sem tabelas extras: pontos, jogos, vitórias, empates, derrotas, gols pró/contra, saldo, aproveitamento, gols por jogador e cartões. Jogadores são identificados pelo clube e índice no elenco. A interface acompanha partidas automaticamente e para de consultar detalhes ao encerrar.
+> **Estado desta versão:** a base disponível no GitHub não era o ZIP citado no pedido. O repositório original era uma aplicação monolítica com outras competições e front-end. Nesta revisão, as rotas A2 `/api/v1` e o cliente HTTP de demonstração foram acrescentados e a árvore antiga foi movida para `api/`. Ainda há funções de simulação/calendário no código da API e a temporada não foi convertida para o requisito de 20 rodadas finalizadas + 18 futuras. Leia os relatórios A3/A4 para as limitações verificadas.
 
 ## Estrutura
 
-12 arquivos Java principais: aplicação/configuração, dois controllers, quatro services (simulação, campeonato, calendário e consultas), um repository, três modelos e uma resposta de partida. Frontend: `index.html`, `style.css` e `app.js`. Dois arquivos de testes com 13 testes para calendário, persistência, encerramento, substituições, homônimos, duplicidade, grupos, eliminatórias, estatísticas, preservação de temporadas e regressão das forças.
+```text
+api/        Aplicação Spring Boot existente (REST, JPA e H2)
+simulador/  Aplicação Spring Boot independente para demonstração HTTP
+docs/       Relatórios A3/A4
+insomnia/   Coleção de requisições
+```
 
-## Força dos clubes
+## Pré-requisitos e execução
 
-A força determina a distribuição das jogadas ofensivas, incluindo finalizações e gols: chance do mandante = 53 + força efetiva do mandante − força efetiva do visitante, limitada entre 10% e 90%. O mando dá três pontos percentuais; cada expulso reduz a força efetiva em oito. A diferença de força também influencia a posse. O minuto e a seed persistida sorteiam os eventos; resultados não são fixos. Os atributos dos jogadores pesam na escolha dos titulares e dos protagonistas dos eventos.
+- JDK 21.
+- Maven 3.9+ ou Maven Wrapper incluído em `api/`.
+- Acesso ao Maven Central na primeira compilação, para baixar as dependências.
 
-Essa regra foi comparada com `EventoService` no commit `32a74e2` e preservada. Palmeiras passou de 95 a 96, Flamengo de 90 a 92; Corinthians permanece em 50. Os demais clubes mantêm as forças dos JSONs.
+No Eclipse, use **File → Import → Maven → Existing Maven Projects** e importe `api/` e `simulador/` separadamente.
 
-Teste regressivo: 2.000 partidas por clube, mesmos dez adversários, dois mandos e seeds controladas. Foram avaliadas médias, não posições em uma única temporada:
+Abra dois terminais na raiz do repositório.
 
-| Clube | Força | Pontos/jogo | Vitórias | Gols/jogo | Finalizações/jogo |
-|---|---:|---:|---:|---:|---:|
-| Palmeiras | 96 | 1,782 | 48,35% | 1,001 | 8,166 |
-| Flamengo | 92 | 1,687 | 44,80% | 0,945 | 7,687 |
-| Santos | 80 | 1,363 | 33,70% | 0,760 | 6,232 |
-| Goiás | 62 | 0,885 | 18,50% | 0,477 | 4,008 |
-| Corinthians | 50 | 0,621 | 10,75% | 0,307 | 2,565 |
+1. Inicie a API:
 
-Outro teste isola a força usando o mesmo elenco: em 2.000 jogos, força 96 venceu força 50 em 69,55%; empates em 26,50% e zebras em 3,95%. Os testes exigem diferenças relevantes, mas preservam empates e vitórias dos fracos.
+```bash
+cd api
+bash mvnw spring-boot:run
+```
 
-## Clubes e escudos
+2. Em outro terminal, compile e inicie o simulador de demonstração:
 
-42 clubes novos foram integrados do pacote fornecido: 20 brasileiros e 22 estrangeiros, totalizando 62. Seus elencos são fictícios para simulação. Os elencos existentes foram mantidos para preservar a identidade dos jogadores nos eventos salvos; apenas as forças de Palmeiras e Flamengo foram atualizadas. O Brasileirão continua com 20 clubes. Paulista, Copa do Brasil e Libertadores usam os participantes definidos em `data/competicoes.json`.
+```bash
+cd simulador
+bash mvnw spring-boot:run -Dspring-boot.run.arguments="--simulador.demo=true --simulador.partida-id=1 --api.base-url=http://localhost:8080"
+```
 
-Os 62 escudos SVG locais estilizados estão em `static/img/times/`. A associação por sigla vem de `escudos-manifest.json`; são imagens fornecidas no pacote, não escudos oficiais. Nenhum escudo é armazenado no H2. A interface mostra siglas quando falta imagem ou seu carregamento falha.
+A demonstração envia quatro atualizações HTTP (minutos 1, 30, 60 e 90). A API precisa estar disponível e a partida informada deve existir e não estar encerrada. O modo demonstração usa força base de 75/70; não substitui a simulação de campeonato pedida na especificação final.
 
-Para adicionar outro clube, inclua seu JSON em `data/`, registre o arquivo em `times-index.json` e sua sigla nas competições desejadas. Reutilize o formato existente:
+## API e demonstração
 
-```json
+Rotas A2:
+
+| Método | Rota | Finalidade |
+|---|---|---|
+| GET | `/api/v1/times` | Times do Brasileirão configurado |
+| GET | `/api/v1/jogos` | Partidas; aceita `temporada` e `limite` |
+| GET | `/api/v1/jogos/{id}` | Detalhe da partida |
+| GET | `/api/v1/jogos/rodada/{numero}` | Partidas da rodada |
+| GET | `/api/v1/jogos/ao-vivo` | Partidas com status `AO_VIVO` |
+| GET | `/api/v1/jogos/{id}/eventos` | Eventos de uma partida |
+| GET | `/api/v1/classificacao` | Classificação calculada |
+| POST | `/api/v1/jogos/{id}/atualizacoes` | Atualização enviada pelo simulador |
+
+Exemplo de atualização:
+
+```http
+POST http://localhost:8080/api/v1/jogos/1/atualizacoes
+Content-Type: application/json
+
 {
-  "nome": "Nome do clube", "sigla": "ABC", "forca": 80, "pais": "País",
-  "jogadores": [
-    {"nome": "Nome do jogador", "posicao": "GOL", "overall": 80,
-     "ataque": 40, "defesa": 85, "finalizacao": 30, "fisico": 75}
-  ]
+  "minuto": 30,
+  "golsMandante": 1,
+  "golsVisitante": 0,
+  "status": "AO_VIVO",
+  "novoEvento": {
+    "minuto": 30,
+    "tipo": "GOL",
+    "descricao": "Gol simulado do mandante"
+  }
 }
 ```
 
-O exemplo mostra somente a estrutura: um elenco válido tem ao menos 11 jogadores e um goleiro. `pais`, `slug` e `escudo` são opcionais; posições: GOL, ZAG, LD, LE, VOL, MC, MEI, PD, PE, SA e ATA. Não inclua atributos sem uso como passe, velocidade e regraEspecial.
+Erros tratados pelas rotas v1 usam JSON com `status`, `mensagem`, `caminho` e `timestamp`. Swagger/OpenAPI: `http://localhost:8080/swagger-ui.html`; documento JSON: `http://localhost:8080/v3/api-docs`.
+
+## Banco de dados
+
+O H2 está configurado em arquivo local em `api/data/futebol-portal.mv.db`, com usuário `sa` e senha vazia. Console: `http://localhost:8080/h2-console`; JDBC URL: `jdbc:h2:file:./data/futebol-portal`.
+
+## Insomnia
+
+Importe `insomnia/Insomnia_Resultado_Brasileirao.json` no Insomnia e ajuste `base_url` se a API estiver em outro endereço. A coleção cobre as oito rotas da A2.
+
+## Compilação e testes
+
+```bash
+cd api && bash mvnw test
+cd ../simulador && bash mvnw test
+```
+
+A validação executada nesta sessão está registrada em `docs/A4_RELATORIO_VALIDACAO.md`. A compilação não pôde baixar o parent Maven do Spring Boot devido à falha de resolução de `repo.maven.apache.org` no ambiente.

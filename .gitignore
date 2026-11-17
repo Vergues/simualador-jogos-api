@@ -1,34 +1,29 @@
-HELP.md
-target/
-/data/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Java and Maven outputs
+**/target/
+**/build/
+*.class
+*.jar
+*.log
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Local database files and secrets
+**/data/*.mv.db
+**/data/*.trace.db
+**/data/*.lock.db
+.env
+.env.*
+!.env.example
 
-### IntelliJ IDEA ###
-.idea
-*.iws
+# Maven Wrapper runtime download (wrapper properties stay versioned)
+**/.mvn/wrapper/maven-wrapper.jar
+
+# IDE files
+.idea/
 *.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+.classpath
+.project
+.settings/
 .vscode/
+.apt_generated/
+.factorypath
+.springBeans
+.sts4-cache/

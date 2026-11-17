@@ -1,6 +1,7 @@
 package com.vergues.simuladorjogosapi.service;
 
 import com.vergues.simuladorjogosapi.dto.PartidaResponse;
+import com.vergues.simuladorjogosapi.dto.AtualizacaoPartidaRequest;
 import com.vergues.simuladorjogosapi.model.Competicao;
 import com.vergues.simuladorjogosapi.model.Jogo;
 import com.vergues.simuladorjogosapi.model.Time;
@@ -56,7 +57,8 @@ public class CampeonatoService {
                 escudos.put(escudo.sigla(), escudo.arquivo());
             }
         } catch (IOException e) { throw new IllegalStateException("Erro ao carregar escudos", e); }
-        competicoes = List.of(lerRecurso("competicoes.json", Competicao[].class));
+        competicoes = List.of(lerRecurso("competicoes.json", Competicao[].class)).stream()
+                .filter(c -> "brasileirao".equals(c.id())).toList();
         for (String arquivo : lerRecurso("times-index.json", String[].class)) carregarTime(arquivo);
         for (Competicao c : competicoes) {
             for (String sigla : c.clubes()) time(sigla);
@@ -89,7 +91,7 @@ public class CampeonatoService {
 
     public int temporadaAtual() { return Year.now(clock).getValue(); }
     public LocalDate hoje() { return LocalDate.now(clock); }
-    public List<Time> listarTimes() { return List.copyOf(times.values()); }
+    public List<Time> listarTimes() { return competicao("brasileirao").clubes().stream().map(this::time).toList(); }
     public List<Competicao> competicoes() { return competicoes; }
 
     public Competicao competicao(String id) {
@@ -162,6 +164,56 @@ public class CampeonatoService {
         return transacao.execute(status -> {
             Jogo jogo = encontrar(id);
             return resposta(jogo, lerEstado(jogo));
+        });
+    }
+
+    public synchronized List<PartidaResponse> jogosAoVivo(int ano) {
+        validarTemporada(ano);
+        return jogosTemporada(ano).stream()
+                .filter(j -> "brasileirao".equals(j.competicao) && j.status == Jogo.Status.AO_VIVO)
+                .map(this::resumo).toList();
+    }
+
+    /** Recebe uma atualização enviada por um processo externo via HTTP. */
+    public synchronized PartidaResponse receberAtualizacao(long id, AtualizacaoPartidaRequest request) {
+        if (request == null || request.minuto() == null || request.golsMandante() == null
+                || request.golsVisitante() == null || request.status() == null) {
+            throw erro(HttpStatus.BAD_REQUEST, "Minuto, placar e status são obrigatórios.");
+        }
+        if (request.minuto() < 0 || request.minuto() > 120 || request.golsMandante() < 0
+                || request.golsVisitante() < 0) {
+            throw erro(HttpStatus.BAD_REQUEST, "Minuto deve estar entre 0 e 120 e gols não podem ser negativos.");
+        }
+        return transacao.execute(status -> {
+            Jogo jogo = encontrar(id);
+            Jogo.Estado estado = lerEstado(jogo);
+            if (jogo.status == Jogo.Status.ENCERRADO) {
+                throw erro(HttpStatus.BAD_REQUEST, "A partida já está encerrada.");
+            }
+            if (request.minuto() < jogo.minutoAtual) {
+                throw erro(HttpStatus.BAD_REQUEST, "O minuto informado não pode regredir.");
+            }
+            jogo.minutoAtual = request.minuto();
+            jogo.golsCasa = request.golsMandante();
+            jogo.golsFora = request.golsVisitante();
+            jogo.status = request.status();
+            estado.ultimoMinuto = request.minuto();
+            if (request.novoEvento() != null) {
+                var e = request.novoEvento();
+                if (e.minuto() == null || e.minuto() < 0 || e.minuto() > 120
+                        || e.tipo() == null || e.tipo().isBlank() || e.descricao() == null
+                        || e.descricao().isBlank()) {
+                    throw erro(HttpStatus.BAD_REQUEST, "Evento inválido: minuto, tipo e descrição são obrigatórios.");
+                }
+                String sigla = e.siglaTime();
+                if (sigla != null && !sigla.equals(jogo.siglaCasa) && !sigla.equals(jogo.siglaFora)) {
+                    throw erro(HttpStatus.BAD_REQUEST, "O time do evento não participa desta partida.");
+                }
+                String nome = sigla == null ? null : time(sigla).nome();
+                estado.eventos.add(new Jogo.Evento(e.minuto(), e.tipo(), nome, e.jogador(), e.descricao(), sigla, null));
+            }
+            salvar(jogo, estado);
+            return resposta(jogo, estado);
         });
     }
 
