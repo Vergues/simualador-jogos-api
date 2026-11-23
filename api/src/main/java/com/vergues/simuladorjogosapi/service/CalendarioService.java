@@ -9,6 +9,7 @@ import tools.jackson.databind.ObjectMapper;
 import java.time.Clock;
 import java.time.Duration;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.time.OffsetDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -104,6 +105,7 @@ public class CalendarioService {
         List<Time> ordem = new ArrayList<>(clubes);
         if (ordem.size() % 2 != 0) ordem.add(null);
         int rodadas = ordem.size() - 1;
+        int jogosPorRodada = ordem.size() / 2;
         List<Jogo> jogos = new ArrayList<>();
         LocalDate inicio = LocalDate.of(ano, c.mesInicio(), c.diaInicio());
         for (int rodada = 1; rodada <= rodadas; rodada++) {
@@ -111,11 +113,18 @@ public class CalendarioService {
                 Time casa = ordem.get(rodada % 2 == 0 ? ordem.size() - 1 - i : i);
                 Time fora = ordem.get(rodada % 2 == 0 ? i : ordem.size() - 1 - i);
                 if (casa == null || fora == null) continue;
+                boolean brasileirao = c.id().equals("brasileirao");
+                long diaDaRodada = brasileirao ? (long) i * c.intervaloDias() / jogosPorRodada : 0;
+                LocalTime horario = brasileirao
+                        ? LocalTime.of(18 + Math.floorMod(rodada + i, 5), 30)
+                        : LocalTime.of(20, 0);
                 jogos.add(agendar(c, ano, c.faseInicial(), grupo, rodada, casa, fora,
-                        inicio.plusDays((long) (rodada - 1) * c.intervaloDias()), null, 0, agenda));
+                        inicio.plusDays((long) (rodada - 1) * c.intervaloDias() + diaDaRodada),
+                        horario, null, 0, agenda));
                 if (c.returno()) {
                     jogos.add(agendar(c, ano, c.faseInicial(), grupo, rodada + rodadas, fora, casa,
-                            inicio.plusDays((long) (rodada + rodadas - 1) * c.intervaloDias()), null, 0, agenda));
+                            inicio.plusDays((long) (rodada + rodadas - 1) * c.intervaloDias() + diaDaRodada),
+                            horario, null, 0, agenda));
                 }
             }
             Collections.rotate(ordem.subList(1, ordem.size()), 1);
@@ -137,20 +146,21 @@ public class CalendarioService {
             Time casa = classificados.get(i);
             Time fora = classificados.get(classificados.size() - 1 - i);
             String confronto = c.id() + "-" + ano + "-" + fase.nome() + "-" + i;
-            Jogo ida = agendar(c, ano, fase.nome(), null, 0, casa, fora, data, confronto, 1, agenda);
+            Jogo ida = agendar(c, ano, fase.nome(), null, 0, casa, fora, data,
+                    LocalTime.of(20, 0), confronto, 1, agenda);
             jogos.add(ida);
             if (fase.idaVolta()) {
                 jogos.add(agendar(c, ano, fase.nome(), null, 0, fora, casa,
-                        ida.dataHora.toLocalDate().plusDays(7), confronto, 2, agenda));
+                        ida.dataHora.toLocalDate().plusDays(7), LocalTime.of(20, 0), confronto, 2, agenda));
             }
         }
         return jogos;
     }
 
     private Jogo agendar(Competicao c, int ano, String fase, String grupo, int rodada,
-                         Time casa, Time fora, LocalDate preferida, String confronto,
+                         Time casa, Time fora, LocalDate preferida, LocalTime horario, String confronto,
                          int perna, List<Jogo> agenda) {
-        OffsetDateTime data = preferida.atTime(20, 0).atZone(clock.getZone()).toOffsetDateTime();
+        OffsetDateTime data = preferida.atTime(horario).atZone(clock.getZone()).toOffsetDateTime();
         int tentativas = 0;
         while (conflito(agenda, casa.sigla(), fora.sigla(), data)) {
             data = data.plusDays(1);
