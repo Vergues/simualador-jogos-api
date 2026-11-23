@@ -12,6 +12,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.nio.file.Path;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -32,6 +34,16 @@ class CampeonatoServiceTest {
             assertEquals(380, jogos.size());
             assertEquals(20, campeonato.listarTimes().size());
             assertEquals(38, jogos.stream().map(PartidaResponse::rodada).distinct().count());
+            LocalDate primeiraData = jogos.stream().map(j -> j.dataHora().toLocalDate()).min(LocalDate::compareTo).orElseThrow();
+            LocalDate ultimaData = jogos.stream().map(j -> j.dataHora().toLocalDate()).max(LocalDate::compareTo).orElseThrow();
+            Set<LocalDate> datasComJogos = jogos.stream().map(j -> j.dataHora().toLocalDate()).collect(java.util.stream.Collectors.toSet());
+            for (LocalDate data = primeiraData; !data.isAfter(ultimaData); data = data.plusDays(1)) {
+                assertTrue(datasComJogos.contains(data), "Não há jogos em " + data);
+            }
+            assertTrue(jogos.stream().allMatch(j -> {
+                LocalTime horario = j.dataHora().toLocalTime();
+                return !horario.isBefore(LocalTime.of(18, 30)) && !horario.isAfter(LocalTime.of(22, 30));
+            }), "Todos os jogos do Brasileirão devem ocorrer entre 18h30 e 22h30");
             Set<String> confrontos = new HashSet<>();
             Map<String, Integer> mandos = new HashMap<>();
             Map<String, Integer> visitas = new HashMap<>();
