@@ -4,8 +4,12 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.web.client.RestClient;
 
+import java.time.Year;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -18,10 +22,22 @@ public class SimuladorApplication {
             org.springframework.core.env.Environment env) {
         return args -> {
             if (!env.getProperty("simulador.demo", Boolean.class, false)) return;
-            long id = env.getProperty("simulador.partida-id", Long.class, 1L);
+            long id = env.getProperty("simulador.partida-id", Long.class, 0L);
             String base = env.getProperty("api.base-url", "http://localhost:8080");
             RestClient client = builder.baseUrl(base).build();
-            Map jogo = client.get().uri("/api/v1/jogos/{id}", id).retrieve().body(Map.class);
+            Map jogo;
+            if (id > 0) {
+                jogo = client.get().uri("/api/v1/jogos/{id}", id).retrieve().body(Map.class);
+            } else {
+                List<Map<String, Object>> jogos = client.get()
+                        .uri("/api/v1/jogos?temporada={ano}&limite=380", Year.now().getValue())
+                        .retrieve().body(new ParameterizedTypeReference<>() { });
+                jogo = jogos == null ? null : jogos.stream()
+                        .filter(partida -> "AGENDADO".equals(partida.get("status")))
+                        .min(Comparator.comparing(partida -> String.valueOf(partida.get("dataHora"))))
+                        .orElse(null);
+                if (jogo != null) id = ((Number) jogo.get("id")).longValue();
+            }
             if (jogo == null) throw new IllegalStateException("A API não retornou a partida " + id);
             int forcaCasa = 75, forcaFora = 70;
             int golsCasa = 0, golsFora = 0;

@@ -3,6 +3,7 @@ package com.vergues.simuladorjogosapi.service;
 import com.vergues.simuladorjogosapi.SimuladorJogosApiApplication;
 import com.vergues.simuladorjogosapi.dto.AtualizacaoPartidaRequest;
 import com.vergues.simuladorjogosapi.dto.PartidaResponse;
+import com.vergues.simuladorjogosapi.model.Competicao;
 import com.vergues.simuladorjogosapi.model.Jogo;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -12,6 +13,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.web.server.ResponseStatusException;
 
 import java.nio.file.Path;
+import java.time.LocalTime;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -99,10 +101,50 @@ class CampeonatoServiceTest {
         }
     }
 
+    @Test
+    void novaBaseCongelaHistoricoEDistribuiJogosFuturosNosHorariosPedidos() {
+        try (ConfigurableApplicationContext contexto = iniciarComRotinaAutomatica()) {
+            CampeonatoService campeonato = contexto.getBean(CampeonatoService.class);
+            int ano = campeonato.temporadaAtual();
+            List<Competicao.Classificacao> tabela = campeonato.classificacao(ano);
+            Competicao.Classificacao palmeiras = tabela.stream().filter(t -> t.sigla.equals("PAL")).findFirst().orElseThrow();
+            Competicao.Classificacao flamengo = tabela.stream().filter(t -> t.sigla.equals("FLA")).findFirst().orElseThrow();
+            Competicao.Classificacao vasco = tabela.stream().filter(t -> t.sigla.equals("VAS")).findFirst().orElseThrow();
+            Competicao.Classificacao corinthians = tabela.stream().filter(t -> t.sigla.equals("COR")).findFirst().orElseThrow();
+
+            assertEquals(10, palmeiras.pontos - flamengo.pontos);
+            assertTrue(palmeiras.derrotas > 0, "Palmeiras não deve ficar invicto");
+            assertEquals("PAL", tabela.getFirst().sigla);
+            assertEquals("FLA", tabela.get(1).sigla);
+            assertEquals("VAS", tabela.get(tabela.size() - 2).sigla);
+            assertEquals("COR", tabela.getLast().sigla);
+            assertEquals(10, vasco.pontos - corinthians.pontos);
+
+            int rodadaAtiva = contexto.getBean(CalendarioService.class)
+                    .primeiraRodadaAtiva(campeonato.competicao("brasileirao"), ano);
+            List<Jogo> jogos = campeonato.jogosTemporada(ano).stream()
+                    .filter(j -> "brasileirao".equals(j.competicao)).toList();
+            assertTrue(jogos.stream().filter(j -> j.rodada < rodadaAtiva)
+                    .allMatch(j -> j.status == Jogo.Status.ENCERRADO));
+            List<Jogo> rodadaAtual = jogos.stream().filter(j -> j.rodada == rodadaAtiva).toList();
+            assertEquals(7, rodadaAtual.stream().map(j -> j.dataHora.toLocalDate()).distinct().count());
+            assertTrue(jogos.stream().filter(j -> j.status == Jogo.Status.AGENDADO)
+                    .allMatch(j -> j.dataHora.toLocalTime().equals(LocalTime.of(18, 30))
+                            || j.dataHora.toLocalTime().equals(LocalTime.of(22, 30))));
+        }
+    }
+
     private ConfigurableApplicationContext iniciar() {
         return new SpringApplicationBuilder(SimuladorJogosApiApplication.class)
                 .web(WebApplicationType.NONE)
                 .run("--spring.datasource.url=jdbc:h2:file:" + diretorio.resolve("teste").toAbsolutePath(),
                         "--simulador.automatico=false", "--spring.main.banner-mode=off", "--logging.level.root=WARN");
+    }
+
+    private ConfigurableApplicationContext iniciarComRotinaAutomatica() {
+        return new SpringApplicationBuilder(SimuladorJogosApiApplication.class)
+                .web(WebApplicationType.NONE)
+                .run("--spring.datasource.url=jdbc:h2:file:" + diretorio.resolve("teste-automatico").toAbsolutePath(),
+                        "--spring.main.banner-mode=off", "--logging.level.root=WARN");
     }
 }

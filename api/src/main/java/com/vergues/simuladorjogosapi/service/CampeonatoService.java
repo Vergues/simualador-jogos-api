@@ -21,10 +21,12 @@ import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.time.Year;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.LinkedHashMap;
+import java.util.Set;
 import java.util.UUID;
 
 @Service
@@ -83,10 +85,138 @@ public class CampeonatoService {
                 j.fase = j.rodada == 0 ? "Amistoso" : "Pontos corridos";
             }
         }));
-        prepararTemporada(temporadaAtual());
+        int anoAtual = temporadaAtual();
+        List<Jogo> antes = jogosTemporada(anoAtual).stream()
+                .filter(j -> "brasileirao".equals(j.competicao)).toList();
+        boolean podePrepararHistorico = antes.isEmpty()
+                || antes.stream().allMatch(j -> j.status == Jogo.Status.AGENDADO);
+        prepararTemporada(anoAtual);
+        if (podePrepararHistorico) congelarHistorico(anoAtual);
+        ajustarAgendaFutura(anoAtual);
         // O próximo calendário recebe expansões sem substituir jogos de temporadas já iniciadas.
-        prepararTemporada(temporadaAtual() + 1);
-        atualizarPartidas();
+        prepararTemporada(anoAtual + 1);
+        finalizarPartidasAtrasadasNoInicio();
+    }
+
+    private void finalizarPartidasAtrasadasNoInicio() {
+        OffsetDateTime agora = OffsetDateTime.now(clock);
+        transacao.executeWithoutResult(status -> {
+            for (Jogo jogo : repository.findAll()) {
+                if (jogo.status == Jogo.Status.ENCERRADO || jogo.dataHora.isAfter(agora)) continue;
+                Jogo.Estado estado = lerEstado(jogo);
+                simulador.simular(jogo, estado, time(jogo.siglaCasa), time(jogo.siglaFora));
+                salvar(jogo, estado);
+            }
+        });
+    }
+
+    private void congelarHistorico(int ano) {
+        Competicao brasileirao = competicao("brasileirao");
+        int primeiraRodadaAtiva = calendario.primeiraRodadaAtiva(brasileirao, ano);
+        LocalDate hoje = hoje();
+        transacao.executeWithoutResult(status -> {
+            List<Jogo> historicos = repository.findByTemporadaOrderByDataHoraAsc(ano).stream()
+                    .filter(j -> "brasileirao".equals(j.competicao)
+                            && j.rodada < primeiraRodadaAtiva
+                            && j.dataHora.toLocalDate().isBefore(hoje)
+                            && j.status == Jogo.Status.AGENDADO)
+                    .sorted(java.util.Comparator.comparingInt((Jogo j) -> j.rodada)
+                            .thenComparing(j -> j.chave)).toList();
+            if (historicos.isEmpty()) return;
+
+            // A base histórica começa em empates; resultados determinísticos definem a tabela desejada.
+            for (Jogo jogo : historicos) {
+                definirEmpate(jogo);
+                jogo.minutoAtual = 90;
+                jogo.status = Jogo.Status.ENCERRADO;
+            }
+            Set<String> vencedoresContraLideres = new HashSet<>();
+            vencedoresContraLideres.add(aplicarResultados(historicos, "PAL", Set.of("FLA", "COR", "VAS"), 9, 1));
+            vencedoresContraLideres.add(aplicarResultados(historicos, "FLA", Set.of("PAL", "COR", "VAS"), 4, 1));
+
+            // Corinthians perde uma partida para cada adversário, exceto Palmeiras e Flamengo.
+            int derrotasCorinthians = 0;
+            for (String adversario : brasileirao.clubes()) {
+                if (Set.of("COR", "PAL", "FLA").contains(adversario)) continue;
+                Jogo jogo = historicos.stream()
+                        .filter(j -> j.siglaCasa.equals("COR") && j.siglaFora.equals(adversario)
+                                || j.siglaFora.equals("COR") && j.siglaCasa.equals(adversario))
+                        .findFirst().orElse(null);
+                if (jogo != null) {
+                    definirVencedor(jogo, adversario);
+                    derrotasCorinthians++;
+                }
+            }
+            if (derrotasCorinthians != 17) {
+                throw new IllegalStateException("Não foi possível preparar o histórico do Corinthians.");
+            }
+
+            // O Vasco termina dez pontos acima do Corinthians e permanece em 19º.
+            int derrotasVasco = 0;
+            for (String adversario : brasileirao.clubes()) {
+                if (derrotasVasco == 9) break;
+                if (Set.of("VAS", "PAL", "FLA", "COR").contains(adversario)
+                        || vencedoresContraLideres.contains(adversario)) continue;
+                Jogo jogo = historicos.stream()
+                        .filter(j -> j.siglaCasa.equals("VAS") && j.siglaFora.equals(adversario)
+                                || j.siglaFora.equals("VAS") && j.siglaCasa.equals(adversario))
+                        .findFirst().orElse(null);
+                if (jogo != null) {
+                    definirVencedor(jogo, adversario);
+                    derrotasVasco++;
+                }
+            }
+            if (derrotasVasco != 9) {
+                throw new IllegalStateException("Não foi possível preparar os resultados históricos do Brasileirão.");
+            }
+            repository.saveAll(historicos);
+        });
+    }
+
+    private String aplicarResultados(List<Jogo> jogos, String sigla, Set<String> ignorar,
+                                     int vitorias, int derrotas) {
+        List<Jogo> candidatos = jogos.stream()
+                .filter(j -> j.siglaCasa.equals(sigla) || j.siglaFora.equals(sigla))
+                .filter(j -> !ignorar.contains(j.siglaCasa.equals(sigla) ? j.siglaFora : j.siglaCasa))
+                .toList();
+        if (candidatos.size() < vitorias + derrotas) {
+            throw new IllegalStateException("Partidas históricas insuficientes para " + sigla + ".");
+        }
+        for (int i = 0; i < vitorias; i++) definirVencedor(candidatos.get(i), sigla);
+        String vencedorDaDerrota = null;
+        for (int i = 0; i < derrotas; i++) {
+            Jogo jogo = candidatos.get(vitorias + i);
+            vencedorDaDerrota = jogo.siglaCasa.equals(sigla) ? jogo.siglaFora : jogo.siglaCasa;
+            definirVencedor(jogo, vencedorDaDerrota);
+        }
+        return vencedorDaDerrota;
+    }
+
+    private void definirVencedor(Jogo jogo, String vencedor) {
+        int diferenca = Math.floorMod(jogo.chave.hashCode(), 3) + 1;
+        int golsDerrotado = Math.floorMod(jogo.chave.hashCode() >>> 3, diferenca);
+        if (jogo.siglaCasa.equals(vencedor)) {
+            jogo.golsCasa = golsDerrotado + diferenca;
+            jogo.golsFora = golsDerrotado;
+        } else {
+            jogo.golsCasa = golsDerrotado;
+            jogo.golsFora = golsDerrotado + diferenca;
+        }
+    }
+
+    private void definirEmpate(Jogo jogo) {
+        int gols = Math.floorMod(jogo.chave.hashCode(), 3);
+        jogo.golsCasa = gols;
+        jogo.golsFora = gols;
+    }
+
+    private void ajustarAgendaFutura(int ano) {
+        Competicao brasileirao = competicao("brasileirao");
+        transacao.executeWithoutResult(status -> {
+            List<Jogo> jogos = repository.findByTemporadaOrderByDataHoraAsc(ano);
+            List<Jogo> alterados = calendario.reagendarFuturos(brasileirao, ano, jogos);
+            if (!alterados.isEmpty()) repository.saveAll(alterados);
+        });
     }
 
     public int temporadaAtual() { return Year.now(clock).getValue(); }

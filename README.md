@@ -2,7 +2,7 @@
 
 Projeto acadêmico de partidas simuladas do Campeonato Brasileiro, baseado no planejamento A1 e na especificação A2. A API usa Java 21, Spring Boot, Spring Data JPA e H2. O projeto de demonstração em `simulador/` é uma aplicação Spring Boot independente que envia atualizações à API por HTTP.
 
-> **Estado desta versão:** a base disponível no GitHub não era o ZIP citado no pedido. O repositório original era uma aplicação monolítica com outras competições e front-end. Nesta revisão, as rotas A2 `/api/v1` e o cliente HTTP de demonstração foram acrescentados e a árvore antiga foi movida para `api/`. Ainda há funções de simulação/calendário no código da API e a temporada não foi convertida para o requisito de 20 rodadas finalizadas + 18 futuras. Leia os relatórios A3/A4 para as limitações verificadas.
+> **Calendário e execução:** o Brasileirão distribui as partidas de cada rodada pelos sete dias, em horários entre 18h30 e 22h30. A API atualiza os jogos enquanto estiver em execução. Ao iniciar, partidas cujo horário já passou e que ainda não terminaram são simuladas até o fim; partidas encerradas não têm o resultado alterado. Em uma base nova, o histórico anterior à rodada atual é criado como encerrado, com Palmeiras 10 pontos à frente do Flamengo e Corinthians 10 pontos atrás do penúltimo colocado. O H2 é criado localmente em `api/data/futebol-portal.mv.db`.
 
 ## Estrutura
 
@@ -30,14 +30,14 @@ cd api
 bash mvnw spring-boot:run
 ```
 
-2. Em outro terminal, compile e inicie o simulador de demonstração:
+2. Para demonstrar o envio de atualizações por HTTP, em outro terminal, compile e inicie o cliente de demonstração:
 
 ```bash
 cd simulador
-bash mvnw spring-boot:run -Dspring-boot.run.arguments="--simulador.demo=true --simulador.partida-id=1 --api.base-url=http://localhost:8080"
+bash mvnw spring-boot:run -Dspring-boot.run.arguments="--simulador.demo=true --simulador.partida-id=0 --api.base-url=http://localhost:8080"
 ```
 
-A demonstração envia quatro atualizações HTTP (minutos 1, 30, 60 e 90). A API precisa estar disponível e a partida informada deve existir e não estar encerrada. O modo demonstração usa força base de 75/70; não substitui a simulação de campeonato pedida na especificação final.
+A demonstração envia quatro atualizações HTTP (minutos 1, 30, 60 e 90). Com `--simulador.partida-id=0`, o cliente seleciona uma partida agendada; com um ID positivo, usa a partida informada. A API precisa estar disponível. O calendário automático e as partidas ao vivo são processados pela própria API; o cliente separado serve para demonstrar uma atualização externa.
 
 ## API e demonstração
 

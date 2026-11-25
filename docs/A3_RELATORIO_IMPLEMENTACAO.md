@@ -4,52 +4,24 @@
 
 **Equipe:** Guilherme Gabriel Krull dos Santos, Lucas Ferraz Rezeck, Luiz Rogério Ribeiro de Castro Neto e Matheus Vergueiro Silva.
 
-## Objetivo
+## Implementação disponível no repositório
 
-Registrar a implementação disponível para a primeira versão e separar o que foi alterado do que ainda precisa ser integrado para cumprir integralmente A1, A2 e os requisitos finais.
+- API REST em Java 21 e Spring Boot, com Spring Data JPA e banco H2 em arquivo.
+- Oito rotas A2 sob `/api/v1`: times, jogos, detalhe, rodada, partidas ao vivo, eventos, classificação e atualização de partida.
+- Calendário de 20 clubes, 38 rodadas, 380 partidas e turno/returno.
+- A classificação é calculada a partir dos jogos encerrados.
+- Uma base nova encerra o histórico anterior à rodada atual e preserva esses resultados. O histórico inicial é preparado para deixar o Palmeiras dez pontos à frente do Flamengo e o Corinthians dez pontos atrás do Vasco; o Palmeiras também tem derrota registrada.
+- A partir da rodada atual, as partidas são distribuídas ao longo dos sete dias, entre 18h30 e 22h30. A API mantém a simulação automática enquanto estiver em execução.
+- Partidas agendadas cujo horário passou durante o desligamento são concluídas ao iniciar a API. Resultados já encerrados não são alterados pela simulação automática nem pela rota de atualização.
 
-## Tecnologias e organização
+## Banco de dados
 
-- Java 21 e Spring Boot 4.1.0 no código da API.
-- Spring MVC, Spring Data JPA e H2 em arquivo.
-- Um cliente Spring Boot separado em `simulador/`, que usa `RestClient` para enviar atualizações por HTTP.
-- A aplicação API está em `api/`; relatórios e coleção Insomnia ficam em `docs/` e `insomnia/`.
+O arquivo H2 não é versionado no GitHub. A aplicação o cria localmente em `api/data/futebol-portal.mv.db` quando é executada. O esquema JPA está configurado para atualização. Em bases existentes, partidas encerradas são preservadas; partidas futuras ainda agendadas podem receber novos horários.
 
-A revisão acrescentou as oito rotas definidas na A2 sob `/api/v1`, validação de placar/minuto e identificação do time do evento, persistência da atualização no estado da partida e respostas de erro JSON para as rotas v1. O cliente independente possui modo de demonstração de quatro atualizações.
+## Demonstração
 
-## Banco e consultas
+Com a API em execução, o Swagger está disponível em `http://localhost:8080/swagger-ui.html` e a coleção Insomnia está em `insomnia/Insomnia_Resultado_Brasileirao.json`. O módulo `simulador/` é um cliente HTTP de demonstração que seleciona uma partida agendada quando iniciado com `--simulador.partida-id=0`.
 
-A aplicação existente usa H2 em arquivo (`jdbc:h2:file:./data/futebol-portal`) e JPA para persistir partidas. Os times e atributos vêm de JSON em `api/src/main/resources/data/`. As consultas A2 expostas são times, partidas, detalhe, rodada, jogos ao vivo, eventos e classificação.
+## Situação da validação
 
-## Requisições
-
-Exemplo de consulta incluído na coleção Insomnia:
-
-```http
-GET http://localhost:8080/api/v1/jogos/1
-```
-
-O formato de detalhe segue o DTO existente `PartidaResponse`, contendo identificador, campeonato, temporada, rodada, data/hora, status, minuto, mandante, visitante, placar e, quando solicitado, eventos e estatísticas.
-
-Exemplo de atualização que o simulador envia:
-
-```http
-POST http://localhost:8080/api/v1/jogos/1/atualizacoes
-Content-Type: application/json
-
-{"minuto":30,"golsMandante":1,"golsVisitante":0,"status":"AO_VIVO","novoEvento":{"minuto":30,"tipo":"GOL","descricao":"Gol simulado do mandante"}}
-```
-
-O exemplo descreve o contrato implementado; **não foi possível observar uma resposta real** porque a aplicação não pôde ser compilada neste ambiente (dependência Maven não baixada). Portanto, ele não é apresentado como evidência de uma execução bem-sucedida.
-
-## Testes e evidências
-
-O comando `bash mvnw test -q` foi iniciado em `api/` com OpenJDK 21.0.13. O Maven parou ao resolver o parent `org.springframework.boot:spring-boot-starter-parent:4.1.0`: `repo.maven.apache.org` falhou com `Temporary failure in name resolution`. A execução não chegou a compilar ou executar os testes existentes. Não houve chamada HTTP real nem medição de resposta nesta sessão.
-
-## Demonstração ao professor
-
-Com Maven Central disponível: inicie a API com `cd api && bash mvnw spring-boot:run`; depois importe a coleção Insomnia ou consulte o Swagger. O modo HTTP de demonstração pode ser iniciado com `cd simulador && mvn spring-boot:run -Dspring-boot.run.arguments="--simulador.demo=true --simulador.partida-id=1 --api.base-url=http://localhost:8080"`.
-
-## Pendências da A3
-
-A base que estava publicada não era o ZIP anexado no pedido e tinha escopo maior: front-end, múltiplas competições e simulação no mesmo aplicativo. A atualização presente não reimplementa o calendário do estado inicial (20 rodadas concluídas/200 jogos e 180 futuros), nem move toda a lógica de simulação para o módulo independente. A geração inicial, a execução agendada configurada por calendário real e a demonstração ainda precisam de validação integrada. O código deve ser compilado e corrigido em ambiente com acesso às dependências antes de ser apresentado como versão funcional final.
+Foi acrescentado um teste de inicialização para conferir o congelamento do histórico, os pontos definidos e os horários da rodada atual. A execução de `bash mvnw test` nesta revisão não chegou à compilação: o ambiente não conseguiu resolver `repo.maven.apache.org` ao tentar baixar o parent do Spring Boot. A demonstração real da API e das rotas precisa ser repetida em uma máquina com acesso ao Maven Central.
